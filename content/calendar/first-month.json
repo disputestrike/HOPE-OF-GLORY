@@ -1,0 +1,130 @@
+{
+  "month": "Month 1 — The Earth Filled With His Glory",
+  "anchors": ["Habakkuk 2:14", "Psalm 72:19", "Colossians 1:27"],
+  "series": [
+    {
+      "slug": "foundations-launch-week",
+      "title": "Foundations: The Earth Filled With His Glory",
+      "theme": "Mission, identity, and the gospel that fills the earth",
+      "weekIndex": 1,
+      "sermons": [
+        {
+          "dayOfWeek": "Monday",
+          "title": "The Earth Filled With His Glory",
+          "primaryPassage": "Habakkuk 2:14",
+          "supportingPassages": ["Numbers 14:21", "Isaiah 11:9"],
+          "angle": "Ministry mission and global proclamation",
+          "callToAction": "Join the mission. Subscribe to the Daily Word."
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "title": "Let the Whole Earth Be Filled With His Glory",
+          "primaryPassage": "Psalm 72:19",
+          "supportingPassages": ["Psalm 72:8-11", "Psalm 96:1-3"],
+          "angle": "Worship horizon and kingdom vision",
+          "callToAction": "Pray for the nations."
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "title": "Christ in You, the Hope of Glory",
+          "primaryPassage": "Colossians 1:27",
+          "supportingPassages": ["Colossians 1:24-29", "Galatians 2:20"],
+          "angle": "Identity in Christ and the ministry name",
+          "callToAction": "If you've never trusted Christ, begin here."
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "title": "The Word Became Flesh and Revealed Glory",
+          "primaryPassage": "John 1:14",
+          "supportingPassages": ["John 1:1-18", "Hebrews 1:1-3"],
+          "angle": "Christ as the revelation of God's glory",
+          "callToAction": "Read John this week."
+        },
+        {
+          "dayOfWeek": "Friday",
+          "title": "Go and Make Disciples",
+          "primaryPassage": "Matthew 28:18-20",
+          "supportingPassages": ["Acts 1:8", "Romans 10:13-15"],
+          "angle": "Public mission and digital evangelism",
+          "callToAction": "Share today's sermon with one person."
+        },
+        {
+          "dayOfWeek": "Saturday",
+          "title": "The Revelation of Jesus Christ",
+          "primaryPassage": "Revelation 1:1-8",
+          "supportingPassages": ["Revelation 1:9-20"],
+          "angle": "Revelation as Christ-centered unveiling, not panic",
+          "callToAction": "Pray for endurance and clear vision."
+        },
+        {
+          "dayOfWeek": "Sunday",
+          "title": "A Great Multitude From Every Nation",
+          "primaryPassage": "Revelation 7:9-10",
+          "supportingPassages": ["Revelation 5:9-10", "Habakkuk 2:14"],
+          "angle": "Nations, worship, and the mission's end",
+          "callToAction": "Worship with us next Sunday."
+        }
+      ]
+    },
+    {
+      "slug": "christ-in-you-week-2",
+      "title": "Christ in You",
+      "theme": "Union with Christ, the mystery revealed, Christ among the nations",
+      "weekIndex": 2,
+      "sermons": [
+        { "title": "The Mystery Hidden for Ages", "primaryPassage": "Colossians 1:24-27" },
+        { "title": "Christ Is All and in All", "primaryPassage": "Colossians 3:11" },
+        { "title": "Buried With Him, Raised With Him", "primaryPassage": "Colossians 2:12-15" },
+        { "title": "Set Your Mind on Things Above", "primaryPassage": "Colossians 3:1-4" },
+        { "title": "Christ Among the Nations", "primaryPassage": "Colossians 1:6" },
+        { "title": "The Fullness of Deity", "primaryPassage": "Colossians 2:9-10" },
+        { "title": "Above Every Name", "primaryPassage": "Philippians 2:9-11" }
+      ]
+    },
+    {
+      "slug": "knowledge-of-glory-week-3",
+      "title": "The Knowledge of the Glory of the Lord",
+      "theme": "Habakkuk: faithfulness, judgment, glory, mission",
+      "weekIndex": 3,
+      "sermons": [
+        { "title": "How Long, O Lord?", "primaryPassage": "Habakkuk 1:1-4" },
+        { "title": "The Righteous Shall Live by Faith", "primaryPassage": "Habakkuk 2:4" },
+        { "title": "Woe to the Proud", "primaryPassage": "Habakkuk 2:6-20" },
+        { "title": "The Knowledge of His Glory", "primaryPassage": "Habakkuk 2:14" },
+        { "title": "Yet I Will Rejoice", "primaryPassage": "Habakkuk 3:17-19" },
+        { "title": "The God Who Sees", "primaryPassage": "Habakkuk 3:3-15" },
+        { "title": "The Earth Shall Be Filled", "primaryPassage": "Habakkuk 2:14" }
+      ]
+    },
+    {
+      "slug": "word-to-the-nations-week-4",
+      "title": "The Word Goes to the Nations",
+      "theme": "Matthew 28, Acts 1, Romans 10, Psalm 96",
+      "weekIndex": 4,
+      "sermons": [
+        { "title": "All Authority", "primaryPassage": "Matthew 28:18" },
+        { "title": "Make Disciples", "primaryPassage": "Matthew 28:19-20" },
+        { "title": "You Will Be My Witnesses", "primaryPassage": "Acts 1:8" },
+        { "title": "How Will They Hear?", "primaryPassage": "Romans 10:14-17" },
+        { "title": "Declare His Glory", "primaryPassage": "Psalm 96:1-3" },
+        { "title": "Whoever Calls on the Name", "primaryPassage": "Romans 10:13" },
+        { "title": "From Every Tribe", "primaryPassage": "Matthew 24:14" }
+      ]
+    },
+    {
+      "slug": "revelation-of-jesus-week-5",
+      "title": "The Revelation of Jesus Christ",
+      "theme": "Revelation 1, 5, 7, 19, 22",
+      "weekIndex": 5,
+      "sermons": [
+        { "title": "Behold, He Is Coming", "primaryPassage": "Revelation 1:7-8" },
+        { "title": "Worthy Is the Lamb", "primaryPassage": "Revelation 5:9-14" },
+        { "title": "Salvation Belongs to Our God", "primaryPassage": "Revelation 7:9-12" },
+        { "title": "The Marriage Supper of the Lamb", "primaryPassage": "Revelation 19:6-9" },
+        { "title": "King of Kings and Lord of Lords", "primaryPassage": "Revelation 19:11-16" },
+        { "title": "I Am Making All Things New", "primaryPassage": "Revelation 21:5" },
+        { "title": "Behold, I Am Coming Soon", "primaryPassage": "Revelation 22:7-21" }
+      ]
+    }
+  ]
+}

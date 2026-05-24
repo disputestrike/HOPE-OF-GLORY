@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "paths": {
+      "@hog/db": ["../../packages/db/index.ts"],
+      "@hog/db/*": ["../../packages/db/*"],
+      "@hog/ai": ["../../packages/ai/index.ts"],
+      "@hog/ai/*": ["../../packages/ai/*"],
+      "@hog/rag": ["../../packages/rag/index.ts"],
+      "@hog/rag/*": ["../../packages/rag/*"],
+      "@hog/scripture": ["../../packages/scripture/index.ts"],
+      "@hog/scripture/*": ["../../packages/scripture/*"],
+      "@hog/safety": ["../../packages/safety/index.ts"],
+      "@hog/safety/*": ["../../packages/safety/*"],
+      "@hog/prompts": ["../../packages/prompts/index.ts"],
+      "@hog/prompts/*": ["../../packages/prompts/*"],
+      "@hog/shared": ["../../packages/shared/index.ts"],
+      "@hog/shared/*": ["../../packages/shared/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

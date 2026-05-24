@@ -1,0 +1,456 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================================================================
+   Hope of Glory Ministry — Global brand tokens
+   "Filling the earth with the knowledge of the glory of the Lord."
+   ==================================================================== */
+
+@layer base {
+  :root {
+    /* ---- Color tokens ---- */
+    --glory-gold: #d4af37;
+    --deep-heaven: #0b1f3a;
+    --midnight-navy: #050b18;
+    --warm-light: #fff8e7;
+    --blood-crimson: #8a1c1c;
+    --living-olive: #556b2f;
+
+    /* ---- Semantic colors ---- */
+    --bg: var(--deep-heaven);
+    --bg-elevated: #0e2447;
+    --bg-deep: var(--midnight-navy);
+    --fg: var(--warm-light);
+    --fg-muted: rgba(255, 248, 231, 0.78);
+    --accent: var(--glory-gold);
+    --accent-soft: rgba(212, 175, 55, 0.18);
+    --border: rgba(212, 175, 55, 0.22);
+    --border-soft: rgba(255, 248, 231, 0.12);
+
+    /* ---- Type scale (mobile) ---- */
+    --fs-h1: 2.25rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.375rem;
+    --fs-h4: 1rem;
+    --fs-body: 1rem;
+    --fs-body-lg: 1.125rem;
+    --fs-small: 0.875rem;
+    --fs-xs: 0.75rem;
+    --fs-scripture-display: 1.875rem;
+    --fs-scripture-inline: 1.125rem;
+    --fs-scripture-ref: 0.75rem;
+    --fs-button: 0.9375rem;
+    --fs-nav: 0.875rem;
+    --fs-footer: 0.875rem;
+
+    /* ---- Spacing ---- */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* ---- Misc ---- */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --max-content: 1200px;
+  }
+
+  @media (min-width: 768px) {
+    :root {
+      --fs-h1: 3.75rem;
+      --fs-h2: 2.75rem;
+      --fs-h3: 1.875rem;
+      --fs-h4: 1.0625rem;
+      --fs-body: 1.0625rem;
+      --fs-body-lg: 1.25rem;
+      --fs-small: 0.9375rem;
+      --fs-xs: 0.8125rem;
+      --fs-scripture-display: 3rem;
+      --fs-scripture-inline: 1.25rem;
+      --fs-scripture-ref: 0.8125rem;
+      --fs-button: 1rem;
+      --fs-nav: 0.9375rem;
+      --fs-footer: 0.9375rem;
+    }
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "ss01" 1;
+    background: var(--bg);
+    color: var(--fg);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body), Inter, system-ui, sans-serif;
+    font-size: var(--fs-body);
+    line-height: 1.65;
+    min-height: 100dvh;
+    background-image:
+      radial-gradient(1200px 600px at 50% -10%, rgba(212, 175, 55, 0.08), transparent 60%),
+      radial-gradient(900px 500px at 100% 10%, rgba(14, 36, 71, 0.6), transparent 60%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: var(--glory-gold);
+    color: var(--midnight-navy);
+  }
+
+  a {
+    color: var(--glory-gold);
+    text-decoration: none;
+    transition: opacity 200ms ease, color 200ms ease;
+  }
+  a:hover {
+    opacity: 0.85;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), "Cormorant Garamond", serif;
+    color: var(--warm-light);
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: var(--fs-h1);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    max-width: 22ch;
+    margin: 0 0 var(--space-6) 0;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: var(--fs-h2);
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+    max-width: 28ch;
+    margin: 0 0 var(--space-4) 0;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: var(--fs-h3);
+    line-height: 1.25;
+    max-width: 36ch;
+    margin: 0 0 var(--space-3) 0;
+  }
+
+  h4 {
+    font-family: var(--font-body), Inter, sans-serif;
+    font-weight: 600;
+    font-size: var(--fs-h4);
+    line-height: 1.4;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--glory-gold);
+    margin: 0 0 var(--space-3) 0;
+  }
+
+  p {
+    margin: 0 0 var(--space-4) 0;
+    max-width: 68ch;
+  }
+
+  blockquote {
+    font-family: var(--font-display), "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: var(--fs-scripture-inline);
+    line-height: 1.55;
+    border-left: 2px solid var(--glory-gold);
+    padding-left: var(--space-4);
+    margin: var(--space-6) 0;
+    max-width: 60ch;
+    color: var(--warm-light);
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: var(--border-soft);
+    margin: var(--space-12) 0;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+    margin: 0 0 var(--space-4) 0;
+    max-width: 64ch;
+  }
+  li { margin-bottom: var(--space-2); }
+}
+
+@layer components {
+  /* ---- Container ---- */
+  .container-prose {
+    width: 100%;
+    max-width: var(--max-content);
+    margin: 0 auto;
+    padding-inline: var(--space-6);
+  }
+  @media (min-width: 768px) {
+    .container-prose { padding-inline: var(--space-12); }
+  }
+
+  /* ---- Eyebrow / overline ---- */
+  .eyebrow {
+    font-family: var(--font-body), sans-serif;
+    font-weight: 600;
+    font-size: var(--fs-xs);
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--glory-gold);
+    display: inline-block;
+    margin-bottom: var(--space-3);
+  }
+
+  /* ---- Scripture display ---- */
+  .scripture-display {
+    font-family: var(--font-display), "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: var(--fs-scripture-display);
+    line-height: 1.3;
+    color: var(--warm-light);
+    text-wrap: balance;
+    text-align: center;
+    max-width: 22ch;
+    margin-inline: auto;
+  }
+  .scripture-display::before,
+  .scripture-display::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 1px;
+    background: var(--glory-gold);
+    margin-inline: auto;
+    margin-block: 1.5rem;
+  }
+  .scripture-ref {
+    display: block;
+    text-align: center;
+    margin-top: var(--space-4);
+    font-family: var(--font-body), sans-serif;
+    font-weight: 500;
+    font-size: var(--fs-scripture-ref);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--glory-gold);
+  }
+
+  /* ---- Buttons ---- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-body), sans-serif;
+    font-weight: 600;
+    font-size: var(--fs-button);
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.875rem 1.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 200ms ease;
+    min-height: 44px;
+  }
+  .btn--primary {
+    background: var(--glory-gold);
+    color: var(--midnight-navy);
+    border-color: var(--glory-gold);
+  }
+  .btn--primary:hover {
+    background: #e1c14b;
+    border-color: #e1c14b;
+    opacity: 1;
+  }
+  .btn--secondary {
+    background: transparent;
+    color: var(--glory-gold);
+    border-color: var(--glory-gold);
+  }
+  .btn--secondary:hover {
+    background: var(--accent-soft);
+    opacity: 1;
+  }
+  .btn--ghost {
+    background: transparent;
+    color: var(--warm-light);
+    border-color: var(--border-soft);
+  }
+  .btn--ghost:hover {
+    border-color: var(--glory-gold);
+    color: var(--glory-gold);
+    opacity: 1;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    background: linear-gradient(180deg, rgba(14, 36, 71, 0.55), rgba(11, 31, 58, 0.85));
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-md);
+    padding: var(--space-8);
+    transition: border-color 200ms ease, transform 200ms ease;
+  }
+  .card:hover {
+    border-color: var(--border);
+    transform: translateY(-2px);
+  }
+  .card__eyebrow {
+    color: var(--glory-gold);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-3);
+  }
+
+  /* ---- Section ---- */
+  .section {
+    padding-block: var(--space-16);
+  }
+  @media (min-width: 768px) {
+    .section { padding-block: var(--space-24); }
+  }
+  .section--hero {
+    padding-block: var(--space-24);
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .section--hero { padding-block: var(--space-32); }
+  }
+
+  /* ---- Gold divider ---- */
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--glory-gold) 30%,
+      var(--glory-gold) 70%,
+      transparent
+    );
+    opacity: 0.5;
+    margin-block: var(--space-12);
+  }
+
+  /* ---- Markdown prose (for content/site-copy pages) ---- */
+  .prose-ministry {
+    color: var(--fg);
+    max-width: 68ch;
+    margin-inline: auto;
+  }
+  .prose-ministry > * + * { margin-top: var(--space-4); }
+  .prose-ministry h1 { margin-block: var(--space-8) var(--space-4); }
+  .prose-ministry h2 { margin-block: var(--space-12) var(--space-4); }
+  .prose-ministry h3 { margin-block: var(--space-8) var(--space-3); }
+  .prose-ministry blockquote {
+    font-family: var(--font-display), serif;
+    font-style: italic;
+    color: var(--warm-light);
+    border-left: 2px solid var(--glory-gold);
+    padding-left: var(--space-4);
+    margin: var(--space-6) 0;
+  }
+  .prose-ministry hr {
+    background: var(--border-soft);
+    margin: var(--space-12) 0;
+  }
+  .prose-ministry strong { font-weight: 600; color: var(--warm-light); }
+  .prose-ministry a {
+    color: var(--glory-gold);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+  }
+  .prose-ministry a:hover { opacity: 0.85; }
+
+  /* ---- Navigation ---- */
+  .nav-link {
+    font-family: var(--font-body), sans-serif;
+    font-weight: 500;
+    font-size: var(--fs-nav);
+    line-height: 1;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--warm-light);
+    text-decoration: none;
+    transition: color 200ms ease;
+    padding: var(--space-2) 0;
+  }
+  .nav-link:hover,
+  .nav-link[aria-current="page"] {
+    color: var(--glory-gold);
+    opacity: 1;
+  }
+
+  /* ---- Wordmark / logo ---- */
+  .wordmark {
+    font-family: var(--font-display), serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--warm-light);
+    line-height: 1;
+    text-transform: uppercase;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wordmark__title {
+    font-size: 1.125rem;
+    letter-spacing: 0.18em;
+  }
+  .wordmark__sub {
+    font-family: var(--font-body), sans-serif;
+    font-weight: 500;
+    font-size: 0.625rem;
+    letter-spacing: 0.4em;
+    color: var(--glory-gold);
+    margin-top: 0.25rem;
+  }
+  @media (min-width: 768px) {
+    .wordmark__title { font-size: 1.375rem; }
+    .wordmark__sub { font-size: 0.6875rem; }
+  }
+}
+
+@layer utilities {
+  .text-gold { color: var(--glory-gold); }
+  .text-warm { color: var(--warm-light); }
+  .text-muted { color: var(--fg-muted); }
+  .bg-deep { background: var(--deep-heaven); }
+  .bg-navy { background: var(--midnight-navy); }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

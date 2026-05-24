@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@hog/db": ["../../packages/db/index.ts"],
+      "@hog/db/*": ["../../packages/db/*"],
+      "@hog/ai": ["../../packages/ai/index.ts"],
+      "@hog/ai/*": ["../../packages/ai/*"],
+      "@hog/rag": ["../../packages/rag/index.ts"],
+      "@hog/rag/*": ["../../packages/rag/*"],
+      "@hog/prompts": ["../../packages/prompts/index.ts"],
+      "@hog/prompts/*": ["../../packages/prompts/*"],
+      "@hog/safety": ["../../packages/safety/index.ts"],
+      "@hog/safety/*": ["../../packages/safety/*"],
+      "@hog/scripture": ["../../packages/scripture/index.ts"],
+      "@hog/scripture/*": ["../../packages/scripture/*"],
+      "@hog/shared": ["../../packages/shared/index.ts"],
+      "@hog/shared/*": ["../../packages/shared/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}

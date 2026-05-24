@@ -1,0 +1,48 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^19.0.0-rc-66855b96-20241106",
+    "react-dom": "^19.0.0-rc-66855b96-20241106",
+    "next-auth": "5.0.0-beta.25",
+    "@auth/drizzle-adapter": "^1.7.2",
+    "drizzle-orm": "^0.36.4",
+    "postgres": "^3.4.5",
+    "redis": "^4.7.0",
+    "@sentry/nextjs": "^8.40.0",
+    "marked": "^15.0.3",
+    "gray-matter": "^4.0.3",
+    "zod": "^3.23.8",
+    "@anthropic-ai/sdk": "^0.32.1",
+    "openai": "^4.73.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.4",
+    "@hog/db": "workspace:*",
+    "@hog/ai": "workspace:*",
+    "@hog/rag": "workspace:*",
+    "@hog/scripture": "workspace:*",
+    "@hog/safety": "workspace:*",
+    "@hog/prompts": "workspace:*",
+    "@hog/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.2",
+    "tailwindcss": "^3.4.14",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3"
+  }
+}

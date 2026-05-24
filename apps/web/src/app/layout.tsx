@@ -1,0 +1,99 @@
+import type { Metadata, Viewport } from "next";
+import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import "./globals.css";
+
+const display = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const body = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  themeColor: "#0B1F3A",
+  width: "device-width",
+  initialScale: 1,
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://hopeofglory.ministry"
+  ),
+  title: {
+    default: "Hope of Glory Ministry",
+    template: "%s · Hope of Glory Ministry",
+  },
+  description:
+    "Filling the earth with the knowledge of the glory of the Lord. A Christian media ministry proclaiming Jesus Christ through Scripture, prayer, teaching, and apologetics.",
+  applicationName: "Hope of Glory Ministry",
+  keywords: [
+    "Christian ministry",
+    "Bible teaching",
+    "prayer",
+    "apologetics",
+    "Jesus Christ",
+    "discipleship",
+    "Scripture",
+  ],
+  authors: [{ name: "Hope of Glory Ministry" }],
+  creator: "Hope of Glory Ministry",
+  publisher: "Hope of Glory Ministry",
+  openGraph: {
+    title: "Hope of Glory Ministry",
+    description:
+      "Filling the earth with the knowledge of the glory of the Lord.",
+    url: "https://hopeofglory.ministry",
+    siteName: "Hope of Glory Ministry",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hope of Glory Ministry",
+    description:
+      "Filling the earth with the knowledge of the glory of the Lord.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en" className={`${display.variable} ${body.variable}`}>
+      <body>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-glory-gold focus:text-midnight-navy focus:px-4 focus:py-2 focus:rounded"
+        >
+          Skip to main content
+        </a>
+        <Header />
+        <main id="main">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}

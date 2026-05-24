@@ -1,0 +1,29 @@
+{
+  "name": "hope-of-glory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hope of Glory Ministry — AI-native Christian media ministry. Filling the earth with the knowledge of the glory of the Lord.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @hog/db generate",
+    "db:migrate": "pnpm --filter @hog/db migrate",
+    "db:seed": "pnpm --filter @hog/db seed",
+    "worker:dev": "pnpm --filter worker dev",
+    "voice:dev": "pnpm --filter voice dev",
+    "stream:dev": "pnpm --filter stream dev"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2",
+    "prettier": "^3.3.3"
+  }
+}

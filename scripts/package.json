@@ -1,0 +1,24 @@
+{
+  "name": "scripts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest:doctrine": "tsx ingest-doctrine.ts",
+    "ingest:bible": "tsx ingest-bible.ts",
+    "ingest:creeds": "tsx ingest-creeds.ts",
+    "ingest:all": "pnpm ingest:doctrine && pnpm ingest:creeds && pnpm ingest:bible",
+    "seed:calendar": "tsx seed-calendar.ts"
+  },
+  "dependencies": {
+    "@hog/db": "workspace:*",
+    "@hog/ai": "workspace:*",
+    "@hog/rag": "workspace:*",
+    "drizzle-orm": "^0.36.4"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.2",
+    "@types/node": "^22.7.4"
+  }
+}
