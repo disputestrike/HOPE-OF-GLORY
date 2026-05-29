@@ -13,8 +13,13 @@
 import type { ComposedPost, PublishResult } from "./types";
 import type { Platform } from "@hog/shared";
 
-const BASE = process.env.POSTIZ_URL ?? "http://localhost:3000";
-const KEY = process.env.POSTIZ_API_KEY ?? "";
+function postizBase(): string {
+  return process.env.POSTIZ_URL ?? "http://localhost:3000";
+}
+
+function postizKey(): string {
+  return process.env.POSTIZ_API_KEY ?? "";
+}
 
 type PostizIntegration = {
   id: string;
@@ -46,10 +51,10 @@ async function request<T>(
   init: RequestInit & { json?: unknown } = {}
 ): Promise<T> {
   const { json, ...rest } = init;
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await fetch(`${postizBase()}${path}`, {
     ...rest,
     headers: {
-      Authorization: `Bearer ${KEY}`,
+      Authorization: `Bearer ${postizKey()}`,
       "Content-Type": "application/json",
       ...(rest.headers ?? {}),
     },
@@ -95,19 +100,19 @@ export async function schedulePost(opts: {
   scheduledFor: Date;
   tags?: string[];
 }): Promise<PublishResult> {
-  if (!KEY) {
-    return {
-      platform: opts.post.platform,
-      status: "failed",
-      error: "POSTIZ_API_KEY not configured",
-    };
-  }
   if (opts.post.platform === "email") {
     // Email is handled by Resend, not Postiz.
     return {
       platform: "email",
       status: "failed",
       error: "Use Resend client for email posts",
+    };
+  }
+  if (!postizKey()) {
+    return {
+      platform: opts.post.platform,
+      status: "failed",
+      error: "POSTIZ_API_KEY not configured",
     };
   }
 

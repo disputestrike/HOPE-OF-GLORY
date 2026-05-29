@@ -10,11 +10,11 @@
  * record a crisis_event so the founder can review within 24h.
  */
 import { NextResponse } from "next/server";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
 import { z } from "zod";
 import { features, PrayerPrivacy } from "@hog/shared";
 import { redactPii, assess as assessCrisis } from "@hog/safety";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -27,6 +27,10 @@ const BodySchema = z.object({
   email: z.string().email().max(200).optional(),
   phone: z.string().max(40).optional(),
 });
+
+function fallbackPrayer(): string {
+  return "Father, we lift this need before you. You see and you hear. Jesus, you are near to the brokenhearted. Holy Spirit, comfort and lead. In the name of Jesus we pray. Amen.";
+}
 
 export async function POST(request: Request) {
   if (!features().prayer) {
@@ -42,43 +46,47 @@ export async function POST(request: Request) {
 
   const crisis = assessCrisis(body.content);
 
-  let prayerText = "";
-  try {
-    const { generateSermonPrayer } = await import("../../../../../worker/src/agents/prayer");
-    prayerText = await generateSermonPrayer({
-      title: "A prayer with you today",
-      bigIdea: "We bring this need before the Father, through the Son, in the Spirit.",
-      prayerFocus: redactPii(body.content).slice(0, 300),
-    });
-  } catch (err) {
-    console.warn("[prayer] prayer generation failed:", err);
-    prayerText =
-      "Father, we lift this need before you. You see and you hear. Jesus, you are near to the brokenhearted. Holy Spirit, comfort and lead. In the name of Jesus we pray. Amen.";
+  let prayerText = fallbackPrayer();
+  if (process.env.ANTHROPIC_API_KEY) {
+    try {
+      const { generateSermonPrayer } = await import("../../../../../worker/src/agents/prayer");
+      prayerText = await generateSermonPrayer({
+        title: "A prayer with you today",
+        bigIdea: "We bring this need before the Father, through the Son, in the Spirit.",
+        prayerFocus: redactPii(body.content).slice(0, 300),
+      });
+    } catch (err) {
+      console.warn("[prayer] prayer generation failed:", err);
+    }
   }
 
   let id: string | null = null;
+  const database = await optionalDb("prayer");
   try {
-    const rows = await db.execute<{ id: string }>(sql`
-      INSERT INTO prayer_requests (
-        submitted_from, privacy_level, content, risk_level, follow_up_state
-      )
-      VALUES (
-        'web',
-        ${body.privacyLevel},
-        ${body.content},
-        ${crisis.severity === "none" ? "low" : crisis.severity === "watch" ? "medium" : "high"},
-        ${crisis.severity === "none" ? "queued" : "needs_human_review"}
-      )
-      RETURNING id
-    `);
-    id = rows[0]?.id ?? null;
+    if (database) {
+      const rows = await database.execute<{ id: string }>(sql`
+        INSERT INTO prayer_requests (
+          submitted_from, privacy_level, content, risk_level, follow_up_state, contact_email
+        )
+        VALUES (
+          'web',
+          ${body.privacyLevel},
+          ${body.content},
+          ${crisis.severity === "none" ? "low" : crisis.severity === "watch" ? "medium" : "high"},
+          ${crisis.severity === "none" ? "pending" : "escalated"},
+          ${body.email ?? null}
+        )
+        RETURNING id
+      `);
+      id = rows[0]?.id ?? null;
+    }
   } catch (err) {
     console.warn("[prayer] DB insert failed:", err);
   }
 
-  if (crisis.severity !== "none" && id) {
+  if (crisis.severity !== "none" && id && database) {
     try {
-      await db.execute(sql`
+      await database.execute(sql`
         INSERT INTO crisis_events (
           chat_session_id, trigger_phrase, severity, action_taken, escalated_to
         )

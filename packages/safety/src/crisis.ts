@@ -28,6 +28,7 @@ export type CrisisAssessment = {
 
 const IMMINENT_INDICATORS: readonly RegExp[] = [
   /\b(tonight|right now|today)\b.*?\b(end|kill|hurt)\b/i,
+  /\b(want|going|plan|planning|about)\b.{0,60}\b(hurt|harm|kill|end)\b.{0,40}\b(myself|my life|it)\b.{0,60}\b(tonight|right now|today)\b/i,
   /\bhave (a |the )?(gun|pills|rope|knife)\b/i,
   /\bplan to (kill|end|hurt)\b/i,
   /\b(am|i'm) going to (die|end it|do it)\b/i,
@@ -38,7 +39,9 @@ const ACTIVE_INDICATORS: readonly RegExp[] = [
   /\b(want|wish) (to|i could) die\b/i,
   /\bsuicid(e|al)\b/i,
   /\bkill myself\b/i,
-  /\bend my life\b/i,
+  /\bend(ing)? my life\b/i,
+  /\b(want|wish|going|planning|plan|thinking about|about)\b.{0,40}\b(hurt|harm) myself\b/i,
+  /\b(do not|don't|dont|cannot|can't|cant|no longer) want to live( anymore)?\b/i,
   /\bself[\s-]?harm\b/i,
   /\bcut(ting)? my(self)?\b/i,
 ];
@@ -46,6 +49,7 @@ const ACTIVE_INDICATORS: readonly RegExp[] = [
 const ABUSE_INDICATORS: readonly RegExp[] = [
   /\b(being|getting) (abused|raped|beaten|hurt|hit)\b/i,
   /\bsomeone (is hurting|is abusing|raped) me\b/i,
+  /\b(husband|wife|partner|boyfriend|girlfriend|spouse|parent|father|mother|caregiver)\s+is\s+(abusing|beating|hitting|hurting)\b/i,
   /\bchild (abuse|being hurt|in danger)\b/i,
   /\bdomestic violence\b/i,
 ];

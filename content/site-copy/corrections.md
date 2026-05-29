@@ -18,4 +18,4 @@ We will not list private pastoral conversations or prayer requests here. This pa
 
 ## Recent corrections
 
-*No corrections have been published yet. When the first one is needed, it will appear here, dated and plain.*
+The public trail is active. When a correction is needed, it will appear here with the date, the content affected, what changed, and why.

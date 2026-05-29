@@ -2,7 +2,7 @@
 
 A Bible Q&A chat. Ask an honest question about scripture, faith, or the Christian life, and receive a thoughtful, scripture-grounded answer.
 
-[Open the chat →](/ask/chat)
+[Open the chat →](/ask)
 
 ---
 
@@ -44,4 +44,4 @@ We do not sell, share, or publish your chats. For full detail on how messages ar
 
 Ready when you are.
 
-[Ask a question →](/ask/chat)
+[Ask a question →](/ask)

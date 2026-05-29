@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -13,8 +13,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-handoff");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, source_type, user_email, reason, status, notes, created_at, assigned_to
       FROM human_handoff
       ORDER BY
@@ -42,7 +44,10 @@ export default async function AdminHandoffPage() {
 
       {rows.length === 0 ? (
         <div className="card">
-          <p className="m-0 text-muted">No handoff requests yet.</p>
+          <p className="m-0 text-muted">
+            Human handoff queue is ready. Contact-form submissions, pastoral asks, and
+            safety escalations appear here after intake begins.
+          </p>
         </div>
       ) : (
         <div className="flex flex-col gap-3">

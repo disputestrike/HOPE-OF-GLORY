@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
 import { marked } from "marked";
+import { EngagementActions } from "@/components/EngagementActions";
+import { LAUNCH_SERMONS, getStaticSermon } from "@/data/launch-schedule";
+import { optionalDb } from "@/lib/server-db";
 
 type SermonRow = {
   id: string;
@@ -22,9 +24,25 @@ type SermonRow = {
   series_theme: string | null;
 };
 
-async function getSermon(slug: string): Promise<SermonRow | null> {
+type SermonDetail = {
+  id: string;
+  slug: string;
+  title: string;
+  primaryPassage: string;
+  summary: string | null;
+  fullText: string;
+  prayer: string | null;
+  callToAction: string | null;
+  imageUrl: string | null;
+  seriesTitle: string | null;
+  seriesTheme: string | null;
+};
+
+async function getDbSermon(slug: string): Promise<SermonRow | null> {
+  const database = await optionalDb("sermon-detail");
+  if (!database) return null;
   try {
-    const rows = await db.execute<SermonRow>(sql`
+    const rows = await database.execute<SermonRow>(sql`
       SELECT
         s.id, s.slug, s.title, s.primary_passage, s.summary, s.full_text, s.prayer,
         s.call_to_action, s.published_at, s.scheduled_for, s.image_url,
@@ -41,7 +59,50 @@ async function getSermon(slug: string): Promise<SermonRow | null> {
   }
 }
 
+async function getSermon(slug: string): Promise<SermonDetail | null> {
+  const db = await getDbSermon(slug);
+  if (db) {
+    return {
+      id: db.id,
+      slug: db.slug,
+      title: db.title,
+      primaryPassage: db.primary_passage,
+      summary: db.summary,
+      fullText:
+        db.full_text ??
+        `## Sermon notes\n\n${db.summary ?? "This sermon centers on the stated passage and the glory of Jesus Christ."}\n\n## Prayer\n\n${
+          db.prayer ?? "Lord, open our eyes to your Word and make us obedient to Jesus Christ. Amen."
+        }`,
+      prayer: db.prayer,
+      callToAction: db.call_to_action,
+      imageUrl: db.image_url,
+      seriesTitle: db.series_title,
+      seriesTheme: db.series_theme,
+    };
+  }
+
+  const fallback = getStaticSermon(slug);
+  if (!fallback) return null;
+  return {
+    id: fallback.id,
+    slug: fallback.slug,
+    title: fallback.title,
+    primaryPassage: fallback.primaryPassage,
+    summary: fallback.summary,
+    fullText: fallback.fullText,
+    prayer: fallback.prayer,
+    callToAction: fallback.callToAction,
+    imageUrl: fallback.imageUrl,
+    seriesTitle: fallback.seriesTitle,
+    seriesTheme: fallback.seriesTheme,
+  };
+}
+
 type Params = Promise<{ slug: string }>;
+
+export function generateStaticParams() {
+  return LAUNCH_SERMONS.map((sermon) => ({ slug: sermon.slug }));
+}
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { slug } = await params;
@@ -53,7 +114,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     openGraph: {
       title: s.title,
       description: s.summary ?? undefined,
-      images: s.image_url ? [{ url: s.image_url }] : undefined,
+      images: s.imageUrl ? [{ url: s.imageUrl }] : undefined,
     },
   };
 }
@@ -63,14 +124,14 @@ export default async function SermonPage({ params }: { params: Params }) {
   const s = await getSermon(slug);
   if (!s) notFound();
 
-  const html = s.full_text ? await marked.parse(s.full_text, { async: true }) : "";
+  const html = await marked.parse(s.fullText, { async: true });
 
   return (
     <article>
-      {s.image_url ? (
+      {s.imageUrl ? (
         <div
           className="w-full h-64 md:h-96 bg-navy bg-cover bg-center border-b border-[var(--border-soft)]"
-          style={{ backgroundImage: `url(${s.image_url})` }}
+          style={{ backgroundImage: `url(${s.imageUrl})` }}
           role="img"
           aria-label={`Hero image for ${s.title}`}
         />
@@ -78,47 +139,41 @@ export default async function SermonPage({ params }: { params: Params }) {
 
       <div className="container-prose section">
         <header className="mb-12">
-          {s.series_title ? (
-            <Link
-              href={`/sermons` as const}
-              className="eyebrow hover:opacity-80 inline-block mb-3"
-            >
-              {s.series_title}
-            </Link>
-          ) : (
-            <p className="eyebrow">Sermon</p>
-          )}
+          <Link href="/sermons" className="eyebrow hover:opacity-80 inline-block mb-3">
+            {s.seriesTitle ?? "Sermon"}
+          </Link>
           <h1>{s.title}</h1>
           <p className="text-gold mt-4" style={{ fontSize: "var(--fs-body-lg)" }}>
-            {s.primary_passage}
+            {s.primaryPassage}
           </p>
           {s.summary ? (
-            <p
-              className="text-muted mt-4 max-w-readable"
-              style={{ fontSize: "var(--fs-body-lg)" }}
-            >
+            <p className="text-muted mt-4 max-w-readable" style={{ fontSize: "var(--fs-body-lg)" }}>
               {s.summary}
             </p>
           ) : null}
         </header>
 
-        {html ? (
-          <div className="prose-ministry" dangerouslySetInnerHTML={{ __html: html }} />
-        ) : (
-          <p className="text-muted">This sermon is being prepared.</p>
-        )}
+        <div className="prose-ministry" dangerouslySetInnerHTML={{ __html: html }} />
 
-        {s.call_to_action ? (
-          <aside
-            className="card mt-12"
-            style={{ borderColor: "var(--border)" }}
-          >
-            <p className="card__eyebrow">Next step</p>
+        {s.prayer ? (
+          <aside className="card mt-12" style={{ borderColor: "var(--border)" }}>
+            <p className="card__eyebrow">Prayer</p>
             <p className="m-0 text-warm" style={{ fontSize: "var(--fs-body-lg)" }}>
-              {s.call_to_action}
+              {s.prayer}
             </p>
           </aside>
         ) : null}
+
+        {s.callToAction ? (
+          <aside className="card mt-6" style={{ borderColor: "var(--border)" }}>
+            <p className="card__eyebrow">Next step</p>
+            <p className="m-0 text-warm" style={{ fontSize: "var(--fs-body-lg)" }}>
+              {s.callToAction}
+            </p>
+          </aside>
+        ) : null}
+
+        <EngagementActions targetType="sermon" targetId={s.slug} />
 
         <div className="gold-divider" />
 
@@ -131,3 +186,4 @@ export default async function SermonPage({ params }: { params: Params }) {
     </article>
   );
 }
+

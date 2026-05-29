@@ -9,11 +9,24 @@
     "pnpm": ">=9.0.0"
   },
   "packageManager": "pnpm@9.12.0",
+  "pnpm": {
+    "overrides": {
+      "@rollup/plugin-commonjs>rollup": "3.30.0",
+      "@rollup/pluginutils>rollup": "3.30.0",
+      "@sentry/nextjs>rollup": "3.30.0",
+      "postcss": "8.5.10",
+      "uuid": "11.1.1"
+    }
+  },
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "preflight": "tsx scripts/preflight.ts",
     "db:generate": "pnpm --filter @hog/db generate",
     "db:migrate": "pnpm --filter @hog/db migrate",
     "db:seed": "pnpm --filter @hog/db seed",
@@ -23,7 +36,13 @@
   },
   "devDependencies": {
     "@types/node": "^22.7.4",
+    "@vitest/coverage-v8": "^2.1.5",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.2",
-    "prettier": "^3.3.3"
+    "vitest": "^2.1.5"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
   }
 }

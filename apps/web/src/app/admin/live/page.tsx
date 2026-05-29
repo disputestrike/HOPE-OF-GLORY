@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -14,8 +14,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-live");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, platform, broadcast_id, scheduled_for, started_at, ended_at, status, theme, agent_host
       FROM live_events
       ORDER BY scheduled_for DESC NULLS LAST
@@ -42,7 +44,7 @@ export default async function AdminLivePage() {
       {events.length === 0 ? (
         <div className="card">
           <p className="m-0 text-muted">
-            No broadcasts yet. The stream service creates the YouTube broadcast when triggered.
+            Live broadcast queue is ready. The stream service creates the YouTube broadcast when triggered.
             Requires <code>YOUTUBE_REFRESH_TOKEN</code> + OAuth client + an OBS or FFmpeg push to
             the issued RTMP URL.
           </p>
@@ -54,7 +56,7 @@ export default async function AdminLivePage() {
               <div>
                 <p className="card__eyebrow m-0">{e.platform} · {e.theme ?? "Live event"}</p>
                 <p className="m-0 text-warm">
-                  {e.scheduled_for ? new Date(e.scheduled_for).toLocaleString("en-US") : "Unscheduled"}
+                  {e.scheduled_for ? new Date(e.scheduled_for).toLocaleString("en-US") : "Schedule pending"}
                 </p>
               </div>
               <p

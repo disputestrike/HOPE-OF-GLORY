@@ -32,8 +32,13 @@ export async function renderSermonAssets(opts: {
 }): Promise<SermonVideoAssets> {
   // 1. Full-length audio narration via Deepgram.
   const fullAudio = await synthesizeLong(opts.fullText);
+  const fullAudioBuffer = Buffer.concat(fullAudio.map((part) => part.audioBuffer));
+  const audioDurationSec = fullAudio.reduce(
+    (sum, part) => sum + (part.approxDurationSeconds ?? 0),
+    0,
+  );
   const audioUpload = await upload({
-    buffer: fullAudio.audio,
+    buffer: fullAudioBuffer,
     key: `sermons/${opts.sermonId}/audio.mp3`,
     contentType: "audio/mpeg",
   });
@@ -61,13 +66,13 @@ export async function renderSermonAssets(opts: {
   if (teaserAudio && heroUrl) {
     try {
       const heroComposite = await composite({
-        audioBuffer: teaserAudio.audio,
+        audioBuffer: teaserAudio.audioBuffer,
         imageUrls: [heroUrl],
         titleText: opts.title,
         scriptureRef: opts.primaryPassage,
         scriptureText: opts.scriptureText.slice(0, 200),
         aspectRatio: "16:9",
-        durationSec: Math.min(teaserAudio.durationSec + 2, 60),
+        durationSec: Math.min((teaserAudio.approxDurationSeconds ?? 20) + 2, 60),
       });
       const upl = await upload({
         buffer: heroComposite.videoBuffer,
@@ -88,12 +93,12 @@ export async function renderSermonAssets(opts: {
         `${opts.scriptureText.slice(0, 180)}. From ${opts.primaryPassage}.`
       );
       const reelComposite = await composite({
-        audioBuffer: reelAudio.audio,
+        audioBuffer: reelAudio.audioBuffer,
         imageUrls: [heroUrl],
         titleText: opts.scriptureText.slice(0, 120),
         scriptureRef: `${opts.primaryPassage} · WEB`,
         aspectRatio: "9:16",
-        durationSec: Math.min(reelAudio.durationSec + 2, 30),
+        durationSec: Math.min((reelAudio.approxDurationSeconds ?? 18) + 2, 30),
       });
       const upl = await upload({
         buffer: reelComposite.videoBuffer,
@@ -108,7 +113,7 @@ export async function renderSermonAssets(opts: {
 
   return {
     audioUrl: audioUpload.url,
-    audioDurationSec: fullAudio.durationSec,
+    audioDurationSec,
     heroVideoUrl,
     reelUrl,
   };

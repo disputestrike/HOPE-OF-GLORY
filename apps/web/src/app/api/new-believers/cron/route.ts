@@ -3,8 +3,8 @@
  * Protect with X-Cron-Secret header.
  */
 import { NextResponse } from "next/server";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -16,12 +16,15 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "forbidden" }, { status: 403 });
   }
 
-  const subs = await db.execute<{ email: string }>(sql`
-    SELECT email FROM email_subscribers
-    WHERE status LIKE 'new_believer_day_%'
-      AND status != 'new_believer_completed'
-      AND unsubscribed_at IS NULL
-  `).catch(() => []);
+  const database = await optionalDb("new-believer-cron");
+  const subs = database
+    ? await database.execute<{ email: string }>(sql`
+        SELECT email FROM email_subscribers
+        WHERE status LIKE 'new_believer_day_%'
+          AND status != 'new_believer_completed'
+          AND unsubscribed_at IS NULL
+      `).catch(() => [])
+    : [];
 
   const { sendDailyEmail } = await import("../../../../../../worker/src/agents/discipleship");
   let sent = 0;

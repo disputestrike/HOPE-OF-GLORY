@@ -5,8 +5,8 @@
  * forward to PayPal's verify-webhook-signature endpoint to confirm.
  */
 import { NextResponse } from "next/server";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -51,9 +51,10 @@ async function verifySignature(headers: Headers, body: string): Promise<boolean>
 export async function POST(request: Request) {
   const raw = await request.text();
   const verified = await verifySignature(request.headers, raw).catch(() => false);
+  const database = await optionalDb("paypal-webhook");
 
-  await db
-    .execute(sql`
+  await database
+    ?.execute(sql`
       INSERT INTO provider_usage (provider, model, http_status)
       VALUES ('paypal_webhook', ${verified ? "verified" : "unverified"}, ${verified ? 200 : 401})
     `)
@@ -76,8 +77,8 @@ export async function POST(request: Request) {
   if (event.event_type === "PAYMENT.CAPTURE.COMPLETED") {
     const amt = event.resource.amount;
     const payer = event.resource.payer;
-    await db
-      .execute(sql`
+    await database
+      ?.execute(sql`
         INSERT INTO donations (provider, provider_txn_id, amount, currency, donor_email, donor_name, status, webhook_received_at)
         VALUES (
           'paypal',
@@ -93,8 +94,8 @@ export async function POST(request: Request) {
       `)
       .catch(() => undefined);
   } else if (event.event_type === "PAYMENT.CAPTURE.REFUNDED") {
-    await db
-      .execute(sql`UPDATE donations SET status = 'refunded' WHERE provider_txn_id = ${event.resource.id ?? ""}`)
+    await database
+      ?.execute(sql`UPDATE donations SET status = 'refunded' WHERE provider_txn_id = ${event.resource.id ?? ""}`)
       .catch(() => undefined);
   }
 

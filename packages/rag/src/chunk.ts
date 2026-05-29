@@ -21,6 +21,26 @@ function estimateTokens(text: string): number {
   return Math.ceil(text.length / APPROX_CHARS_PER_TOKEN);
 }
 
+function splitLongText(text: string, maxTokens: number): string[] {
+  const maxChars = Math.max(1, maxTokens * APPROX_CHARS_PER_TOKEN);
+  const words = text.split(/(\s+)/);
+  const chunks: string[] = [];
+  let buffer = "";
+
+  for (const word of words) {
+    if (buffer.length + word.length > maxChars && buffer.trim()) {
+      chunks.push(buffer.trim());
+      buffer = "";
+    }
+    buffer += word;
+  }
+
+  if (buffer.trim()) {
+    chunks.push(buffer.trim());
+  }
+  return chunks;
+}
+
 /**
  * Section-based chunking — splits on markdown headers (## and ###),
  * then groups sections to stay within target token range.
@@ -39,6 +59,17 @@ export function chunkBySection(
 
   for (const section of sections) {
     const sectionTokens = estimateTokens(section);
+    if (sectionTokens > maxTokens) {
+      if (buffer.trim()) {
+        chunks.push({ index: index++, content: buffer.trim(), tokenEstimate: bufferTokens });
+        buffer = "";
+        bufferTokens = 0;
+      }
+      for (const part of splitLongText(section, maxTokens)) {
+        chunks.push({ index: index++, content: part, tokenEstimate: estimateTokens(part) });
+      }
+      continue;
+    }
     if (bufferTokens + sectionTokens > maxTokens && buffer) {
       chunks.push({ index: index++, content: buffer.trim(), tokenEstimate: bufferTokens });
       // overlap tail

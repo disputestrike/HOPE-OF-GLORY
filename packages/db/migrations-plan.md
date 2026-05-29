@@ -131,6 +131,17 @@ for the retention sweepers:
 These are application-managed schedules; the migration just inserts the
 canonical row so the worker has a stable id to update.
 
+### 0014 - `public_engagement`
+
+Tables: `engagements`.
+
+Notes:
+- Adds `engagement_target_type` and `engagement_action` enums.
+- Records Amen / Helpful / Save / Share / Download for authenticated users
+  by `user_id` and anonymous visitors by `anon_key`.
+- Uses partial unique indexes for both identity paths so API writes can use
+  `ON CONFLICT DO NOTHING`.
+
 ---
 
 ## 2. Rollback strategy
@@ -315,3 +326,81 @@ SELECT prompt_version FROM agent_runs WHERE agent_name = 'system.seed';
 ```
 
 Each check is wired into the deploy pipeline's post-migrate health probe.
+
+---
+
+## 7. Migration: engagements table (Batch 4)
+
+Adds a public, on-site reactions table. This is distinct from
+`social_engagements` (which records inbound replies from external
+platforms such as YouTube and Facebook). The new table backs the
+Amen / Helpful / Save / Share / Download row that appears below sermons,
+Read articles, journey days, and Daily Word messages.
+
+### 7.1 New enums
+
+```sql
+CREATE TYPE engagement_target_type AS ENUM (
+  'sermon', 'article', 'journey_day', 'message'
+);
+
+CREATE TYPE engagement_action AS ENUM (
+  'amen', 'helpful', 'save', 'share', 'download'
+);
+```
+
+### 7.2 New table
+
+```sql
+CREATE TABLE engagements (
+  id          uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
+  target_type engagement_target_type NOT NULL,
+  target_id   text NOT NULL,
+  action      engagement_action NOT NULL,
+  user_id     uuid REFERENCES users(id) ON DELETE SET NULL,
+  anon_key    varchar(128),
+  ip_hash     varchar(128),
+  created_at  timestamptz NOT NULL DEFAULT now()
+);
+
+CREATE INDEX engagements_target_idx ON engagements (target_type, target_id);
+CREATE INDEX engagements_user_idx   ON engagements (user_id);
+CREATE INDEX engagements_anon_idx   ON engagements (anon_key);
+
+-- A given authenticated or anonymous actor may amen/helpful/save/share/download
+-- a specific target only once. Partial indexes keep the two identity paths
+-- independent while allowing user_id to be nulled if an account is deleted.
+CREATE UNIQUE INDEX engagements_user_action_unique
+  ON engagements (target_type, target_id, action, user_id)
+  WHERE user_id IS NOT NULL;
+
+CREATE UNIQUE INDEX engagements_anon_action_unique
+  ON engagements (target_type, target_id, action, anon_key)
+  WHERE anon_key IS NOT NULL;
+```
+
+### 7.3 Notes
+
+- `target_id` is `text`, not `uuid`. Articles use composite slugs
+  (`hub/article`), journey days use the numeric day as a string, and
+  messages use their own slug — so a single polymorphic column is the
+  right tradeoff. The `(target_type, target_id)` index covers all reads.
+- `anon_key` is the same cookie-bound opaque id used by `chat_sessions`
+  and is bounded to `varchar(128)` to match that schema.
+- `ip_hash` is salted SHA-256 (uses `IP_HASH_PEPPER`, falling back to
+  `PHONE_HASH_PEPPER`) and stored as `varchar(128)`. Raw IPs are never
+  persisted.
+- Rate-limit is enforced at the API layer (30 actions per user/anon key
+  and IP hash per 10 minutes via Redis). If Redis is unavailable the limit
+  is skipped rather than failing the user-visible action.
+
+### 7.4 Rollback
+
+```sql
+DROP TABLE IF EXISTS engagements;
+DROP TYPE IF EXISTS engagement_action;
+DROP TYPE IF EXISTS engagement_target_type;
+```
+
+Only run rollback on a not-yet-production migration. After production
+apply, prefer a forward-fix.

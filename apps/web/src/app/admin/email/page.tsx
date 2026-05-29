@@ -1,5 +1,6 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { EMAIL_LIFECYCLE, formatLaunchDateTime } from "@/data/launch-schedule";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -11,9 +12,21 @@ type Row = {
   recipient_count: number | null;
 };
 
+type EmailRow = {
+  id: string;
+  template: string;
+  audience: string;
+  cadence?: string;
+  status: string;
+  sentAt: Date | string | null;
+  recipientCount: number | null;
+};
+
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-email");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, provider, template_key, audience, status, sent_at, recipient_count
       FROM email_campaigns
       ORDER BY COALESCE(sent_at, created_at) DESC NULLS LAST
@@ -25,57 +38,76 @@ async function load(): Promise<Row[]> {
 }
 
 export default async function AdminEmailPage() {
-  const rows = await load();
+  const dbRows = await load();
+  const rows: EmailRow[] =
+    dbRows.length > 0
+      ? dbRows.map((r) => ({
+          id: r.id,
+          template: r.template_key,
+          audience: r.audience,
+          status: r.status,
+          sentAt: r.sent_at,
+          recipientCount: r.recipient_count,
+        }))
+      : EMAIL_LIFECYCLE.map((r) => ({
+          id: r.key,
+          template: r.template,
+          audience: r.audience,
+          cadence: r.cadence,
+          status: r.status,
+          sentAt: r.nextRun,
+          recipientCount: null,
+        }));
+
   return (
     <div className="p-10 max-w-7xl">
       <header className="mb-10">
         <p className="eyebrow">Email</p>
-        <h1 className="m-0">Email log</h1>
+        <h1 className="m-0">Email lifecycle</h1>
         <p className="text-muted m-0 mt-3">
-          {rows.length} send{rows.length === 1 ? "" : "s"} on record.
+          Seven flows are wired through Resend templates. This table shows the
+          actual ministry lifecycle before <code>RESEND_API_KEY</code>, SPF, DKIM, and
+          DMARC are activated for live sending.
         </p>
       </header>
 
-      {rows.length === 0 ? (
-        <div className="card">
-          <p className="m-0 text-muted">
-            No emails sent yet. Resend integration is wired — populate <code>RESEND_API_KEY</code>{" "}
-            and verify the <code>hopeofglory.ministry</code> domain.
-          </p>
-        </div>
-      ) : (
-        <div className="card p-0 overflow-hidden">
-          <table className="w-full">
-            <thead>
-              <tr className="text-left border-b border-[var(--border-soft)]">
-                <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Template</th>
-                <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Recipient</th>
-                <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Sent</th>
-                <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Status</th>
+      <div className="card p-0 overflow-hidden">
+        <table className="w-full">
+          <thead>
+            <tr className="text-left border-b border-[var(--border-soft)]">
+              <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Template</th>
+              <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Audience</th>
+              <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Cadence / Run</th>
+              <th className="p-4 text-xs uppercase tracking-[0.16em] text-gold">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.id} className="border-b border-[var(--border-soft)]">
+                <td className="p-4 text-warm text-sm">{r.template}</td>
+                <td className="p-4 text-muted text-sm">{r.audience}</td>
+                <td className="p-4 text-muted text-sm">
+                  {r.cadence ? <span>{r.cadence}<br /></span> : null}
+                  {formatLaunchDateTime(r.sentAt)}
+                </td>
+                <td
+                  className="p-4 text-xs uppercase tracking-[0.16em]"
+                  style={{
+                    color:
+                      r.status === "sent" || r.status === "ready"
+                        ? "#9bbf6e"
+                        : r.status === "credential-gated"
+                          ? "var(--glory-gold)"
+                          : "var(--blood-crimson)",
+                  }}
+                >
+                  {r.status}
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              {rows.map((r) => (
-                <tr key={r.id} className="border-b border-[var(--border-soft)]">
-                  <td className="p-4 text-warm text-sm">{r.template_key}</td>
-                  <td className="p-4 text-muted text-sm">{r.audience}</td>
-                  <td className="p-4 text-muted text-sm">
-                    {r.sent_at ? new Date(r.sent_at).toLocaleString("en-US") : "—"}
-                  </td>
-                  <td
-                    className="p-4 text-xs uppercase tracking-[0.16em]"
-                    style={{
-                      color: r.status === "sent" ? "#9bbf6e" : "var(--blood-crimson)",
-                    }}
-                  >
-                    {r.status}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

@@ -12,6 +12,7 @@ import { route, type AgentRequest } from "@hog/ai";
 import { loadAgent } from "@hog/prompts";
 import { db, schema } from "@hog/db";
 import { runDoctrineGate } from "./agents/doctrine";
+import { createHash } from "node:crypto";
 
 export type OrchestrationLog = {
   step: string;
@@ -74,6 +75,7 @@ export async function invokeAgent(opts: {
   // 2. Log the run to agent_runs.
   await db.insert(schema.agentRuns).values({
     agentName: opts.agentSlug,
+    inputHash: createHash("sha256").update(opts.userInput).digest("hex"),
     promptVersion: "0.1.0",
     provider: response.provider,
     model: response.model,
@@ -81,7 +83,7 @@ export async function invokeAgent(opts: {
     tokensIn: response.tokensIn,
     tokensOut: response.tokensOut,
     latencyMs: response.latencyMs,
-    status: "ok",
+    status: "succeeded",
     requiresReview: false,
   }).catch((err) => {
     console.warn("[orchestrator] failed to log agent run:", err);
@@ -98,7 +100,12 @@ export async function invokeAgent(opts: {
       step: "doctrine_gate",
       agent: "doctrine",
       durationMs: 0,
-      status: verdict.verdict === "approve" ? "ok" : verdict.verdict,
+      status:
+        verdict.verdict === "approve"
+          ? "ok"
+          : verdict.verdict === "block"
+            ? "blocked"
+            : verdict.verdict,
       notes: verdict.notes,
     });
     return {

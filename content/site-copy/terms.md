@@ -14,7 +14,7 @@ Hope of Glory Ministry is a Christian media ministry based in Washington, D.C. B
 
 ## What this site is
 
-This site offers Christian teaching, scripture, prayer support, a Bible Q&A chat (Ask Hope), and a phone line (Hope Line) during posted hours.
+This site offers Christian teaching, scripture, prayer support, a Scripture-and-prayer chat (Ask Hope), and a phone line (Hope Line) during posted hours.
 
 It is a ministry, not a medical, legal, financial, or emergency service. Read our [AI disclosure](/ai-disclosure) for details on how AI is used.
 

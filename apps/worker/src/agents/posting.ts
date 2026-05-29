@@ -9,6 +9,7 @@
  *
  * Each successful schedule is logged to social_posts with status='scheduled'.
  */
+import { eq } from "drizzle-orm";
 import { db, schema } from "@hog/db";
 import { schedulePost } from "@hog/publishing";
 import { moderate } from "@hog/safety";
@@ -68,7 +69,7 @@ export async function publishScheduledPost(
         postUrl: result.postUrl,
         status: result.status === "scheduled" ? "scheduled" : "failed",
       })
-      .where(schema.socialPosts.id.eq(localId) as never)
+      .where(eq(schema.socialPosts.id, localId))
       .catch((err) => console.warn("[posting] update failed:", err));
   }
 

@@ -11,19 +11,22 @@
   "dependencies": {
     "@hog/ai": "workspace:*",
     "@hog/db": "workspace:*",
-    "@hog/rag": "workspace:*",
-    "@hog/scripture": "workspace:*",
-    "@hog/safety": "workspace:*",
+    "@hog/email": "workspace:^",
+    "@hog/media": "workspace:^",
     "@hog/prompts": "workspace:*",
+    "@hog/publishing": "workspace:^",
+    "@hog/rag": "workspace:*",
+    "@hog/safety": "workspace:*",
+    "@hog/scripture": "workspace:*",
     "@hog/shared": "workspace:*",
-    "drizzle-orm": "^0.36.4",
+    "drizzle-orm": "^0.45.2",
+    "node-cron": "^4.2.1",
     "redis": "^4.7.0",
-    "zod": "^3.23.8",
-    "node-cron": "^3.0.3"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/node": "^22.7.4",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.2",
-    "@types/node": "^22.7.4"
+    "typescript": "^5.6.2"
   }
 }

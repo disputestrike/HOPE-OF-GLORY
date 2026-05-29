@@ -115,11 +115,14 @@ export const sourceStatusEnum = pgEnum('source_status', [
 export const sermonStatusEnum = pgEnum('sermon_status', [
   'draft',
   'generated',
+  'verifying',
   'in_review',
+  'ready',
   'approved',
   'scheduled',
   'published',
   'retracted',
+  'withdrawn',
 ]);
 
 export const assetTypeEnum = pgEnum('asset_type', [
@@ -197,6 +200,10 @@ export const platformEnum = pgEnum('platform', [
   'x',
   'threads',
   'linkedin',
+  'bluesky',
+  'mastodon',
+  'pinterest',
+  'discord',
   'rumble',
   'twitch',
   'web',
@@ -1508,6 +1515,62 @@ export const adminActions = pgTable(
 );
 
 /* ============================================================================
+ * PUBLIC ENGAGEMENT — on-site reactions
+ * --------------------------------------------------------------------------
+ * Anonymous or authenticated public reactions to ministry content: Amen,
+ * Helpful, Save, Share, Download. Distinct from `social_engagements` which
+ * records inbound replies from external platforms (YouTube, Facebook, etc.).
+ *
+ * Privacy: anon_key is a cookie-bound opaque id, ip_hash is salted SHA-256
+ * (never raw IP). Authenticated actors dedupe by user_id; anonymous actors
+ * dedupe by anon_key.
+ * ========================================================================== */
+
+export const engagementTargetTypeEnum = pgEnum('engagement_target_type', [
+  'sermon',
+  'article',
+  'journey_day',
+  'message',
+]);
+
+export const engagementActionEnum = pgEnum('engagement_action', [
+  'amen',
+  'helpful',
+  'save',
+  'share',
+  'download',
+]);
+
+export const engagements = pgTable(
+  'engagements',
+  {
+    id: uuid('id').primaryKey().default(sql`uuid_generate_v4()`),
+    targetType: engagementTargetTypeEnum('target_type').notNull(),
+    targetId: text('target_id').notNull(),
+    action: engagementActionEnum('action').notNull(),
+    userId: uuid('user_id').references(() => users.id, {
+      onDelete: 'set null',
+    }),
+    anonKey: varchar('anon_key', { length: 128 }),
+    ipHash: varchar('ip_hash', { length: 128 }),
+    createdAt: timestamp('created_at', { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+  },
+  (t) => ({
+    targetIx: index('engagements_target_idx').on(t.targetType, t.targetId),
+    userIx: index('engagements_user_idx').on(t.userId),
+    anonIx: index('engagements_anon_idx').on(t.anonKey),
+    uniqueUserAction: uniqueIndex('engagements_user_action_unique')
+      .on(t.targetType, t.targetId, t.action, t.userId)
+      .where(sql`${t.userId} IS NOT NULL`),
+    uniqueAnonAction: uniqueIndex('engagements_anon_action_unique')
+      .on(t.targetType, t.targetId, t.action, t.anonKey)
+      .where(sql`${t.anonKey} IS NOT NULL`),
+  }),
+);
+
+/* ============================================================================
  * EXPORTS — type helpers
  * ========================================================================== */
 
@@ -1532,3 +1595,5 @@ export type LiveEvent = typeof liveEvents.$inferSelect;
 export type SocialPost = typeof socialPosts.$inferSelect;
 export type EmailCampaign = typeof emailCampaigns.$inferSelect;
 export type HumanHandoff = typeof humanHandoff.$inferSelect;
+export type Engagement = typeof engagements.$inferSelect;
+export type NewEngagement = typeof engagements.$inferInsert;

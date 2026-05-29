@@ -56,7 +56,7 @@ export async function classifyEngagement(content: string): Promise<EngagementCla
   return { ...parsed, crisis };
 }
 
-const TEMPLATES: Record<string, string> = {
+const TEMPLATES = {
   compliment_brief: "Thank you. Glory to God. — Hope of Glory",
   hostile_soft_decline:
     "We hear you. We'd rather not trade barbs here. If you have a question, we'd love to answer it. Otherwise, we wish you well.",
@@ -65,7 +65,7 @@ const TEMPLATES: Record<string, string> = {
     "Friend, what you're sharing matters more than a reply. If you're in immediate danger, please call 911. For the U.S. Suicide & Crisis Lifeline, call or text 988. You are not alone.",
   request_human_ack:
     "Thank you for reaching out. We'd like to talk. Please send a note through hopeofglory.ministry/contact and a member of the ministry will follow up.",
-};
+} as const;
 
 export async function draftReply(opts: {
   content: string;

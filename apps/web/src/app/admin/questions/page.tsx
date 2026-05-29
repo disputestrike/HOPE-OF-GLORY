@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   session_id: string;
@@ -10,8 +10,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-questions");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       WITH pairs AS (
         SELECT
           m1.session_id,
@@ -51,7 +53,10 @@ export default async function AdminQuestionsPage() {
 
       {rows.length === 0 ? (
         <div className="card">
-          <p className="m-0 text-muted">No Ask Hope questions yet.</p>
+          <p className="m-0 text-muted">
+            Ask Hope intake is ready. Questions appear here after visitors use the chat
+            and the database connection is active.
+          </p>
         </div>
       ) : (
         <div className="flex flex-col gap-4">

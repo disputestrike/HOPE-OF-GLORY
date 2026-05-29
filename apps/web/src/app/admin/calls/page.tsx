@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -12,8 +12,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-calls");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, caller_hash, started_at, ended_at, risk_level, escalated_to
       FROM call_sessions
       ORDER BY started_at DESC
@@ -46,7 +48,7 @@ export default async function AdminCallsPage() {
       {rows.length === 0 ? (
         <div className="card">
           <p className="m-0 text-muted">
-            No calls yet. Provision a SignalWire number, point it at{" "}
+            Hope Line queue is ready. Provision a SignalWire number, point it at{" "}
             <code>/api/voice/inbound</code>, and run the 20+ simulated scenarios in{" "}
             <code>apps/voice/src/test-scenarios.ts</code> before going public.
           </p>

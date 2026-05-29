@@ -5,8 +5,8 @@
  * THIS FILE HANDLES HUMAN LIVES. EDIT WITH EXTREME CARE.
  */
 import { NextResponse } from "next/server";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -28,12 +28,15 @@ export async function POST(request: Request) {
   }
 
   let sessionId: string | null = null;
+  const database = await optionalDb("voice-inbound");
   try {
-    const rows = await db.execute<{ id: string }>(sql`
-      INSERT INTO call_sessions (signalwire_call_id, caller_hash, started_at, risk_level)
-      VALUES (${callSid}, ${callerHash}, now(), 'none')
-      RETURNING id
-    `);
+    const rows = database
+      ? await database.execute<{ id: string }>(sql`
+          INSERT INTO call_sessions (signalwire_call_id, caller_hash, started_at, risk_level)
+          VALUES (${callSid}, ${callerHash}, now(), 'none')
+          RETURNING id
+        `)
+      : [];
     sessionId = rows[0]?.id ?? null;
   } catch (err) {
     console.warn("[voice] session insert failed:", err);

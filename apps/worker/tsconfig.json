@@ -15,6 +15,12 @@
       "@hog/safety/*": ["../../packages/safety/*"],
       "@hog/prompts": ["../../packages/prompts/index.ts"],
       "@hog/prompts/*": ["../../packages/prompts/*"],
+      "@hog/email": ["../../packages/email/index.ts"],
+      "@hog/email/*": ["../../packages/email/*"],
+      "@hog/publishing": ["../../packages/publishing/index.ts"],
+      "@hog/publishing/*": ["../../packages/publishing/*"],
+      "@hog/media": ["../../packages/media/index.ts"],
+      "@hog/media/*": ["../../packages/media/*"],
       "@hog/shared": ["../../packages/shared/index.ts"],
       "@hog/shared/*": ["../../packages/shared/*"]
     }

@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -13,20 +13,22 @@ type Row = {
 };
 
 async function load(): Promise<{ rows: Row[]; totalMonth: number; totalYear: number }> {
+  const database = await optionalDb("admin-donations");
+  if (!database) return { rows: [], totalMonth: 0, totalYear: 0 };
   try {
     const [rows, monthly, yearly] = await Promise.all([
-      db.execute<Row>(sql`
+      database.execute<Row>(sql`
         SELECT id, provider_txn_id, amount::text, currency, donor_email, donor_name, status, created_at
         FROM donations
         ORDER BY created_at DESC
         LIMIT 200
       `),
-      db.execute<{ sum: string }>(sql`
+      database.execute<{ sum: string }>(sql`
         SELECT COALESCE(SUM(amount), 0)::text as sum FROM donations
         WHERE created_at >= date_trunc('month', now())
           AND status = 'completed'
       `),
-      db.execute<{ sum: string }>(sql`
+      database.execute<{ sum: string }>(sql`
         SELECT COALESCE(SUM(amount), 0)::text as sum FROM donations
         WHERE created_at >= date_trunc('year', now())
           AND status = 'completed'
@@ -76,7 +78,7 @@ export default async function AdminDonationsPage() {
       {rows.length === 0 ? (
         <div className="card">
           <p className="m-0 text-muted">
-            No donations yet. Configure <code>PAYPAL_CLIENT_ID</code>, register the webhook,
+            Donation ledger is ready. Configure <code>PAYPAL_CLIENT_ID</code>, register the webhook,
             and complete 501(c)(3) status before flipping <code>FEATURE_DONATIONS=true</code>.
           </p>
         </div>

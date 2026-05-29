@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { SiteChrome } from "@/components/SiteChrome";
+import { alternateLinks } from "@/lib/i18n";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -48,6 +48,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Hope of Glory Ministry" }],
   creator: "Hope of Glory Ministry",
   publisher: "Hope of Glory Ministry",
+  alternates: alternateLinks("/"),
   openGraph: {
     title: "Hope of Glory Ministry",
     description:
@@ -82,7 +83,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html
+      lang="en"
+      dir="ltr"
+      className={`${display.variable} ${body.variable}`}
+      suppressHydrationWarning
+    >
       <body>
         <a
           href="#main"
@@ -90,9 +96,7 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

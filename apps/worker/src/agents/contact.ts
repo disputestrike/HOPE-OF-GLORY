@@ -11,6 +11,10 @@
 import { db, schema } from "@hog/db";
 import { sendEmail, prayerReceivedTemplate, newBelieverWelcomeTemplate } from "@hog/email";
 
+function campaignSlug(prefix: string, id: string): string {
+  return `${prefix}-${id}`.toLowerCase().replace(/[^a-z0-9-]/g, "-").slice(0, 200);
+}
+
 export async function ackPrayerRequest(opts: {
   email: string;
   givenName?: string;
@@ -29,9 +33,12 @@ export async function ackPrayerRequest(opts: {
   });
 
   await db.insert(schema.emailCampaigns).values({
+    slug: campaignSlug("prayer-ack", opts.prayerRequestId),
+    subject: t.subject,
+    bodyHtml: t.html,
+    bodyText: t.text,
+    audienceFilter: { email: opts.email, kind: "prayer_ack" },
     provider: "resend",
-    templateKey: "prayer_ack",
-    audience: opts.email,
     status: id ? "sent" : "failed",
     sentAt: id ? new Date() : null,
     recipientCount: 1,
@@ -54,9 +61,12 @@ export async function welcomeNewBeliever(opts: {
   });
 
   await db.insert(schema.emailCampaigns).values({
+    slug: campaignSlug("new-believer-welcome", opts.email),
+    subject: t.subject,
+    bodyHtml: t.html,
+    bodyText: t.text,
+    audienceFilter: { email: opts.email, kind: "new_believer_welcome" },
     provider: "resend",
-    templateKey: "new_believer_welcome",
-    audience: opts.email,
     status: id ? "sent" : "failed",
     sentAt: id ? new Date() : null,
     recipientCount: 1,

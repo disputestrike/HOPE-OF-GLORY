@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { features } from "@hog/shared";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -27,7 +27,8 @@ export async function POST(request: Request) {
 
   // Log
   try {
-    await db.execute(sql`
+    const database = await optionalDb("apologetics");
+    await database?.execute(sql`
       INSERT INTO chat_messages (session_id, role, content, agent_name)
       VALUES (
         COALESCE(${body.sessionId}, gen_random_uuid()),

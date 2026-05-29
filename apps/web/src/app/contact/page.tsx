@@ -43,7 +43,9 @@ export default function ContactPage() {
           <div className="card">
             <p className="card__eyebrow">Hope Line</p>
             <p className="m-0 text-warm">(202) 555-0100</p>
-            <p className="m-0 text-muted text-xs mt-1">Coming soon</p>
+            <p className="m-0 text-muted text-xs mt-1">
+              Phone ministry setup number. For immediate danger use 911 or 988.
+            </p>
           </div>
           <div className="card">
             <p className="card__eyebrow">Location</p>

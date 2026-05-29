@@ -1,40 +1,54 @@
 import Link from "next/link";
+import Image from "next/image";
+
+const logoSrc = "/brand/hope-of-glory-logo-transparent.png";
 
 const sections = [
   {
-    heading: "Ministry",
+    heading: "Begin",
     links: [
-      { href: "/mission", label: "Mission" },
-      { href: "/beliefs", label: "What We Believe" },
-      { href: "/sermons", label: "Sermons" },
-      { href: "/new-believers", label: "Start Here" },
+      { href: "/come-to-christ", label: "Come to Christ" },
+      { href: "/sinners-prayer", label: "Sinner's Prayer" },
+      { href: "/journey/40-day", label: "40-Day Journey" },
+      { href: "/new-believer-next-steps", label: "Next Steps" },
     ],
   },
   {
     heading: "Engage",
     links: [
       { href: "/ask", label: "Ask Hope" },
-      { href: "/prayer", label: "Prayer" },
-      { href: "/hope-line", label: "Hope Line" },
-      { href: "/give", label: "Support" },
+      { href: "/read", label: "Read" },
+      { href: "/daily-faith", label: "Daily Faith" },
+      { href: "/scroll", label: "The Scroll" },
+      { href: "/trust-the-scriptures", label: "Trust the Scriptures" },
+      { href: "/messages", label: "Messages" },
+      { href: "/gallery", label: "Glory Gallery" },
     ],
   },
   {
-    heading: "Teaching",
+    heading: "Care",
     links: [
-      { href: "/revelation", label: "Revelation" },
-      { href: "/apologetics", label: "Apologetics" },
-      { href: "/bible-study", label: "Bible Study" },
+      { href: "/help", label: "Help" },
+      { href: "/help-now", label: "Need Help Today?" },
+      { href: "/help/crisis-resources", label: "Crisis Resources" },
+      { href: "/help/prayer-request", label: "Prayer Request" },
+      { href: "/hope-line", label: "Hope Line" },
     ],
   },
   {
     heading: "Transparency",
     links: [
+      { href: "/beliefs", label: "What We Believe" },
+      { href: "/doctrinal-basis", label: "Doctrinal Basis" },
       { href: "/ai-disclosure", label: "AI Disclosure" },
       { href: "/corrections", label: "Corrections" },
+      { href: "/community-guidelines", label: "Community Guidelines" },
+      { href: "/donation-ethics", label: "Donation Ethics" },
+      { href: "/crisis-disclaimer", label: "Crisis Disclaimer" },
       { href: "/privacy", label: "Privacy" },
       { href: "/terms", label: "Terms" },
       { href: "/contact", label: "Contact" },
+      { href: "/give", label: "Support the Mission" },
     ],
   },
 ];
@@ -58,10 +72,7 @@ export function Footer() {
               <ul className="flex flex-col gap-2">
                 {section.links.map((link) => (
                   <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-muted hover:text-gold text-sm"
-                    >
+                    <Link href={link.href} className="text-muted hover:text-gold text-sm">
                       {link.label}
                     </Link>
                   </li>
@@ -75,10 +86,14 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-sm text-muted">
           <div className="flex flex-col gap-2 max-w-prose">
-            <div className="wordmark items-start">
-              <span className="wordmark__title">Hope of Glory</span>
-              <span className="wordmark__sub">Ministry</span>
-            </div>
+            <Image
+              src={logoSrc}
+              alt="Hope of Glory Ministry"
+              width={1536}
+              height={1024}
+              className="h-auto w-64 object-contain drop-shadow-[0_0_16px_rgba(212,175,55,0.18)] md:w-80"
+              sizes="(min-width: 768px) 320px, 256px"
+            />
             <p className="m-0 text-muted">
               Filling the earth with the knowledge of the glory of the Lord.
             </p>
@@ -87,15 +102,12 @@ export function Footer() {
           <div className="text-sm text-muted">
             <p className="m-0">Washington, D.C.</p>
             <p className="m-0">
-              <a
-                href="mailto:hello@hopeofglory.ministry"
-                className="text-muted hover:text-gold"
-              >
+              <a href="mailto:hello@hopeofglory.ministry" className="text-muted hover:text-gold">
                 hello@hopeofglory.ministry
               </a>
             </p>
             <p className="m-0 mt-2 text-xs uppercase tracking-[0.16em] text-gold">
-              In crisis? Call 988 · Emergency? Call 911
+              In crisis? Call 988 · Emergency? Call 911 · Housing? Dial 211
             </p>
           </div>
         </div>
@@ -107,8 +119,7 @@ export function Footer() {
             produced with the help of AI tools. See our{" "}
             <Link href="/ai-disclosure" className="text-gold">
               AI disclosure
-            </Link>
-            .
+            </Link>.
           </p>
         </div>
       </div>

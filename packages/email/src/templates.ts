@@ -91,17 +91,21 @@ export function newBelieverWelcomeTemplate(opts: { givenName?: string }): {
   text: string;
 } {
   const name = opts.givenName ? `, ${opts.givenName}` : "";
+  const journeyUrl = "https://hopeofglory.ministry/journey/40-day";
   const inner = `
     <h1 style="font-family:'Cormorant Garamond', Georgia, serif; font-size:30px; line-height:1.15; color:#FFF8E7; margin:24px 0 16px 0;">Welcome to the family${name}.</h1>
     <p style="font-size:17px;">If you have just begun to follow Jesus — or you are still wondering who He is — we are so glad you are here.</p>
-    <p style="font-size:17px;">Over the next 30 days we will walk with you through the gospel of John, basic prayer, what baptism and communion mean, and how to find a faithful local church.</p>
+    <p style="font-size:17px;">The next steady step is the 40-Day Hope of Glory Journey: short readings, honest prayers, baptism and church guidance, and room to grow without pressure.</p>
     <blockquote style="font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-size:18px; line-height:1.4; border-left:2px solid #D4AF37; padding-left:16px; margin:24px 0; color:#FFF8E7;">
       You will know the truth, and the truth will make you free.
     </blockquote>
-    <p style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#D4AF37; margin:0;">John 8:32 · WEB</p>`;
+    <p style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#D4AF37; margin:0 0 32px 0;">John 8:32 · WEB</p>
+    <table cellpadding="0" cellspacing="0" border="0" style="margin:32px 0 0 0;"><tr><td>
+      <a href="${journeyUrl}" style="display:inline-block; padding:14px 28px; background:#D4AF37; color:#050B18; font-weight:600; font-size:15px; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; border-radius:2px;">Start the 40-Day Journey</a>
+    </td></tr></table>`;
   return {
     subject: "Welcome to the family",
     html: shell(inner),
-    text: `Welcome to the family${name}.\n\nIf you have just begun to follow Jesus — or you are still wondering who He is — we are so glad you are here.\n\nOver the next 30 days we will walk with you through the gospel of John, basic prayer, what baptism and communion mean, and how to find a faithful local church.\n\n"You will know the truth, and the truth will make you free." — John 8:32 (WEB)`,
+    text: `Welcome to the family${name}.\n\nIf you have just begun to follow Jesus — or you are still wondering who He is — we are so glad you are here.\n\nThe next steady step is the 40-Day Hope of Glory Journey: short readings, honest prayers, baptism and church guidance, and room to grow without pressure.\n\n"You will know the truth, and the truth will make you free." — John 8:32 (WEB)\n\nStart the 40-Day Journey: ${journeyUrl}`,
   };
 }

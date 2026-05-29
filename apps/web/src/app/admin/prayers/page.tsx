@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -11,8 +11,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-prayers");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, privacy_level, content, risk_level, follow_up_state, created_at
       FROM prayer_requests
       ORDER BY created_at DESC
@@ -46,7 +48,10 @@ export default async function AdminPrayersPage() {
 
       {rows.length === 0 ? (
         <div className="card">
-          <p className="m-0 text-muted">No prayer requests yet.</p>
+          <p className="m-0 text-muted">
+            Prayer intake is ready. Requests appear here after the form is used and the
+            database connection is active.
+          </p>
         </div>
       ) : (
         <div className="flex flex-col gap-4">

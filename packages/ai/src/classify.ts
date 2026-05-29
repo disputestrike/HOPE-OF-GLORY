@@ -13,7 +13,7 @@ import type { RiskLevel, TaskType } from "./types";
 const CRISIS_PATTERNS: readonly RegExp[] = [
   /\bsuicide\b/i,
   /\bkill (myself|me)\b/i,
-  /\bend (my|this) life\b/i,
+  /\bend(ing)? (my|this) life\b/i,
   /\bself[\s-]?harm\b/i,
   /\bcut(ting)? (myself|my arm|my wrist)\b/i,
   /\bwant to die\b/i,
@@ -34,7 +34,7 @@ const HIGH_RISK_TOPICS: readonly RegExp[] = [
   /\b(islam|muslim|qur'?an|allah|muhammad|sharia)\b/i,
   /\b(catholic|orthodox|pope|magisterium|purgatory|mary worship)\b/i,
   /\bjehovah'?s? witnesses?\b/i,
-  /\b(lds|mormon|joseph smith|book of mormon)\b/i,
+  /\b(lds|mormons?|joseph smith|book of mormon)\b/i,
   /\b(end[\s-]?times|antichrist|rapture|tribulation|millennium)\b/i,
   /\b(homosexual|gay marriage|transgender|lgbt[a-z]*)\b/i,
   /\babortion\b/i,

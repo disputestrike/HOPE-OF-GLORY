@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 type Message = {
   id: string;
@@ -25,10 +26,18 @@ export function AskHopeChat() {
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState<string | undefined>(undefined);
   const endRef = useRef<HTMLDivElement | null>(null);
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages.length]);
+
+  useEffect(() => {
+    const prompt = searchParams.get("prompt") ?? searchParams.get("q");
+    if (prompt && !input && messages.length === 0) {
+      setInput(prompt.slice(0, 2000));
+    }
+  }, [input, messages.length, searchParams]);
 
   async function send(text: string) {
     const question = text.trim();
@@ -87,8 +96,9 @@ export function AskHopeChat() {
           <div>
             <p className="card__eyebrow">Start with a question</p>
             <p className="m-0 text-muted mb-6">
-              Hope is an AI Bible Q&A companion. Not a pastor, counselor, or spiritual director.
-              If you are in crisis, please call <strong className="text-gold">988</strong> or{" "}
+              Ask Hope is an AI Scripture and prayer companion. Not a pastor,
+              counselor, or spiritual director. If you are in crisis, please call{" "}
+              <strong className="text-gold">988</strong> or{" "}
               <strong className="text-gold">911</strong>.
             </p>
             <div className="flex flex-wrap gap-2">
@@ -131,7 +141,7 @@ export function AskHopeChat() {
                 ) : null}
 
                 <p className="card__eyebrow">
-                  {m.role === "user" ? "You" : "Hope"}
+                  {m.role === "user" ? "You" : "Ask Hope"}
                 </p>
                 <p
                   className="m-0 whitespace-pre-wrap"
@@ -150,7 +160,7 @@ export function AskHopeChat() {
             ))}
             {loading ? (
               <li className="self-start opacity-70">
-                <p className="card__eyebrow">Hope</p>
+                <p className="card__eyebrow">Ask Hope</p>
                 <p className="m-0 text-muted">…</p>
               </li>
             ) : null}

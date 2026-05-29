@@ -13,10 +13,15 @@ export function NewBelieverSignup() {
     if (!email.trim() || loading) return;
     setLoading(true);
     try {
-      await fetch("/api/new-believers/enroll", {
+      await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email.trim(), givenName: name.trim() || undefined }),
+        body: JSON.stringify({
+          email: email.trim(),
+          name: name.trim() || undefined,
+          flow: "forty_day",
+          sourcePage: "/new-believers",
+        }),
       });
       setDone(true);
     } finally {

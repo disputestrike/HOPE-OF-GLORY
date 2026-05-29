@@ -9,12 +9,12 @@
 import { db, closeDb } from "./client";
 import { providerKeys, doctrineDocuments } from "../schema";
 
-const CEREBRAS_LABELS = [
-  "cerebras-sermons",
-  "cerebras-chat",
-  "cerebras-live",
-  "cerebras-phone",
-  "cerebras-background",
+const CEREBRAS_SEEDS = [
+  { label: "cerebras-sermons", serviceClass: "sermons" },
+  { label: "cerebras-chat", serviceClass: "chat" },
+  { label: "cerebras-live", serviceClass: "live" },
+  { label: "cerebras-phone", serviceClass: "phone" },
+  { label: "cerebras-background", serviceClass: "background" },
 ] as const;
 
 const DOCTRINE_SLUGS = [
@@ -32,15 +32,22 @@ const DOCTRINE_SLUGS = [
 ] as const;
 
 async function main(): Promise<void> {
+  const environment =
+    process.env.APP_ENV === "production" ||
+    process.env.APP_ENV === "staging" ||
+    process.env.APP_ENV === "preview"
+      ? process.env.APP_ENV
+      : "development";
+
   console.log("Seeding provider key labels ...");
-  for (const label of CEREBRAS_LABELS) {
+  for (const seed of CEREBRAS_SEEDS) {
     await db
       .insert(providerKeys)
       .values({
         provider: "cerebras",
-        keyLabel: label,
-        environment: process.env.APP_ENV ?? "development",
-        serviceClass: label.replace("cerebras-", ""),
+        keyLabel: seed.label,
+        environment,
+        serviceClass: seed.serviceClass,
         status: "active",
       })
       .onConflictDoNothing();
@@ -52,8 +59,12 @@ async function main(): Promise<void> {
       .insert(doctrineDocuments)
       .values({
         slug,
-        version: "0.1.0",
+        version: 1,
         status: "draft",
+        title: slug
+          .split("-")
+          .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+          .join(" "),
         body: "",
         checksum: "",
       })

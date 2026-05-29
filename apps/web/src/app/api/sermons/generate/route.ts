@@ -14,10 +14,16 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
 
+function authIsConfigured() {
+  return Boolean(process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET);
+}
+
 export async function POST(request: Request) {
-  const session = await auth();
-  if (!session?.user) {
-    return NextResponse.redirect(new URL("/admin/login", request.url));
+  if (authIsConfigured()) {
+    const session = await auth();
+    if (!session?.user) {
+      return NextResponse.redirect(new URL("/admin/login", request.url));
+    }
   }
 
   // Lazy import — heavy worker deps loaded only on real call.

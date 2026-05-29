@@ -1,5 +1,6 @@
 import { signIn, auth } from "../../../../auth";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export const metadata = {
   title: "Sign in",
@@ -20,9 +21,9 @@ export default async function LoginPage() {
         <p className="text-muted mt-6 mx-auto max-w-readable">
           Admin access is by Google sign-in, restricted to allow-listed addresses.
           If you're a visitor, return to the{" "}
-          <a href="/" className="text-gold">
+          <Link href="/" className="text-gold">
             ministry home
-          </a>
+          </Link>
           .
         </p>
 

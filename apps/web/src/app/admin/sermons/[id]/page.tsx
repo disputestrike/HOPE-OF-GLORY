@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { db, schema } from "@hog/db";
-import { sql, eq } from "drizzle-orm";
+import { sql } from "drizzle-orm";
 import { marked } from "marked";
 import { revalidatePath } from "next/cache";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -20,8 +21,10 @@ type Row = {
 };
 
 async function load(id: string): Promise<Row | null> {
+  const database = await optionalDb("admin-sermon-detail");
+  if (!database) return null;
   try {
-    const rows = await db.execute<Row>(sql`
+    const rows = await database.execute<Row>(sql`
       SELECT id, slug, title, primary_passage, full_text, summary, prayer, status, theology_score, citation_score, image_url
       FROM sermons
       WHERE id = ${id}
@@ -44,17 +47,26 @@ export default async function AdminSermonDetail({ params }: { params: Params }) 
 
   async function publish() {
     "use server";
-    await db.update(schema.sermons).set({
-      status: "published",
-      publishedAt: new Date(),
-    }).where(eq(schema.sermons.id, id));
+    const database = await optionalDb("admin-sermon-publish");
+    if (!database) return;
+    await database.execute(sql`
+      UPDATE sermons
+      SET status = 'published', published_at = now()
+      WHERE id = ${id}
+    `);
     revalidatePath("/sermons");
     revalidatePath(`/admin/sermons/${id}`);
   }
 
   async function withdraw() {
     "use server";
-    await db.update(schema.sermons).set({ status: "withdrawn" }).where(eq(schema.sermons.id, id));
+    const database = await optionalDb("admin-sermon-withdraw");
+    if (!database) return;
+    await database.execute(sql`
+      UPDATE sermons
+      SET status = 'withdrawn'
+      WHERE id = ${id}
+    `);
     revalidatePath("/sermons");
     revalidatePath(`/admin/sermons/${id}`);
   }
@@ -63,9 +75,9 @@ export default async function AdminSermonDetail({ params }: { params: Params }) 
     <div className="p-10 max-w-5xl">
       <header className="mb-10">
         <Link href="/admin/sermons" className="text-muted hover:text-gold text-sm">
-          ← All sermons
+          &larr; All sermons
         </Link>
-        <p className="eyebrow mt-3">Sermon · {s.status}</p>
+        <p className="eyebrow mt-3">Sermon - {s.status}</p>
         <h1 className="m-0">{s.title}</h1>
         <p className="text-gold m-0 mt-3">{s.primary_passage}</p>
       </header>
@@ -74,13 +86,13 @@ export default async function AdminSermonDetail({ params }: { params: Params }) 
         <div className="card">
           <p className="card__eyebrow">Doctrine</p>
           <p className="m-0 text-2xl text-gold" style={{ fontFamily: "var(--font-display)" }}>
-            {s.theology_score ?? "—"}
+            {s.theology_score ?? "-"}
           </p>
         </div>
         <div className="card">
           <p className="card__eyebrow">Citations</p>
           <p className="m-0 text-2xl text-gold" style={{ fontFamily: "var(--font-display)" }}>
-            {s.citation_score === "1" ? "OK" : s.citation_score === "0" ? "FAIL" : "—"}
+            {s.citation_score === "1" ? "OK" : s.citation_score === "0" ? "FAIL" : "-"}
           </p>
         </div>
         <div className="card">

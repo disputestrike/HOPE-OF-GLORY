@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -12,8 +12,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-media");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT sa.id, sa.sermon_id, sa.asset_type, sa.url, sa.mime_type, sa.duration_secs,
              s.title as sermon_title
       FROM sermon_assets sa
@@ -40,7 +42,7 @@ export default async function AdminMediaPage() {
       {rows.length === 0 ? (
         <div className="card">
           <p className="m-0 text-muted">
-            No media yet. From a sermon detail page, trigger the video pipeline.
+            Media queue is ready. From a sermon detail page, trigger the video pipeline.
             Requires <code>DEEPGRAM_API_KEY</code>, <code>S3_*</code> creds, and{" "}
             <code>ffmpeg</code> on the worker container.
           </p>

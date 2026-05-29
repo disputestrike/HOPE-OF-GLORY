@@ -10,7 +10,7 @@
  *   7. Prayer Agent → closing prayer
  *   8. Branding Agent → hero image + Scripture card
  *   9. Doctrine Agent → gate (must approve)
- *  10. Persist to sermons table, status='ready'
+ *  10. Persist to sermons table, status='ready' or 'verifying'
  *
  * Returns a SermonPipelineResult describing what landed and any flags.
  */
@@ -175,8 +175,8 @@ export async function runSermonPipeline(
       callToAction: outline.application_steps.join(" | "),
       status: newStatus,
       imageUrl: heroUrl,
-      theologyScore: verdict.score.toString(),
-      citationScore: draft.citationsValid ? "1" : "0",
+      theologyScore: verdict.score,
+      citationScore: draft.citationsValid ? 1 : 0,
       verifiedByModel: "claude-sonnet-4-5",
       createdByModel: "llama-3.3-70b",
     })

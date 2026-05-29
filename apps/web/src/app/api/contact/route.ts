@@ -3,10 +3,10 @@
  * human_handoff row so the founder sees it in the queue.
  */
 import { NextResponse } from "next/server";
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
 import { z } from "zod";
 import { HumanHandoffReason } from "@hog/shared";
+import { optionalDb } from "@/lib/server-db";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -29,22 +29,27 @@ export async function POST(request: Request) {
   }
 
   let contactId: string | null = null;
+  const database = await optionalDb("contact");
   try {
-    const rows = await db.execute<{ id: string }>(sql`
-      INSERT INTO contact_submissions (name, email, phone, message, source_page)
-      VALUES (${body.name ?? null}, ${body.email}, ${body.phone ?? null}, ${body.message}, '/contact')
-      RETURNING id
-    `);
-    contactId = rows[0]?.id ?? null;
+    if (database) {
+      const rows = await database.execute<{ id: string }>(sql`
+        INSERT INTO contact_submissions (name, email, phone, message, source_page)
+        VALUES (${body.name ?? null}, ${body.email}, ${body.phone ?? null}, ${body.message}, '/contact')
+        RETURNING id
+      `);
+      contactId = rows[0]?.id ?? null;
+    }
   } catch (err) {
     console.warn("[contact] db insert failed:", err);
   }
 
   try {
-    await db.execute(sql`
-      INSERT INTO human_handoff (source_type, source_id, user_email, user_phone, reason, status, notes)
-      VALUES ('contact', ${contactId}, ${body.email}, ${body.phone ?? null}, ${body.reason}, 'open', ${body.message.slice(0, 500)})
-    `);
+    if (database && contactId) {
+      await database.execute(sql`
+        INSERT INTO human_handoff (source_type, source_id, user_email, user_phone, reason, status, notes)
+        VALUES ('contact_submission', ${contactId}, ${body.email}, ${body.phone ?? null}, ${body.reason}, 'open', ${body.message.slice(0, 500)})
+      `);
+    }
   } catch (err) {
     console.warn("[contact] handoff insert failed:", err);
   }

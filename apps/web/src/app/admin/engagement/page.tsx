@@ -1,5 +1,5 @@
-import { db } from "@hog/db";
 import { sql } from "drizzle-orm";
+import { optionalDb } from "@/lib/server-db";
 
 type Row = {
   id: string;
@@ -13,8 +13,10 @@ type Row = {
 };
 
 async function load(): Promise<Row[]> {
+  const database = await optionalDb("admin-engagement");
+  if (!database) return [];
   try {
-    return await db.execute<Row>(sql`
+    return await database.execute<Row>(sql`
       SELECT id, platform, author_handle, content, sentiment, suggested_reply, status, replied_at
       FROM social_engagements
       ORDER BY
@@ -40,7 +42,12 @@ export default async function AdminEngagementPage() {
         </p>
       </header>
       {rows.length === 0 ? (
-        <div className="card"><p className="m-0 text-muted">No engagement yet.</p></div>
+        <div className="card">
+          <p className="m-0 text-muted">
+            Engagement queue is ready. Comments and DMs appear here after Postiz/social
+            accounts are connected and replies are pulled into the review queue.
+          </p>
+        </div>
       ) : (
         <div className="flex flex-col gap-4">
           {rows.map((r) => (
