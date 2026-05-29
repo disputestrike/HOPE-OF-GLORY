@@ -16,6 +16,9 @@ import { features } from "@hog/shared";
 import { assess as assessCrisis } from "@hog/safety";
 import { randomUUID } from "node:crypto";
 import { optionalDb } from "@/lib/server-db";
+import { localAskHopeAnswer } from "@/lib/local-ask-hope";
+import { crisisDbSeverity } from "@/lib/ops";
+import { publicRateLimit, rateLimitResponse, requestId } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -100,10 +103,10 @@ function fallbackAskHope(question: string): AskResponseResult {
     };
   }
 
+  const local = localAskHopeAnswer(question);
   return {
-    answer:
-      "Ask Hope received your question, but the live AI provider is not connected in this preview. The ministry answer should be grounded in Scripture, point to Christ, and be reviewed against the Word. You can still use the site library, The Scroll, and the journeys while the API keys are being connected.",
-    citations: ["2 Timothy 3:16-17", "John 5:39"],
+    answer: local.answer,
+    citations: local.citations,
     risk: "low",
     crisis,
     blocked: false,
@@ -124,6 +127,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Ask Hope is currently disabled" }, { status: 503 });
   }
 
+  const rl = publicRateLimit(request, "ask-hope", { limit: 24, windowMs: 10 * 60 * 1000 });
+  if (!rl.ok) return rateLimitResponse(rl);
+
   let body: z.infer<typeof RequestSchema>;
   try {
     const json = await request.json();
@@ -138,6 +144,7 @@ export async function POST(request: Request) {
   await logMessage(sessionId, "user", body.question);
 
   const start = Date.now();
+  const correlationId = requestId(request);
   let result: AskResponseResult;
   if (!hasLiveAskHopeProvider()) {
     result = fallbackAskHope(body.question);
@@ -168,14 +175,21 @@ export async function POST(request: Request) {
       if (database) {
         await database.execute(sql`
           INSERT INTO crisis_events (
-            chat_session_id, trigger_phrase, severity, action_taken, escalated_to
+            chat_session_id, trigger_phrase, severity, action_taken, escalated_to, metadata
           )
           VALUES (
             ${sessionId},
             ${result.crisis.triggers.join("|")},
-            ${result.crisis.severity},
+            ${crisisDbSeverity(result.crisis.severity)},
             ${result.crisis.recommendedAction},
-            ${result.crisis.surface_988 && result.crisis.surface_911 ? "988_and_911" : result.crisis.surface_988 ? "988" : result.crisis.surface_911 ? "911" : null}
+            ${null},
+            ${JSON.stringify({
+              surfaces: {
+                lifeline988: result.crisis.surface_988,
+                emergency911: result.crisis.surface_911,
+              },
+              correlationId,
+            })}::jsonb
           )
         `);
       }

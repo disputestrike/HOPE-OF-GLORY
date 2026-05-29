@@ -1,20 +1,22 @@
 import { defineConfig } from "vitest/config";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+const here = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   test: {
-    globals: false,
     environment: "node",
-    include: [
-      "packages/**/*.test.ts",
-      "apps/**/*.test.ts",
-      "tests/**/*.test.ts",
-    ],
-    exclude: ["**/node_modules/**", "**/dist/**", "**/.next/**"],
-    reporters: ["default"],
-    coverage: {
-      provider: "v8",
-      include: ["packages/**/src/**/*.ts"],
-      exclude: ["**/*.test.ts", "**/dist/**"],
+    include: ["tests/**/*.test.ts"],
+  },
+  resolve: {
+    alias: {
+      "@": resolve(here, "apps/web/src"),
+      "@hog/shared": resolve(here, "packages/shared/index.ts"),
+      "@hog/safety": resolve(here, "packages/safety/index.ts"),
+      "@hog/db": resolve(here, "packages/db/index.ts"),
+      "@hog/ai": resolve(here, "packages/ai/index.ts"),
     },
   },
 });
+

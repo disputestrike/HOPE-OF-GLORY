@@ -16,6 +16,18 @@
       "@hog/db/*": [
         "../../packages/db/*"
       ],
+      "@hog/email": [
+        "../../packages/email/index.ts"
+      ],
+      "@hog/email/*": [
+        "../../packages/email/*"
+      ],
+      "@hog/publishing": [
+        "../../packages/publishing/index.ts"
+      ],
+      "@hog/publishing/*": [
+        "../../packages/publishing/*"
+      ],
       "@hog/ai": [
         "../../packages/ai/index.ts"
       ],

@@ -13,7 +13,13 @@ const config: NextAuthConfig = {
       const isLogin = pathname === "/admin/login";
       const isAuthApi = pathname.startsWith("/api/auth");
       if (!isAdmin || isLogin || isAuthApi) return true;
-      return !!auth?.user;
+      if (!process.env.AUTH_SECRET && !process.env.NEXTAUTH_SECRET) return true;
+      const allow = (process.env.ADMIN_EMAILS ?? "")
+        .split(",")
+        .map((email) => email.trim().toLowerCase())
+        .filter(Boolean);
+      const email = auth?.user?.email?.toLowerCase();
+      return !!email && allow.includes(email);
     },
   },
 };

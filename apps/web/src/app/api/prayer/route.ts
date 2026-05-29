@@ -15,6 +15,8 @@ import { z } from "zod";
 import { features, PrayerPrivacy } from "@hog/shared";
 import { redactPii, assess as assessCrisis } from "@hog/safety";
 import { optionalDb } from "@/lib/server-db";
+import { crisisDbSeverity, prayerRiskLevel } from "@/lib/ops";
+import { publicRateLimit, rateLimitResponse, requestId } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -37,6 +39,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Prayer is currently disabled" }, { status: 503 });
   }
 
+  const rl = publicRateLimit(request, "prayer", { limit: 12, windowMs: 10 * 60 * 1000 });
+  if (!rl.ok) return rateLimitResponse(rl);
+
   let body: z.infer<typeof BodySchema>;
   try {
     body = BodySchema.parse(await request.json());
@@ -45,6 +50,7 @@ export async function POST(request: Request) {
   }
 
   const crisis = assessCrisis(body.content);
+  const correlationId = requestId(request);
 
   let prayerText = fallbackPrayer();
   if (process.env.ANTHROPIC_API_KEY) {
@@ -72,7 +78,7 @@ export async function POST(request: Request) {
           'web',
           ${body.privacyLevel},
           ${body.content},
-          ${crisis.severity === "none" ? "low" : crisis.severity === "watch" ? "medium" : "high"},
+          ${prayerRiskLevel(crisis.severity)},
           ${crisis.severity === "none" ? "pending" : "escalated"},
           ${body.email ?? null}
         )
@@ -88,14 +94,37 @@ export async function POST(request: Request) {
     try {
       await database.execute(sql`
         INSERT INTO crisis_events (
-          chat_session_id, trigger_phrase, severity, action_taken, escalated_to
+          trigger_phrase, severity, action_taken, escalated_to, metadata
         )
         VALUES (
-          ${id},
           ${crisis.triggers.join("|")},
-          ${crisis.severity},
+          ${crisisDbSeverity(crisis.severity)},
           ${crisis.recommendedAction},
-          ${crisis.surface_988 ? "988" : null}
+          ${null},
+          ${JSON.stringify({
+            source: "prayer_request",
+            prayerRequestId: id,
+            surfaces: {
+              lifeline988: crisis.surface_988,
+              emergency911: crisis.surface_911,
+            },
+            correlationId,
+          })}::jsonb
+        )
+      `);
+      await database.execute(sql`
+        INSERT INTO human_handoff (
+          source_type, source_id, user_email, user_phone, reason, status, priority, metadata
+        )
+        VALUES (
+          'prayer_request',
+          ${id},
+          ${body.email ?? null},
+          ${body.phone ?? null},
+          ${`Crisis signal detected: ${crisis.severity}`},
+          'open',
+          ${crisis.severity === "imminent" ? 1 : 2},
+          ${JSON.stringify({ correlationId, recommendedAction: crisis.recommendedAction })}::jsonb
         )
       `);
     } catch (err) {

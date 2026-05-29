@@ -14,6 +14,8 @@
     "@auth/drizzle-adapter": "^1.7.2",
     "@hog/ai": "workspace:*",
     "@hog/db": "workspace:*",
+    "@hog/email": "workspace:*",
+    "@hog/publishing": "workspace:*",
     "@hog/prompts": "workspace:*",
     "@hog/rag": "workspace:*",
     "@hog/safety": "workspace:*",

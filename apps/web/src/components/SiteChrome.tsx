@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Analytics } from "@/components/Analytics";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -14,10 +15,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
 
   return (
     <>
+      <Analytics />
       <Header />
       <main id="main">{children}</main>
       <Footer />
     </>
   );
 }
-

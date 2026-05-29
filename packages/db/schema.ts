@@ -312,6 +312,7 @@ export const providerEnum = pgEnum('provider', [
   'deepgram',
   'signalwire',
   'postiz',
+  'paypal',
   'stripe',
   'tithely',
   'givelify',

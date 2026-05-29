@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
-import { auth, signOut } from "../../../auth";
+import { signOut } from "../../../auth";
+import { getAdminSession } from "@/lib/admin-auth";
 
 export const metadata: Metadata = {
   title: "Admin - Hope of Glory",
@@ -19,6 +19,7 @@ const adminNav = [
       { href: "/admin/email", label: "Email" },
       { href: "/admin/media", label: "Media" },
       { href: "/admin/live", label: "Live" },
+      { href: "/admin/release", label: "Release Gates" },
     ],
   },
   {
@@ -42,17 +43,14 @@ const adminNav = [
   },
 ] as const;
 
-function authIsConfigured() {
-  return Boolean(process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET);
-}
-
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
-  const hasAuth = authIsConfigured();
-  const session = hasAuth ? await auth().catch(() => null) : null;
+  const session = await getAdminSession();
+  if (!session.email && !session.localMode) {
+    const { redirect } = await import("next/navigation");
+    redirect("/admin/login");
+  }
 
-  if (hasAuth && !session?.user) redirect("/admin/login");
-
-  const adminName = session?.user?.email ?? "Administrator";
+  const adminName = session.email ?? "Administrator";
 
   return (
     <div className="admin-shell flex">
@@ -82,9 +80,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         <div className="mt-8 border-t border-[rgba(226,232,240,0.14)] pt-5">
           <p className="m-0 text-xs font-semibold text-white">{adminName}</p>
           <p className="m-0 mt-1 text-xs text-[rgba(226,232,240,0.58)]">
-            {hasAuth ? "Authenticated admin" : "Local admin mode"}
+            {session.localMode ? "Local admin mode" : `${session.role} admin`}
           </p>
-          {hasAuth && session?.user ? (
+          {!session.localMode && session.email ? (
             <form
               action={async () => {
                 "use server";
@@ -124,4 +122,3 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     </div>
   );
 }
-

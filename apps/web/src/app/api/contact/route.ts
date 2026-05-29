@@ -7,6 +7,7 @@ import { sql } from "drizzle-orm";
 import { z } from "zod";
 import { HumanHandoffReason } from "@hog/shared";
 import { optionalDb } from "@/lib/server-db";
+import { publicRateLimit, rateLimitResponse } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -21,6 +22,9 @@ const Body = z.object({
 });
 
 export async function POST(request: Request) {
+  const rl = publicRateLimit(request, "contact", { limit: 8, windowMs: 60 * 60 * 1000 });
+  if (!rl.ok) return rateLimitResponse(rl);
+
   let body: z.infer<typeof Body>;
   try {
     body = Body.parse(await request.json());

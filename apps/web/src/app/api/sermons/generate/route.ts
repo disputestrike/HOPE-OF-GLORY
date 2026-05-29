@@ -8,23 +8,17 @@
  * job and return 202 with a job id — Phase 4 wires that up.
  */
 import { NextResponse } from "next/server";
-import { auth } from "../../../../../auth";
+import { requireAdminApi } from "@/lib/admin-auth";
+import { auditAdminAction } from "@/lib/ops";
+import { clientIp, ipHash } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 300;
 
-function authIsConfigured() {
-  return Boolean(process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET);
-}
-
 export async function POST(request: Request) {
-  if (authIsConfigured()) {
-    const session = await auth();
-    if (!session?.user) {
-      return NextResponse.redirect(new URL("/admin/login", request.url));
-    }
-  }
+  const admin = await requireAdminApi("publish");
+  if (!admin.ok) return admin.response;
 
   // Lazy import — heavy worker deps loaded only on real call.
   const { runSermonPipeline } = await import("../../../../../../worker/src/pipelines/sermon");
@@ -34,6 +28,15 @@ export async function POST(request: Request) {
 
   try {
     const result = await runSermonPipeline({ mode });
+    await auditAdminAction({
+      actorEmail: admin.session.email,
+      action: "sermon.generate",
+      targetType: "sermon",
+      targetId: result.sermonId,
+      diff: { mode },
+      ipHash: ipHash(clientIp(request)),
+      userAgent: request.headers.get("user-agent"),
+    });
     return NextResponse.redirect(
       new URL(`/admin/sermons/${result.sermonId}`, request.url),
       { status: 303 }

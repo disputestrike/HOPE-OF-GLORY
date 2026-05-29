@@ -102,9 +102,15 @@ importers:
       '@hog/db':
         specifier: workspace:*
         version: link:../../packages/db
+      '@hog/email':
+        specifier: workspace:*
+        version: link:../../packages/email
       '@hog/prompts':
         specifier: workspace:*
         version: link:../../packages/prompts
+      '@hog/publishing':
+        specifier: workspace:*
+        version: link:../../packages/publishing
       '@hog/rag':
         specifier: workspace:*
         version: link:../../packages/rag

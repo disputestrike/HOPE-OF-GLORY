@@ -8,9 +8,9 @@ You will never be pressured here. Most of what we make is free, and it will stay
 
 ## How to give
 
-Gifts can be sent through PayPal at the link below. We will add more options as the ministry grows.
+Gifts can be sent through the Give page. It supports Give Once and Give Monthly, and the live PayPal button appears when PayPal credentials are configured.
 
-[Give through PayPal →](#paypal-placeholder)
+[Open the Give page](/give)
 
 If you would prefer to give by check or another method, please [contact us](/contact).
 
