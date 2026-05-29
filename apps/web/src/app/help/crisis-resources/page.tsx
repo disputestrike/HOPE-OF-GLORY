@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function CrisisResourcesPage() {
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

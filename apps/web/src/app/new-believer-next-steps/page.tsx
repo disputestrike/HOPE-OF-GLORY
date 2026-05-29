@@ -21,7 +21,7 @@ export default function NewBelieverNextStepsPage() {
     { n: "09", title: "Keep coming back", body: "The Christian life is daily. Not a single decision, but a lifelong following." },
   ];
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

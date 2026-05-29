@@ -12,10 +12,12 @@
  *
  * Always Claude (critical risk). Always through Doctrine Agent + moderation.
  */
+import { randomUUID } from "node:crypto";
 import { anthropic, type AgentRequest } from "@hog/ai";
 import { loadAgent } from "@hog/prompts";
 import { assess as assessCrisis, moderate } from "@hog/safety";
 import { runDoctrineGate } from "./doctrine";
+import { renderAudio } from "../pipelines/audio";
 
 export type ApologeticsResponse = {
   steelman: string;
@@ -26,11 +28,27 @@ export type ApologeticsResponse = {
   doctrineVerdict?: Awaited<ReturnType<typeof runDoctrineGate>>;
   blocked: boolean;
   blockedReason?: string;
+  /**
+   * Public URL to an MP3 narration of christianView + objectionHandling.
+   * Present only when:
+   *   - opts.withAudio === true on the call, AND
+   *   - the response was not blocked, AND
+   *   - Deepgram + S3 are configured, AND
+   *   - the concatenated narration is long enough to be worth rendering.
+   * The audio contains the source text verbatim — no paraphrase.
+   */
+  audioUrl?: string;
 };
 
 export async function answerObjection(opts: {
   question: string;
   audience?: "seeker" | "believer" | "skeptic";
+  /**
+   * When true, render TTS audio of the structured answer and upload to S3.
+   * Off by default to avoid spend on the typical chat-only call site.
+   * The API route opts in for users who explicitly request audio output.
+   */
+  withAudio?: boolean;
 }): Promise<ApologeticsResponse> {
   // 1. Crisis check — never debate someone in crisis.
   const crisis = assessCrisis(opts.question);
@@ -144,5 +162,22 @@ Rules:
     return { ...parsed, doctrineVerdict: verdict, blocked: true, blockedReason: "doctrine_block" };
   }
 
-  return { ...parsed, doctrineVerdict: verdict, blocked: false };
+  // Optional TTS rendering. We only narrate the substantive teaching fields —
+  // not the steel-man (which restates the questioner) and not the invite
+  // (which is a CTA, not teaching). The order mirrors how a pastor would
+  // answer aloud: state the Christian view, then handle the objection.
+  let audioUrl: string | undefined;
+  if (opts.withAudio) {
+    const narration = [parsed.christianView, parsed.objectionHandling]
+      .map((s) => s?.trim())
+      .filter(Boolean)
+      .join("\n\n");
+    const rendered = await renderAudio({
+      text: narration,
+      key: `apologetics/${randomUUID()}.mp3`,
+    });
+    if (rendered) audioUrl = rendered.url;
+  }
+
+  return { ...parsed, doctrineVerdict: verdict, blocked: false, audioUrl };
 }

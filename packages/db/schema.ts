@@ -133,6 +133,17 @@ export const assetTypeEnum = pgEnum('asset_type', [
   'subtitle',
   'thumbnail',
   'pdf',
+  // Granular asset types written by the video + audio pipelines. Existing
+  // raw-SQL INSERTs in apps/worker/src/pipelines/video.ts already use
+  // 'audio_full', 'video_hero', 'video_reel'; ops must run an ALTER TYPE ...
+  // ADD VALUE migration in any environment whose enum was created from the
+  // older list.
+  'audio_full',
+  'audio_sermon',
+  'audio_apologetics',
+  'video_hero',
+  'video_reel',
+  'video_youtube',
 ]);
 
 export const chatChannelEnum = pgEnum('chat_channel', [

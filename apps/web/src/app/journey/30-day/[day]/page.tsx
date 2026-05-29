@@ -60,7 +60,7 @@ export default async function HurtingHeartDayPage({
   const isCrisisDay = CRISIS_DAYS.has(dayNum);
 
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

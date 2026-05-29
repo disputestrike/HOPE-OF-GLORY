@@ -450,6 +450,187 @@
   .bg-navy { background: var(--midnight-navy); }
 }
 
+/* ====================================================================
+   Care surface — `.theme-warm`
+   Use on /help/*, /come-to-christ cluster, /prayer, hurting-heart journey.
+   Wounded readers don't need a dark sky.
+
+   Opt-in only: scope this class on the outer <section> of care pages.
+   The default site stays on the dark Deep Heaven palette. This class
+   re-binds the semantic tokens for the subtree (background, foreground,
+   borders, cards, links, buttons, eyebrow, scripture) to a warm cream
+   surface with navy text. Navy on cream tests ~13:1 (well above WCAG
+   AA 4.5:1). Glory Gold accents are kept but reserved for fills and
+   dividers — never gold text on cream at body sizes.
+
+   Crisis red badges and 988/911 surfaces stay vivid even inside
+   theme-warm (the components set their own border/background colors
+   inline and are not overridden here).
+   ==================================================================== */
+.theme-warm {
+  /* Semantic token overrides — scoped to the subtree */
+  --bg: var(--warm-light);
+  --bg-elevated: #fbefd0;
+  --bg-deep: #f1e2b8;
+  --fg: var(--deep-heaven);
+  --fg-muted: rgba(11, 31, 58, 0.7);
+  --accent: var(--glory-gold);
+  --accent-soft: rgba(212, 175, 55, 0.18);
+  --border: rgba(11, 31, 58, 0.22);
+  --border-soft: rgba(11, 31, 58, 0.12);
+
+  /* Make the section a warm "page" surface instead of letting the
+     dark body bleed through. Soft warm-to-cream wash replaces the
+     deep-blue radial gradients used on the dark default. */
+  background:
+    radial-gradient(1100px 600px at 50% -10%, rgba(212, 175, 55, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 100% 10%, rgba(241, 226, 184, 0.6), transparent 60%),
+    var(--warm-light);
+  color: var(--fg);
+}
+
+/* Typography — flip headings/blockquote/strong to deep navy on cream.
+   The dark theme's gold/warm text would vanish on a cream background. */
+.theme-warm h1,
+.theme-warm h2,
+.theme-warm h3 {
+  color: var(--deep-heaven);
+}
+.theme-warm h4 {
+  /* H4 was gold-on-dark; on cream gold is low-contrast at body size.
+     Switch to deep blue. Gold is still allowed on large display only. */
+  color: var(--deep-heaven);
+}
+.theme-warm blockquote {
+  color: var(--deep-heaven);
+}
+.theme-warm strong,
+.theme-warm .prose-ministry strong {
+  color: var(--deep-heaven);
+}
+.theme-warm hr,
+.theme-warm .prose-ministry hr {
+  background: var(--border-soft);
+}
+
+/* Eyebrow / overline — gold-on-cream is below AA at this size.
+   Use deep blue with gold underline reserved for dividers elsewhere. */
+.theme-warm .eyebrow,
+.theme-warm .card__eyebrow,
+.theme-warm .scripture-ref {
+  color: var(--deep-heaven);
+}
+
+/* Scripture display still uses deep navy text on cream. */
+.theme-warm .scripture-display {
+  color: var(--deep-heaven);
+}
+
+/* Links — deep blue base, gold on hover. */
+.theme-warm a {
+  color: var(--deep-heaven);
+  text-decoration-color: var(--accent-soft);
+}
+.theme-warm a:hover {
+  color: var(--glory-gold);
+  opacity: 1;
+}
+.theme-warm .text-gold {
+  /* Inline "text-gold" utility is fine on small accents at large sizes
+     but on cream a gold link is too pale. Promote to deep blue with
+     gold underline so phone numbers and refs remain readable. */
+  color: var(--deep-heaven);
+  text-decoration: underline;
+  text-decoration-color: var(--glory-gold);
+  text-underline-offset: 3px;
+}
+.theme-warm .text-warm {
+  color: var(--deep-heaven);
+}
+.theme-warm .text-muted {
+  color: var(--fg-muted);
+}
+
+/* Cards — cream gradient with darker navy borders for clear edges
+   on the cream wash. */
+.theme-warm .card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 248, 231, 0.95),
+    rgba(251, 239, 208, 0.85)
+  );
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+.theme-warm .card:hover {
+  border-color: var(--deep-heaven);
+}
+
+/* Buttons —
+   .btn--primary: gold fill, navy text (unchanged — gold on navy is the lockup).
+   .btn--secondary: navy outline + navy text on cream (was gold-on-dark).
+   .btn--ghost: navy outline + navy text. */
+.theme-warm .btn--primary {
+  background: var(--glory-gold);
+  color: var(--midnight-navy);
+  border-color: var(--glory-gold);
+}
+.theme-warm .btn--primary:hover {
+  background: #e1c14b;
+  border-color: #e1c14b;
+}
+.theme-warm .btn--secondary {
+  background: transparent;
+  color: var(--deep-heaven);
+  border-color: var(--deep-heaven);
+}
+.theme-warm .btn--secondary:hover {
+  background: rgba(11, 31, 58, 0.08);
+  color: var(--deep-heaven);
+}
+.theme-warm .btn--ghost {
+  background: transparent;
+  color: var(--deep-heaven);
+  border-color: var(--border);
+}
+.theme-warm .btn--ghost:hover {
+  border-color: var(--deep-heaven);
+  color: var(--deep-heaven);
+}
+
+/* Navigation links inside warm subtree (rare — most nav lives in
+   the dark header) — keep navy. */
+.theme-warm .nav-link {
+  color: var(--deep-heaven);
+}
+.theme-warm .nav-link:hover,
+.theme-warm .nav-link[aria-current="page"] {
+  color: var(--glory-gold);
+}
+
+/* Gold divider stays gold — it's a graphic element, not text. */
+.theme-warm .gold-divider {
+  opacity: 0.6;
+}
+
+/* Prose-ministry: re-bind colors for markdown-rendered help bodies. */
+.theme-warm .prose-ministry {
+  color: var(--fg);
+}
+.theme-warm .prose-ministry blockquote {
+  color: var(--deep-heaven);
+}
+.theme-warm .prose-ministry a {
+  color: var(--deep-heaven);
+  text-decoration-color: var(--glory-gold);
+}
+
+/* Selection — invert so it stays legible on cream. */
+.theme-warm ::selection {
+  background: var(--deep-heaven);
+  color: var(--warm-light);
+}
+
 /* ---- Admin console ---- */
 .admin-shell {
   --admin-bg: #f4f6fa;

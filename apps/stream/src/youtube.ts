@@ -7,7 +7,7 @@ const YT_BASE = "https://www.googleapis.com/youtube/v3";
 
 let _accessToken: { token: string; expiresAt: number } | null = null;
 
-async function getAccessToken(): Promise<string> {
+export async function getAccessToken(): Promise<string> {
   if (_accessToken && _accessToken.expiresAt > Date.now() + 60_000) return _accessToken.token;
 
   const refreshToken = process.env.YOUTUBE_REFRESH_TOKEN;

@@ -55,6 +55,44 @@
 
 Do not generate new colors. If you need a softer gold for a background, use `--warm-light` instead. If you need a darker blue, use `--midnight-navy`. The palette is exhaustive. No HSL math.
 
+### 2.5 Two surfaces: dark default, warm care
+
+The site renders on **two surfaces**, not one. Same palette, two contexts.
+
+| Surface | Token mode | Where | Why |
+|---|---|---|---|
+| **Deep Heaven (default)** | `--bg: --deep-heaven`, `--fg: --warm-light` | Home, Sermons, Read, Apologetics, Ask, Give, About, Bible Study, declarative/teaching pages | The night sky of psalmist kingship. Gold-on-blue is the brand lockup. |
+| **Care Surface (`.theme-warm`)** | `--bg: --warm-light`, `--fg: --deep-heaven` | `/help/*`, `/help-now`, `/come-to-christ` cluster (sinner's prayer, how-can-i-be-saved, what-happens-after-i-pray, new-believer-next-steps), `/prayer`, `/journey/30-day` (Hurting Heart), and the redirect parent `/journey/hope-for-the-hurting-heart` | Wounded readers — the grieving mother, the man in crisis, the one praying for the first time — should not land on a dark night sky. They land on a cream page that reads like a letter, not a cathedral at midnight. |
+
+**The rule of thumb:** declarative pages (we teach, we proclaim, we explain doctrine) use Deep Heaven. Pastoral pages (we sit beside, we listen, we point gently to Christ) use Care Surface.
+
+**Activation:** opt-in by adding `theme-warm` to the outer `<section>` class. Tokens re-bind for the subtree. The dark default is never touched.
+
+**Token deltas between modes:**
+
+| Token | Dark default | `.theme-warm` |
+|---|---|---|
+| `--bg` | `#0B1F3A` Deep Heaven | `#FFF8E7` Warm Light |
+| `--bg-elevated` | `#0E2447` | `#FBEFD0` (deeper cream) |
+| `--bg-deep` | `#050B18` Midnight Navy | `#F1E2B8` (warm sand) |
+| `--fg` | `#FFF8E7` Warm Light | `#0B1F3A` Deep Heaven |
+| `--fg-muted` | `rgba(255,248,231,0.78)` | `rgba(11,31,58,0.7)` |
+| `--accent` | `#D4AF37` Glory Gold | `#D4AF37` Glory Gold (unchanged — the bridge between modes) |
+| `--accent-soft` | `rgba(212,175,55,0.18)` | `rgba(212,175,55,0.18)` |
+| `--border` | `rgba(212,175,55,0.22)` | `rgba(11,31,58,0.22)` |
+| `--border-soft` | `rgba(255,248,231,0.12)` | `rgba(11,31,58,0.12)` |
+| Eyebrow text | Gold on navy | Deep navy (gold on cream fails AA at body sizes) |
+| Body text | Warm Light on navy | Deep Heaven on cream |
+| `.btn--primary` | Gold fill, navy text | Gold fill, navy text (unchanged — the lockup is a constant) |
+| `.btn--secondary` | Gold outline, gold text | Navy outline, navy text |
+| Card background | Deep blue gradient | Cream gradient (`rgba(255,248,231,0.95)` → `rgba(251,239,208,0.85)`) |
+| Card border | Soft gold | Navy at 22% (darker for contrast on cream) |
+| Page wash | Deep-blue radial gradients | Warm-gold + sand radial gradients on cream |
+
+**Crisis surfaces are exempt.** The crimson 988/911 banners, "highest priority" cards, and crisis aside on `/help/suicide` stay vivid red on both modes — they set their own border/background inline. Care Surface softens the *page*, never the *alarm*.
+
+**Accessibility:** Deep Heaven `#0B1F3A` text on Warm Light `#FFF8E7` background tests ~13:1 — well above WCAG AA 4.5:1 and AAA 7:1 for body text.
+
 ---
 
 ## 3. Typography

@@ -12,3 +12,4 @@ export * from "./prayer-followup";
 export * from "./weekly-digest";
 export * from "./re-engagement";
 export * from "./donor-stewardship";
+export * from "./crisis-alert";

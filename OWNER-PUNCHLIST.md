@@ -102,6 +102,56 @@ Things only the founder can do. I'll build everything around these. Check them o
 
 ---
 
+## Block 7 — Reliability (before go-live)
+
+The production reliability layer: nightly backup, disaster recovery, and
+crisis alerting. Some of these are 30-second tasks. Skipping any of them
+means the system runs but cannot be safely operated.
+
+### Crisis alerting
+
+- [ ] Set `CRISIS_ALERT_EMAILS` (comma-separated) in Railway env to the
+      founder's primary inbox + at least one on-call pastoral team member.
+      Use addresses you check on your phone overnight, not aspirational
+      shared inboxes you forget about.
+- [ ] After deploying, hit `POST /api/admin/alerts/test` while signed in as
+      an admin (curl with the session cookie, or via the `/admin` UI button
+      once added). Confirm the `[TEST] [CRISIS - IMMINENT]` email lands in
+      every configured inbox within 60 seconds. **Do not go live without
+      this confirmation** — an imminent event with no human paged is the
+      worst possible failure mode.
+- [ ] Trigger one synthetic imminent event in the **staging** environment
+      (e.g. submit a prayer with a known trigger phrase listed in
+      `packages/safety/src/crisis.ts`). Confirm both the test email path
+      and the real path produce identical inboxes.
+
+### Backup
+
+- [ ] Confirm S3 vars (`S3_BUCKET`, `S3_REGION`, `S3_ACCESS_KEY_ID`,
+      `S3_SECRET_ACCESS_KEY`, optional `S3_ENDPOINT`) are set in
+      production. Backups land at
+      `s3://$S3_BUCKET/backups/postgres/YYYY-MM-DD/db-<ts>.dump`.
+- [ ] Set up the Railway cron (or external scheduler — GitHub Actions /
+      cron-job.org) to hit `POST /api/cron/weekly` every Sunday at 02:00
+      UTC with `Authorization: Bearer $CRON_SECRET`. The endpoint runs
+      `backup-db` then `backup-cleanup`, both logged to `job_runs`.
+- [ ] **Within 24 hours of go-live**, manually trigger the backup once:
+      `POST /api/cron/weekly?secret=$CRON_SECRET`. Verify in S3 that a
+      `.dump` file appeared under today's date and that
+      `aws s3api head-object` reports `ServerSideEncryption: AES256`.
+- [ ] Add the **quarterly DR drill** to the calendar — second Tuesday of
+      Jan / Apr / Jul / Oct. First drill must be within 90 days of go-live.
+      Procedure: `docs/runbook/backup-restore-test.md`. The first drill is
+      the only place you can discover that the backup pipeline is broken
+      before it matters.
+
+### Documentation
+
+- [ ] Print `docs/runbook/disaster-recovery.md` and put a copy somewhere
+      physical. At 3 a.m. with a dead laptop, the cloud is not the answer.
+
+---
+
 ## What you DO NOT need to do
 
 I handle all of this — no action from you required:

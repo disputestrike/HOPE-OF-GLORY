@@ -16,6 +16,7 @@ import { features, PrayerPrivacy } from "@hog/shared";
 import { redactPii, assess as assessCrisis } from "@hog/safety";
 import { optionalDb } from "@/lib/server-db";
 import { crisisDbSeverity, prayerRiskLevel } from "@/lib/ops";
+import { alertOnImminentCrisis } from "@/lib/crisis-alert";
 import { publicRateLimit, rateLimitResponse, requestId } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
@@ -130,6 +131,21 @@ export async function POST(request: Request) {
     } catch (err) {
       console.warn("[prayer] crisis event log failed:", err);
     }
+  }
+
+  // Page the founder on imminent severity. Fire-and-forget. Runs OUTSIDE
+  // the DB-conditional block — an imminent event with DB unavailable still
+  // must page, even if we cannot persist the prayer_request row. The email
+  // is the alert, not the storage.
+  if (crisis.severity === "imminent") {
+    void alertOnImminentCrisis({
+      severity: crisis.severity,
+      source: "prayer",
+      sourceId: id ?? `db-unavailable-${correlationId}`,
+      triggerPhrases: crisis.triggers,
+      actionTaken: crisis.recommendedAction,
+      correlationId,
+    }).catch((err) => console.warn("[prayer] crisis alert dispatch failed:", err));
   }
 
   return NextResponse.json({

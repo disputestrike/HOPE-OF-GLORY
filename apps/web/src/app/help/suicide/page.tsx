@@ -19,13 +19,18 @@ export const metadata: Metadata = {
  */
 export default function SuicidePage() {
   return (
-    <section className="section--hero" style={{ paddingTop: "var(--space-12)" }}>
+    <section className="section--hero theme-warm" style={{ paddingTop: "var(--space-12)" }}>
       <div className="container-prose">
+        {/* Crisis banner stays vivid even in theme-warm. The blood-crimson
+            border + fill is the visual flag for highest-priority care. We
+            intentionally use a deeper crimson background so light/cream text
+            inside reads cleanly without softening the urgency. */}
         <aside
           className="p-6 md:p-8 rounded border mb-10"
           style={{
             borderColor: "var(--blood-crimson)",
-            background: "rgba(138, 28, 28, 0.16)",
+            background: "rgba(138, 28, 28, 0.92)",
+            color: "var(--warm-light)",
           }}
         >
           <p
@@ -35,8 +40,8 @@ export default function SuicidePage() {
             Please read this first
           </p>
           <p
-            className="m-0 mb-6 text-warm"
-            style={{ fontSize: "var(--fs-body-lg)" }}
+            className="m-0 mb-6"
+            style={{ fontSize: "var(--fs-body-lg)", color: "var(--warm-light)" }}
           >
             You should not be alone with this right now.
           </p>

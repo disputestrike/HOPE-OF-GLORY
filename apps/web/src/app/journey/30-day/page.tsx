@@ -49,7 +49,7 @@ const chapters = [
 
 export default function ThirtyDayJourneyPage() {
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

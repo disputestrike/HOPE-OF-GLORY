@@ -30,7 +30,7 @@ export default async function HelpTopicPage({ params }: { params: Params }) {
   const bodyHtml = await marked.parse(t.body, { async: true });
 
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

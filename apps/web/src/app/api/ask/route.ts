@@ -18,6 +18,7 @@ import { randomUUID } from "node:crypto";
 import { optionalDb } from "@/lib/server-db";
 import { localAskHopeAnswer } from "@/lib/local-ask-hope";
 import { crisisDbSeverity } from "@/lib/ops";
+import { alertOnImminentCrisis } from "@/lib/crisis-alert";
 import { publicRateLimit, rateLimitResponse, requestId } from "@/lib/request-guard";
 
 export const runtime = "nodejs";
@@ -195,6 +196,19 @@ export async function POST(request: Request) {
       }
     } catch (err) {
       console.warn("[ask] failed to log crisis event:", err);
+    }
+
+    // Page the founder on imminent severity. Fire-and-forget so the user's
+    // response is never blocked on email delivery.
+    if (result.crisis.severity === "imminent") {
+      void alertOnImminentCrisis({
+        severity: result.crisis.severity,
+        source: "ask",
+        sourceId: sessionId,
+        triggerPhrases: result.crisis.triggers,
+        actionTaken: result.crisis.recommendedAction,
+        correlationId,
+      }).catch((err) => console.warn("[ask] crisis alert dispatch failed:", err));
     }
   }
 

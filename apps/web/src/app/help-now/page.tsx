@@ -73,7 +73,7 @@ const cards = [
 
 export default function HelpNowPage() {
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs
           items={[

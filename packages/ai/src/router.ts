@@ -18,6 +18,7 @@ import type {
   TaskType,
 } from "./types";
 import { RateLimited } from "./types";
+import { checkBudget, recordSpend, BudgetExhausted } from "./budget";
 
 const RISK_BY_TASK: Record<TaskType, RiskLevel> = {
   sermon_draft: "high",
@@ -91,12 +92,32 @@ export async function route(req: AgentRequest): Promise<AgentResponse> {
   const risk = riskFor(req.taskType, req.risk);
   const plan = decide(req.taskType, risk);
 
+  // Budget gate — BEFORE the call, not after. If exhausted, do not spend more.
+  const budget = await checkBudget();
+  if (!budget.allowed) {
+    throw new BudgetExhausted(budget.reason ?? "daily_cap", budget.dayTotal, budget.monthTotal);
+  }
+
   try {
-    return await callProvider(plan.primary, req);
+    const response = await callProvider(plan.primary, req);
+    void recordSpend({
+      provider: response.provider,
+      agentName: req.agentName,
+      tokensIn: response.tokensIn,
+      tokensOut: response.tokensOut,
+    }).catch(() => undefined);
+    return response;
   } catch (err) {
     if (err instanceof RateLimited && plan.fallback) {
       console.warn(`[router] ${plan.primary} → ${plan.fallback}`);
-      return callProvider(plan.fallback, req);
+      const fallback = await callProvider(plan.fallback, req);
+      void recordSpend({
+        provider: fallback.provider,
+        agentName: req.agentName,
+        tokensIn: fallback.tokensIn,
+        tokensOut: fallback.tokensOut,
+      }).catch(() => undefined);
+      return fallback;
     }
     throw err;
   }

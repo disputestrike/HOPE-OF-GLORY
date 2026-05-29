@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function PrayerPage() {
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <header className="mb-10">
           <p className="eyebrow">Prayer</p>

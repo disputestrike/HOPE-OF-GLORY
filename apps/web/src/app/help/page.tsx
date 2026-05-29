@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function HelpPage() {
   const topics = Object.values(HELP_TOPICS);
   return (
-    <section className="section">
+    <section className="section theme-warm">
       <div className="container-prose">
         <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Help", href: "/help" }]} />
 

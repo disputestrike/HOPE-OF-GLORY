@@ -18,7 +18,7 @@ export default function ComeToChristPage() {
         url: "https://hopeofglory.ministry/come-to-christ",
         datePublished: "2025-01-01",
       })}
-      <section className="section">
+      <section className="section theme-warm">
         <div className="container-prose">
           <Breadcrumbs
             items={[
