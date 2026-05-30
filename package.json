@@ -1,14 +1,42 @@
 {
   "name": "hope-of-glory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Hope of Glory Ministry — AI-native Christian media ministry. Filling the earth with the knowledge of the glory of the Lord.",
+  "description": "Hope of Glory Ministry — AI-native Christian media ministry.",
   "license": "UNLICENSED",
   "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=9.0.0"
+    "node": ">=20.0.0"
   },
   "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "preflight": "tsx scripts/preflight.ts",
+    "preflight:strict": "tsx scripts/preflight.ts --strict",
+    "content:qa": "tsx scripts/content-qa.ts",
+    "smoke:routes": "tsx scripts/smoke-routes.ts",
+    "release:gate": "pnpm content:qa && pnpm test && pnpm typecheck && pnpm build && pnpm preflight",
+    "db:generate": "drizzle-kit generate --config=src/lib/db/drizzle.config.ts",
+    "db:migrate": "tsx src/lib/db/src/migrate.ts",
+    "db:seed": "tsx src/lib/db/src/seed.ts",
+    "ingest:doctrine": "tsx scripts/ingest-doctrine.ts",
+    "ingest:creeds": "tsx scripts/ingest-creeds.ts",
+    "ingest:bible": "tsx scripts/ingest-bible.ts",
+    "ingest:all": "pnpm ingest:doctrine && pnpm ingest:creeds && pnpm ingest:bible",
+    "seed:calendar": "tsx scripts/seed-calendar.ts",
+    "seed:knowledge": "tsx scripts/seed-knowledge.ts",
+    "backup:db": "tsx scripts/backup-db.ts",
+    "backup:cleanup": "tsx scripts/backup-cleanup.ts",
+    "worker": "tsx src/server/worker/index.ts",
+    "voice": "tsx src/server/voice/index.ts",
+    "stream": "tsx src/server/stream/index.ts"
+  },
   "pnpm": {
     "overrides": {
       "@rollup/plugin-commonjs>rollup": "3.30.0",
@@ -18,36 +46,43 @@
       "uuid": "11.1.1"
     }
   },
-  "scripts": {
-    "dev": "pnpm --filter web dev",
-    "build": "pnpm -r build",
-    "lint": "pnpm -r lint",
-    "typecheck": "pnpm -r typecheck",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage",
-    "preflight": "tsx scripts/preflight.ts",
-    "preflight:strict": "tsx scripts/preflight.ts --strict",
-    "content:qa": "tsx scripts/content-qa.ts",
-    "smoke:routes": "tsx scripts/smoke-routes.ts",
-    "release:gate": "pnpm content:qa && pnpm test && pnpm typecheck && pnpm build && pnpm preflight",
-    "db:generate": "pnpm --filter @hog/db generate",
-    "db:migrate": "pnpm --filter @hog/db migrate",
-    "db:seed": "pnpm --filter @hog/db seed",
-    "knowledge:seed": "tsx scripts/seed-knowledge.ts",
-    "worker:dev": "pnpm --filter worker dev",
-    "voice:dev": "pnpm --filter voice dev",
-    "stream:dev": "pnpm --filter stream dev"
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@auth/drizzle-adapter": "^1.7.2",
+    "@aws-sdk/client-s3": "^3.687.0",
+    "@aws-sdk/lib-storage": "^3.687.0",
+    "@deepgram/sdk": "^3.9.0",
+    "@sentry/nextjs": "^8.40.0",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.45.2",
+    "gray-matter": "^4.0.3",
+    "marked": "^15.0.3",
+    "next": "^15.0.3",
+    "next-auth": "5.0.0-beta.30",
+    "node-cron": "^3.0.3",
+    "openai": "^4.73.0",
+    "postgres": "^3.4.5",
+    "react": "^19.0.0-rc-66855b96-20241106",
+    "react-dom": "^19.0.0-rc-66855b96-20241106",
+    "redis": "^4.7.0",
+    "resend": "^4.0.1",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^22.7.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@vitest/coverage-v8": "^2.1.5",
+    "autoprefixer": "^10.4.20",
+    "drizzle-kit": "^0.28.1",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3",
+    "postcss": "^8.5.10",
     "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
     "tsx": "^4.19.2",
     "typescript": "^5.6.2",
     "vitest": "^2.1.5"
-  },
-  "dependencies": {
-    "postgres": "^3.4.5"
   }
 }

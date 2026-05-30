@@ -35,7 +35,7 @@ vi.mock("@hog/media", () => ({
 // Import AFTER the mock so the pipeline picks up the mocked module.
 async function loadPipeline() {
   return await import(
-    "../apps/worker/src/pipelines/audio"
+    "../src/server/worker/pipelines/audio"
   );
 }
 

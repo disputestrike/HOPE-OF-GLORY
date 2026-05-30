@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { getReleaseReadiness } from "@hog/shared";
-import { localAskHopeAnswer } from "../apps/web/src/lib/local-ask-hope";
-import { crisisDbSeverity, prayerRiskLevel } from "../apps/web/src/lib/ops";
+import { localAskHopeAnswer } from "../src/lib/local-ask-hope";
+import { crisisDbSeverity, prayerRiskLevel } from "../src/lib/ops";
 
 describe("release readiness", () => {
   it("defines exactly twenty launch gates", () => {

@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "incremental": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@hog/ai": ["./src/lib/ai/index.ts"],
+      "@hog/ai/*": ["./src/lib/ai/*"],
+      "@hog/db": ["./src/lib/db/index.ts"],
+      "@hog/db/*": ["./src/lib/db/*"],
+      "@hog/email": ["./src/lib/email/index.ts"],
+      "@hog/email/*": ["./src/lib/email/*"],
+      "@hog/media": ["./src/lib/media/index.ts"],
+      "@hog/media/*": ["./src/lib/media/*"],
+      "@hog/prompts": ["./src/lib/prompts/index.ts"],
+      "@hog/prompts/*": ["./src/lib/prompts/*"],
+      "@hog/publishing": ["./src/lib/publishing/index.ts"],
+      "@hog/publishing/*": ["./src/lib/publishing/*"],
+      "@hog/rag": ["./src/lib/rag/index.ts"],
+      "@hog/rag/*": ["./src/lib/rag/*"],
+      "@hog/safety": ["./src/lib/safety/index.ts"],
+      "@hog/safety/*": ["./src/lib/safety/*"],
+      "@hog/scripture": ["./src/lib/scripture/index.ts"],
+      "@hog/scripture/*": ["./src/lib/scripture/*"],
+      "@hog/shared": ["./src/lib/shared/index.ts"],
+      "@hog/shared/*": ["./src/lib/shared/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules", ".next", "dist"]
+}

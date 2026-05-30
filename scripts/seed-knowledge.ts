@@ -3,8 +3,8 @@
  * has a first-party knowledge base to retrieve from once embeddings are added.
  */
 import postgres from "postgres";
-import { SCROLL_TOPICS } from "../apps/web/src/data/scroll-topics";
-import { HUBS } from "../apps/web/src/data/read-library";
+import { SCROLL_TOPICS } from "../src/data/scroll-topics";
+import { HUBS } from "../src/data/read-library";
 
 const dbUrl = process.env.DATABASE_URL;
 if (!dbUrl) {

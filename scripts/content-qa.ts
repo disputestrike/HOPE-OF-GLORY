@@ -6,9 +6,9 @@ const root = process.cwd();
 
 const files = execFileSync("rg", [
   "--files",
-  "apps/web/src/app",
-  "apps/web/src/components",
-  "apps/web/src/data",
+  "src/app",
+  "src/components",
+  "src/data",
   "content/site-copy",
 ], { cwd: root, encoding: "utf8" })
   .split(/\r?\n/)
