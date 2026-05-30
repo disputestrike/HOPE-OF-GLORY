@@ -61,7 +61,7 @@ export async function POST(request: Request) {
   // Fire-and-forget acknowledgment email.
   void (async () => {
     try {
-      const { ackPrayerRequest } = await import("../../../../../worker/src/agents/contact");
+      const { ackPrayerRequest } = await import("@/server/worker/agents/contact");
       await ackPrayerRequest({
         email: body.email,
         givenName: body.name,

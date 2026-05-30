@@ -21,7 +21,7 @@ export async function POST(request: Request) {
 
   let callerHash = "(unhashed)";
   try {
-    const { hashCaller } = await import("../../../../../../voice/src/pii");
+    const { hashCaller } = await import("@/server/voice/pii");
     callerHash = fromRaw ? hashCaller(fromRaw) : "(no-from)";
   } catch (err) {
     console.warn("[voice] caller hash failed:", err);

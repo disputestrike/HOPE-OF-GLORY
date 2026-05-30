@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default async function AdminDebatePage() {
   // Lazy import to keep edge runtime light
-  const { getRejectionCount } = await import("../../../../../worker/src/agents/tone-classifier");
+  const { getRejectionCount } = await import("@/server/worker/agents/tone-classifier");
   const rejectionCount = await getRejectionCount().catch(() => 0);
 
   const gates = [

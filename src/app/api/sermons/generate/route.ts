@@ -21,7 +21,7 @@ export async function POST(request: Request) {
   if (!admin.ok) return admin.response;
 
   // Lazy import — heavy worker deps loaded only on real call.
-  const { runSermonPipeline } = await import("../../../../../../worker/src/pipelines/sermon");
+  const { runSermonPipeline } = await import("@/server/worker/pipelines/sermon");
 
   const url = new URL(request.url);
   const mode = (url.searchParams.get("mode") as "today" | "next") ?? "next";

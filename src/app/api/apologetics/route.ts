@@ -56,7 +56,7 @@ export async function POST(request: Request) {
   // a person who is actually in danger.
   const crisis = assessCrisis(body.question);
 
-  const { answerObjection } = await import("../../../../../worker/src/agents/apologetics");
+  const { answerObjection } = await import("@/server/worker/agents/apologetics");
   const result = await answerObjection({
     question: body.question,
     audience: body.audience,

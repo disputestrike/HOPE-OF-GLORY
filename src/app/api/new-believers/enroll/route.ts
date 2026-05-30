@@ -18,7 +18,7 @@ export async function POST(request: Request) {
   }
   try {
     const { enrollNewBeliever } = await import(
-      "../../../../../../worker/src/agents/discipleship"
+      "@/server/worker/agents/discipleship"
     );
     await enrollNewBeliever({ email: body.email, givenName: body.givenName });
   } catch (err) {

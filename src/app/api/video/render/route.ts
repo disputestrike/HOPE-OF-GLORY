@@ -13,7 +13,7 @@ export async function POST(request: Request) {
   const sermonId = url.searchParams.get("sermonId");
   if (!sermonId) return NextResponse.json({ error: "sermonId required" }, { status: 400 });
 
-  const { runVideoPipeline } = await import("../../../../../../worker/src/pipelines/video");
+  const { runVideoPipeline } = await import("@/server/worker/pipelines/video");
   try {
     const result = await runVideoPipeline(sermonId);
     return NextResponse.redirect(new URL(`/admin/sermons/${sermonId}`, request.url), { status: 303 });

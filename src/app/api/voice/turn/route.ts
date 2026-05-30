@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "missing fields" }, { status: 400 });
   }
 
-  const { handleTurn } = await import("../../../../../../voice/src/conversation");
+  const { handleTurn } = await import("@/server/voice/conversation");
   const result = await handleTurn({
     callSessionId,
     callerText,

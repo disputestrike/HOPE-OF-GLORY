@@ -151,7 +151,7 @@ export async function POST(request: Request) {
     result = fallbackAskHope(body.question);
   } else {
     try {
-      const { askHope } = await import("../../../../../worker/src/agents/qa");
+      const { askHope } = await import("@/server/worker/agents/qa");
       result = await askHope(body.question);
       if (result.blocked) {
         result = fallbackAskHope(body.question);

@@ -56,7 +56,7 @@ export async function POST(request: Request) {
   let prayerText = fallbackPrayer();
   if (process.env.ANTHROPIC_API_KEY) {
     try {
-      const { generateSermonPrayer } = await import("../../../../../worker/src/agents/prayer");
+      const { generateSermonPrayer } = await import("@/server/worker/agents/prayer");
       prayerText = await generateSermonPrayer({
         title: "A prayer with you today",
         bigIdea: "We bring this need before the Father, through the Son, in the Spirit.",

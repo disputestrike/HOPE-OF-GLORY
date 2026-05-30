@@ -8,7 +8,7 @@
  *   PREFLIGHT_STRICT=true pnpm preflight
  */
 import postgres from "postgres";
-import type { ReleaseReadinessCheck } from "../packages/shared";
+import type { ReleaseReadinessCheck } from "@hog/shared";
 
 type CheckResult = ReleaseReadinessCheck & { source?: "env" | "db" };
 
@@ -64,7 +64,7 @@ function icon(status: CheckResult["status"]): string {
 
 async function main(): Promise<void> {
   if (process.argv.includes("--strict")) process.env.PREFLIGHT_STRICT = "true";
-  const { getReleaseReadiness } = await import("../packages/shared/index");
+  const { getReleaseReadiness } = await import("@hog/shared/index");
   checks.push(
     ...getReleaseReadiness().map((check) => ({
       ...check,

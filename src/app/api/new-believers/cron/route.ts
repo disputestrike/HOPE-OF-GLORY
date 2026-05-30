@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       `).catch(() => [])
     : [];
 
-  const { sendDailyEmail } = await import("../../../../../../worker/src/agents/discipleship");
+  const { sendDailyEmail } = await import("@/server/worker/agents/discipleship");
   let sent = 0;
   for (const s of subs) {
     const result = await sendDailyEmail(s.email).catch(() => ({ ok: false }));

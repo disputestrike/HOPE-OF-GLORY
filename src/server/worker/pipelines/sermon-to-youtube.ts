@@ -22,7 +22,7 @@ import { sql } from "drizzle-orm";
 // because stream owns runtime-only services (OBS scene relay), but we re-use
 // the YouTube auth + uploader logic. The relative path matches the apologetics
 // API route's pattern of reaching across workspaces for pure functions.
-import { uploadVideo } from "../../../stream/src/youtube-upload";
+import { uploadVideo } from "@/server/stream/youtube-upload";
 
 export type SermonToYouTubeResult = {
   videoId: string | null;

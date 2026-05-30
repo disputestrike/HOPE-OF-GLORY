@@ -9,7 +9,7 @@ type Gate = {
 };
 
 export default async function DebateReadinessPage() {
-  const { getRejectionCount } = await import("../../../../../../worker/src/agents/tone-classifier");
+  const { getRejectionCount } = await import("@/server/worker/agents/tone-classifier");
   const rejectionCount = await getRejectionCount().catch(() => 0);
 
   const gates: Gate[] = [
