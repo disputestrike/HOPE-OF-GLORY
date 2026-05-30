@@ -58,6 +58,7 @@ async function testDb(url: string): Promise<void> {
 
 function icon(status: CheckResult["status"]): string {
   if (status === "ok") return "OK";
+  if (status === "pending") return "WAIT";
   if (status === "warn") return "WARN";
   return "FAIL";
 }
@@ -99,7 +100,11 @@ async function main(): Promise<void> {
     process.argv.includes("--strict");
   const failed = checks.filter((check) => check.status === "fail" && (strict || check.requiredForLaunch)).length;
   const warned = checks.filter((check) => check.status === "warn").length;
-  console.log(`${checks.length} checks, ${failed} blocking, ${warned} warnings`);
+  const pendingCount = checks.filter((check) => check.status === "pending").length;
+  const passed = checks.filter((check) => check.status === "ok").length;
+  console.log(
+    `${checks.length} checks · ${passed} ready · ${pendingCount} awaiting key · ${warned} degraded · ${failed} blocking`,
+  );
 
   if (failed > 0) {
     console.error("\nPreflight failed. Fix the blocking release gates before launch.");

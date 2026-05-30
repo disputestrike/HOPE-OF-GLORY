@@ -558,9 +558,14 @@ export default function HomePage() {
               AI is a help, not a head. The Word of God is the Word of God,
               and Christ alone is Lord of the church.
             </p>
-            <Link href="/ai-disclosure" className="btn btn--ghost mt-2">
-              Read our full AI disclosure →
-            </Link>
+            <div className="mt-2 flex flex-wrap gap-3">
+              <Link href="/about/why" className="btn btn--ghost">
+                Why this ministry exists →
+              </Link>
+              <Link href="/ai-disclosure" className="btn btn--ghost">
+                Read our full AI disclosure →
+              </Link>
+            </div>
           </div>
           <div>
             <p className="eyebrow">Support the mission</p>

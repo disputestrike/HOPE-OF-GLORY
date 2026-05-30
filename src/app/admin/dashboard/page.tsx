@@ -70,6 +70,8 @@ export default async function FounderDashboard() {
 
   const failed = readiness.filter((c) => c.status === "fail").length;
   const warned = readiness.filter((c) => c.status === "warn").length;
+  const pending = readiness.filter((c) => c.status === "pending").length;
+  const passed = readiness.filter((c) => c.status === "ok").length;
 
   return (
     <div className="p-10 max-w-7xl">
@@ -106,12 +108,22 @@ export default async function FounderDashboard() {
         <Link href="/admin/release" className="card hover:no-underline">
           <p className="card__eyebrow">Release readiness</p>
           <p className="m-0">
-            <span className="text-2xl" style={{ color: failed > 0 ? "var(--blood-crimson)" : "var(--glory-gold)" }}>
+            <span
+              className="text-2xl"
+              style={{ color: failed > 0 ? "var(--blood-crimson)" : "var(--glory-gold)" }}
+            >
               {failed === 0 ? "READY" : `${failed} blocked`}
             </span>
-            <span className="text-muted text-sm"> · {warned} warnings</span>
+            <span className="text-muted text-sm">
+              {" "}
+              · {passed} ready · {pending} awaiting key
+              {warned > 0 ? ` · ${warned} degraded` : ""}
+            </span>
           </p>
-          <p className="m-0 text-muted text-sm mt-2">20 gates, the canonical definition of go-live.</p>
+          <p className="m-0 text-muted text-sm mt-2">
+            20 gates, the canonical definition of go-live. Pending gates flip
+            green the moment the matching env var lands in Railway.
+          </p>
         </Link>
         <Link href="/admin/spend" className="card hover:no-underline">
           <p className="card__eyebrow">AI spend</p>

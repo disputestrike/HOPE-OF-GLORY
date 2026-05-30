@@ -38,6 +38,7 @@ const sections = [
   {
     heading: "Transparency",
     links: [
+      { href: "/about/why", label: "Why This Ministry" },
       { href: "/beliefs", label: "What We Believe" },
       { href: "/doctrinal-basis", label: "Doctrinal Basis" },
       { href: "/ai-disclosure", label: "AI Disclosure" },

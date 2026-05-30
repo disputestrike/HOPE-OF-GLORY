@@ -2,14 +2,23 @@ import { getReleaseReadiness } from "@hog/shared";
 
 const statusClass = {
   ok: "text-emerald-700 bg-emerald-50 border-emerald-200",
+  pending: "text-slate-700 bg-slate-50 border-slate-200",
   warn: "text-amber-700 bg-amber-50 border-amber-200",
   fail: "text-red-700 bg-red-50 border-red-200",
+} as const;
+
+const statusLabel = {
+  ok: "READY",
+  pending: "AWAITING KEY",
+  warn: "DEGRADED",
+  fail: "BLOCKED",
 } as const;
 
 export default function AdminReleasePage() {
   const checks = getReleaseReadiness();
   const failed = checks.filter((check) => check.status === "fail").length;
   const warned = checks.filter((check) => check.status === "warn").length;
+  const pending = checks.filter((check) => check.status === "pending").length;
   const passed = checks.filter((check) => check.status === "ok").length;
 
   return (
@@ -18,20 +27,26 @@ export default function AdminReleasePage() {
         <p className="eyebrow">Pre-release gate</p>
         <h1 className="m-0">Production readiness</h1>
         <p className="text-muted m-0 mt-3 max-w-readable">
-          These are the twenty release gates for the ministry platform. A green
-          gate means the code path or credential is ready. A yellow gate means
-          the feature degrades safely. A red gate must be fixed before live
-          production traffic.
+          Twenty release gates for the ministry platform. <strong>Green</strong>{" "}
+          means ready. <strong>Slate</strong> means the feature is wired and
+          waiting for a credential — paste the key into Railway and it flips
+          green on next deploy. <strong>Yellow</strong> means a real soft
+          degradation. <strong>Red</strong> blocks production traffic and must
+          be fixed.
         </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+      <section className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
         <div className="card">
-          <p className="card__eyebrow">Passed</p>
+          <p className="card__eyebrow">Ready</p>
           <p className="m-0 text-4xl font-semibold text-emerald-700">{passed}</p>
         </div>
         <div className="card">
-          <p className="card__eyebrow">Warnings</p>
+          <p className="card__eyebrow">Awaiting key</p>
+          <p className="m-0 text-4xl font-semibold text-slate-700">{pending}</p>
+        </div>
+        <div className="card">
+          <p className="card__eyebrow">Degraded</p>
           <p className="m-0 text-4xl font-semibold text-amber-700">{warned}</p>
         </div>
         <div className="card">
@@ -59,8 +74,10 @@ export default function AdminReleasePage() {
                 </td>
                 <td className="p-4 text-sm text-muted capitalize">{check.category}</td>
                 <td className="p-4">
-                  <span className={`inline-flex rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] ${statusClass[check.status]}`}>
-                    {check.status}
+                  <span
+                    className={`inline-flex rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] ${statusClass[check.status]}`}
+                  >
+                    {statusLabel[check.status]}
                   </span>
                 </td>
                 <td className="p-4 text-sm text-muted">{check.detail}</td>
@@ -72,4 +89,3 @@ export default function AdminReleasePage() {
     </div>
   );
 }
-

@@ -39,7 +39,19 @@ export function features(): FeatureFlags {
   };
 }
 
-export type ReadinessStatus = "ok" | "warn" | "fail";
+/**
+ * Readiness status.
+ *
+ *   ok      — passing, ready for production.
+ *   pending — env-dependent step that simply hasn't been configured yet
+ *             (e.g. RESEND_API_KEY not set). Not broken, not degraded —
+ *             just awaiting a key. Rendered as neutral slate in the UI,
+ *             never as yellow. Flips to "ok" the moment the key is set.
+ *   warn    — actually degraded but not launch-blocking. Reserved for
+ *             real soft-failures (rare). Currently unused.
+ *   fail    — launch blocker. Red. Must be fixed before production.
+ */
+export type ReadinessStatus = "ok" | "pending" | "warn" | "fail";
 
 export type ReleaseReadinessCheck = {
   id: string;
@@ -81,6 +93,18 @@ function hasRealDatabaseUrl(): boolean {
   );
 }
 
+/**
+ * Build a readiness check.
+ *
+ * Status rules:
+ *   - ok=true                                     → "ok"
+ *   - ok=false, requiredForLaunch=true, strict    → "fail" (launch blocker)
+ *   - ok=false, otherwise                         → "pending" (awaiting config)
+ *
+ * `strict` means production environment OR PREFLIGHT_STRICT=true. In
+ * non-strict (dev/preview), even launch-required checks render as
+ * "pending" so the dashboard is calm while keys are being gathered.
+ */
 function check(
   id: string,
   label: string,
@@ -90,10 +114,16 @@ function check(
   category: ReleaseReadinessCheck["category"],
   requiredForLaunch = true,
 ): ReleaseReadinessCheck {
+  const strict =
+    process.env.APP_ENV === "production" || process.env.PREFLIGHT_STRICT === "true";
+  let status: ReadinessStatus;
+  if (ok) status = "ok";
+  else if (requiredForLaunch && strict) status = "fail";
+  else status = "pending";
   return {
     id,
     label,
-    status: ok ? "ok" : requiredForLaunch ? "fail" : "warn",
+    status,
     detail: ok ? detailOk : detailMissing,
     category,
     requiredForLaunch,
