@@ -28,7 +28,6 @@
  */
 import { NextResponse } from "next/server";
 import { spawn } from "node:child_process";
-import path from "node:path";
 import { logJobRun } from "@/lib/ops";
 import { requestId } from "@/lib/request-guard";
 
@@ -54,7 +53,10 @@ function s3Configured(): boolean {
 }
 
 async function runPnpmScript(name: string): Promise<{ ok: boolean; code: number; output: string }> {
-  const cwd = path.resolve(process.cwd(), "scripts");
+  // Scripts are defined in the ROOT package.json. After flattening the
+  // monorepo there is no scripts/package.json, so pnpm must run from the
+  // repo root (cwd), not from the scripts/ directory.
+  const cwd = process.cwd();
   return new Promise((resolve) => {
     const child = spawn("pnpm", ["--silent", name], {
       cwd,

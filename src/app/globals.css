@@ -880,6 +880,25 @@
   outline: none;
 }
 
+/* ====================================================================
+   Keyboard focus ring (WCAG 2.4.7). Only shows for keyboard users
+   (:focus-visible), never on mouse click. Gold ring with a navy halo so
+   it stays visible on BOTH the dark navy surfaces and the light cream
+   (theme-warm) care pages. Admin inputs keep their own focus treatment.
+   ==================================================================== */
+:focus-visible {
+  outline: 2px solid var(--glory-gold);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(11, 31, 58, 0.28);
+  border-radius: 2px;
+}
+.admin-input:focus-visible,
+.admin-select:focus-visible,
+.admin-textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(154, 113, 20, 0.14);
+}
+
 .admin-label {
   color: var(--admin-text);
   display: block;

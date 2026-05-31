@@ -4,8 +4,11 @@ import Link from "next/link";
 import { sql } from "drizzle-orm";
 import { marked } from "marked";
 import { EngagementActions } from "@/components/EngagementActions";
+import { ArticleLd, BreadcrumbListLd } from "@/components/StructuredData";
 import { LAUNCH_SERMONS, getStaticSermon } from "@/data/launch-schedule";
 import { optionalDb } from "@/lib/server-db";
+
+const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hopeofglory.ministry";
 
 type SermonRow = {
   id: string;
@@ -125,9 +128,23 @@ export default async function SermonPage({ params }: { params: Params }) {
   if (!s) notFound();
 
   const html = await marked.parse(s.fullText, { async: true });
+  const url = `${BASE}/sermons/${s.slug}`;
 
   return (
-    <article>
+    <>
+      {ArticleLd({
+        headline: s.title,
+        description: s.summary ?? undefined,
+        url,
+        datePublished: "2026-01-01",
+        imageUrl: s.imageUrl ?? undefined,
+      })}
+      {BreadcrumbListLd([
+        { name: "Home", url: `${BASE}/` },
+        { name: "Sermons", url: `${BASE}/sermons` },
+        { name: s.title, url },
+      ])}
+      <article>
       {s.imageUrl ? (
         <div
           className="w-full h-64 md:h-96 bg-navy bg-cover bg-center border-b border-[var(--border-soft)]"
@@ -183,7 +200,8 @@ export default async function SermonPage({ params }: { params: Params }) {
           See our <Link href="/ai-disclosure">AI disclosure</Link>.
         </p>
       </div>
-    </article>
+      </article>
+    </>
   );
 }
 

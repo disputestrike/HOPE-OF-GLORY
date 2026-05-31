@@ -33,6 +33,7 @@
     "seed:knowledge": "tsx scripts/seed-knowledge.ts",
     "backup:db": "tsx scripts/backup-db.ts",
     "backup:cleanup": "tsx scripts/backup-cleanup.ts",
+    "ebook:build": "python scripts/build-ebook.py",
     "worker": "tsx src/server/worker/index.ts",
     "voice": "tsx src/server/voice/index.ts",
     "stream": "tsx src/server/stream/index.ts"

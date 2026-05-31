@@ -10,6 +10,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import type { AgentRequest, AgentResponse } from "../types";
 import { ProviderUnavailable } from "../types";
+import { withBudget } from "../budget";
 
 const DEFAULT_MODEL = process.env.ANTHROPIC_DEFAULT_MODEL ?? "claude-sonnet-4-5";
 
@@ -25,6 +26,13 @@ function client(): Anthropic {
 export async function call(
   req: AgentRequest,
   model: string = DEFAULT_MODEL
+): Promise<AgentResponse> {
+  return withBudget(req.agentName, () => rawCall(req, model));
+}
+
+async function rawCall(
+  req: AgentRequest,
+  model: string
 ): Promise<AgentResponse> {
   const start = Date.now();
   try {

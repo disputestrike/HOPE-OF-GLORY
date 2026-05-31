@@ -1,8 +1,17 @@
 import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 
-const AGENTS_DIR = path.resolve(process.cwd(), "../../packages/prompts/agents");
-const DOCTRINE_DIR = path.resolve(process.cwd(), "../../docs/doctrine");
+/**
+ * Agent prompts and doctrine corpus live inside the (flattened) repo.
+ * The server runs with cwd = repo root (Railway `next start`, tsx scripts,
+ * and Next.js server runtime all satisfy this), so resolve relative to it.
+ *
+ * Override via env in exotic deploy targets where cwd is not the repo root.
+ */
+const AGENTS_DIR =
+  process.env.AGENTS_DIR ?? path.resolve(process.cwd(), "src/lib/prompts/agents");
+const DOCTRINE_DIR =
+  process.env.DOCTRINE_DIR ?? path.resolve(process.cwd(), "docs/doctrine");
 
 export type AgentDefinition = {
   name: string;

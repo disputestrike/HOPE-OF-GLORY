@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { OrganizationLd } from "@/components/StructuredData";
+import { EmailSubscribeForm } from "@/components/EmailSubscribeForm";
 
 export const metadata: Metadata = {
   title: "Hope of Glory Ministry — Filling the earth with His glory",
@@ -237,6 +238,28 @@ export default function HomePage() {
                 Open Daily Faith
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EMAIL CAPTURE — Daily Faith */}
+      <section
+        className="section border-y border-[var(--border-soft)]"
+        style={{ background: "rgba(212, 175, 55, 0.04)" }}
+      >
+        <div className="container-prose">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <p className="eyebrow">Daily Faith by email</p>
+              <h2 className="m-0 mb-4">A verse and a thought, every morning.</h2>
+              <p className="text-muted max-w-readable">
+                Leave your email and receive a short Scripture, a reflection, a
+                prayer, and one step to carry through the day. No noise, no
+                outrage, no selling — and you can stop any time. We will never
+                share your address.
+              </p>
+            </div>
+            <EmailSubscribeForm flow="daily_faith" sourcePage="/" />
           </div>
         </div>
       </section>

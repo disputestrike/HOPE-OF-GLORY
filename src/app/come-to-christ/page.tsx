@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ArticleLd } from "@/components/StructuredData";
+import { EmailSubscribeForm } from "@/components/EmailSubscribeForm";
 
 export const metadata: Metadata = {
   title: "Come to Christ — Give Your Life to Jesus",
@@ -133,6 +134,17 @@ export default function ComeToChristPage() {
               <li><strong className="text-warm">Join a local church.</strong> The Christian life is not lived alone.</li>
               <li><strong className="text-warm">Start the 40-Day Journey.</strong> We'll walk it with you, one day at a time.</li>
             </ul>
+          </section>
+
+          <section className="mb-12">
+            <p className="eyebrow">We'll walk with you</p>
+            <p className="text-muted max-w-readable mb-5">
+              Leave your email and we'll send the 40-Day Journey — one short,
+              Scripture-grounded message a day to help a brand-new follower of
+              Jesus take root. It's free, and you can stop any time. We will
+              never sell your address or pressure you for anything.
+            </p>
+            <EmailSubscribeForm flow="forty_day" sourcePage="/come-to-christ" />
           </section>
 
           <section className="flex flex-col sm:flex-row flex-wrap gap-3 mt-10">

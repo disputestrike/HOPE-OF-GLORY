@@ -10,6 +10,7 @@
 import OpenAI from "openai";
 import type { AgentRequest, AgentResponse } from "../types";
 import { ProviderUnavailable } from "../types";
+import { withBudget } from "../budget";
 
 const DEFAULT_MODEL = "gpt-4.1-mini";
 const EMBEDDING_MODEL =
@@ -27,6 +28,13 @@ function client(): OpenAI {
 export async function call(
   req: AgentRequest,
   model: string = DEFAULT_MODEL
+): Promise<AgentResponse> {
+  return withBudget(req.agentName, () => rawCall(req, model));
+}
+
+async function rawCall(
+  req: AgentRequest,
+  model: string
 ): Promise<AgentResponse> {
   const start = Date.now();
   try {

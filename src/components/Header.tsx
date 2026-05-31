@@ -8,6 +8,7 @@ const primary = [
   { href: "/journey/40-day", label: "40-Day Journey" },
   { href: "/ask", label: "Ask Hope" },
   { href: "/read", label: "Read" },
+  { href: "/apologetics", label: "Apologetics" },
   { href: "/daily-faith", label: "Daily Faith" },
   { href: "/scroll", label: "The Scroll" },
   { href: "/messages", label: "Messages" },

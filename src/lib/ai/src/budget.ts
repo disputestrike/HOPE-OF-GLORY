@@ -17,7 +17,7 @@
  *   AI_BUDGET_ALERT_EMAILS           comma-separated emails for budget alerts
  */
 import { createClient, type RedisClientType } from "redis";
-import type { Provider } from "./types";
+import type { Provider, AgentResponse } from "./types";
 
 // Cost per 1M tokens, rounded up. Update as providers change pricing.
 const PRICING_USD_PER_M = {
@@ -220,6 +220,36 @@ export function shouldAlert(opts: {
     opts.monthlyCap ? opts.monthTotal / opts.monthlyCap : 0,
   );
   return { day, month, pct };
+}
+
+/**
+ * The single choke point for provider spend. Wrap a raw provider call so
+ * that EVERY call — whether via the router or a direct provider.call() from
+ * an agent (doctrine gate, prayer, greek/hebrew, apologetics, translation,
+ * Hope Line) — is gated by the budget BEFORE spending and metered exactly
+ * ONCE after. Throws BudgetExhausted before the call if the cap is hit, so
+ * an exhausted budget never even reaches the provider API.
+ */
+export async function withBudget(
+  agentName: string,
+  raw: () => Promise<AgentResponse>,
+): Promise<AgentResponse> {
+  const budget = await checkBudget();
+  if (!budget.allowed) {
+    throw new BudgetExhausted(
+      budget.reason ?? "daily_cap",
+      budget.dayTotal,
+      budget.monthTotal,
+    );
+  }
+  const res = await raw();
+  void recordSpend({
+    provider: res.provider,
+    agentName,
+    tokensIn: res.tokensIn,
+    tokensOut: res.tokensOut,
+  }).catch(() => undefined);
+  return res;
 }
 
 export class BudgetExhausted extends Error {

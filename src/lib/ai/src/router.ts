@@ -18,7 +18,6 @@ import type {
   TaskType,
 } from "./types";
 import { RateLimited } from "./types";
-import { checkBudget, recordSpend, BudgetExhausted } from "./budget";
 
 const RISK_BY_TASK: Record<TaskType, RiskLevel> = {
   sermon_draft: "high",
@@ -92,32 +91,17 @@ export async function route(req: AgentRequest): Promise<AgentResponse> {
   const risk = riskFor(req.taskType, req.risk);
   const plan = decide(req.taskType, risk);
 
-  // Budget gate — BEFORE the call, not after. If exhausted, do not spend more.
-  const budget = await checkBudget();
-  if (!budget.allowed) {
-    throw new BudgetExhausted(budget.reason ?? "daily_cap", budget.dayTotal, budget.monthTotal);
-  }
-
+  // Budget gate + spend metering now live at the provider boundary
+  // (see withBudget in ./budget), so EVERY call — routed or a direct
+  // provider.call() from an agent — is capped and metered exactly once.
+  // A BudgetExhausted thrown by the primary is NOT a RateLimited, so it
+  // correctly propagates without attempting the fallback.
   try {
-    const response = await callProvider(plan.primary, req);
-    void recordSpend({
-      provider: response.provider,
-      agentName: req.agentName,
-      tokensIn: response.tokensIn,
-      tokensOut: response.tokensOut,
-    }).catch(() => undefined);
-    return response;
+    return await callProvider(plan.primary, req);
   } catch (err) {
     if (err instanceof RateLimited && plan.fallback) {
       console.warn(`[router] ${plan.primary} → ${plan.fallback}`);
-      const fallback = await callProvider(plan.fallback, req);
-      void recordSpend({
-        provider: fallback.provider,
-        agentName: req.agentName,
-        tokensIn: fallback.tokensIn,
-        tokensOut: fallback.tokensOut,
-      }).catch(() => undefined);
-      return fallback;
+      return await callProvider(plan.fallback, req);
     }
     throw err;
   }

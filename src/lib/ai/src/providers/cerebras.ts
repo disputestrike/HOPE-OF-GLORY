@@ -6,6 +6,7 @@ import OpenAI from "openai";
 import { nextHealthyKey, cooldown, trackUsage } from "../key-pool";
 import type { AgentRequest, AgentResponse } from "../types";
 import { RateLimited, ProviderUnavailable } from "../types";
+import { withBudget } from "../budget";
 
 const BASE_URL = process.env.CEREBRAS_BASE_URL ?? "https://api.cerebras.ai/v1";
 const DEFAULT_MODEL = "llama-3.3-70b";
@@ -13,6 +14,13 @@ const DEFAULT_MODEL = "llama-3.3-70b";
 export async function call(
   req: AgentRequest,
   model: string = DEFAULT_MODEL
+): Promise<AgentResponse> {
+  return withBudget(req.agentName, () => rawCall(req, model));
+}
+
+async function rawCall(
+  req: AgentRequest,
+  model: string
 ): Promise<AgentResponse> {
   const key = await nextHealthyKey(req.serviceClass ?? "background");
   const client = new OpenAI({ apiKey: key.apiKey, baseURL: BASE_URL });

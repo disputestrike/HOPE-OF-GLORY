@@ -1,13 +1,14 @@
 /**
  * XML sitemap.
  *
- * Each entry includes an `alternates.languages` map (hreflang scaffold,
- * Phase 12). For now every locale's alternate URL points to the SAME
- * canonical English URL — this is acceptable per Google's hreflang docs
- * as a placeholder while translated content is being produced by the
- * Translation Agent. Once translated pages exist, the alternate URLs
- * here should be rebuilt with `buildLocalizedPath` so each language
- * advertises its own `/{lang}/{path}` URL.
+ * English-only for now. We deliberately do NOT emit per-locale hreflang
+ * alternates here: the `/{lang}` routes currently redirect to English, so
+ * advertising them as translated alternates would be a contradictory
+ * hreflang cluster that hurts crawl quality. The i18n scaffold lives in
+ * `@/lib/i18n` (buildLocalizedPath) and should be re-wired into this file
+ * once real translated routes ship.
+ *
+ * Every URL listed here must resolve to a real, indexable page.
  */
 import type { MetadataRoute } from "next";
 import { HELP_TOPIC_SLUGS } from "@/data/help-topics";
@@ -16,35 +17,9 @@ import { HURTING_HEART_JOURNEY } from "@/data/thirty-day-hurting-heart";
 import { HUBS } from "@/data/read-library";
 import { SCROLL_TOPICS } from "@/data/scroll-topics";
 import { LAUNCH_SERMONS } from "@/data/launch-schedule";
-import { LOCALES, HREFLANG_CODES } from "@/lib/i18n";
+import { BOOKS } from "@/data/books";
 
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hopeofglory.ministry";
-
-type SitemapEntry = MetadataRoute.Sitemap[number];
-
-/**
- * Build the hreflang `alternates.languages` map for a given canonical URL.
- *
- * Placeholder behaviour: every locale's URL is the canonical English URL.
- * When the Translation Agent (Phase 12) ships translated routes, replace
- * the right-hand side with `${BASE}${buildLocalizedPath(locale, path)}`.
- */
-function alternatesFor(canonicalUrl: string): NonNullable<SitemapEntry["alternates"]> {
-  const languages: Record<string, string> = {};
-  for (const locale of LOCALES) {
-    languages[HREFLANG_CODES[locale]] = canonicalUrl;
-  }
-  languages["x-default"] = canonicalUrl;
-  return { languages };
-}
-
-/**
- * Convenience: extend a plain route entry with the alternates block so the
- * existing route array reads cleanly.
- */
-function withAlternates(entry: SitemapEntry): SitemapEntry {
-  return { ...entry, alternates: alternatesFor(entry.url) };
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -85,13 +60,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/apologetics`, priority: 0.8, changeFrequency: "weekly", lastModified },
     { url: `${BASE}/trust-the-scriptures`, priority: 0.8, changeFrequency: "monthly", lastModified },
 
-    // Public content pages
-    { url: `${BASE}/mission`, priority: 0.7, changeFrequency: "yearly", lastModified },
+    // About + transparency pages
+    { url: `${BASE}/about/why`, priority: 0.7, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/beliefs`, priority: 0.7, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/doctrinal-basis`, priority: 0.6, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/community-guidelines`, priority: 0.5, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/crisis-disclaimer`, priority: 0.5, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/ai-disclosure`, priority: 0.6, changeFrequency: "yearly", lastModified },
+    { url: `${BASE}/donation-ethics`, priority: 0.5, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/corrections`, priority: 0.5, changeFrequency: "weekly", lastModified },
     { url: `${BASE}/privacy`, priority: 0.3, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/terms`, priority: 0.3, changeFrequency: "yearly", lastModified },
@@ -100,9 +76,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/give`, priority: 0.6, changeFrequency: "yearly", lastModified },
     { url: `${BASE}/prayer`, priority: 0.8, changeFrequency: "monthly", lastModified },
     { url: `${BASE}/sermons`, priority: 0.8, changeFrequency: "daily", lastModified },
-    { url: `${BASE}/revelation`, priority: 0.7, changeFrequency: "weekly", lastModified },
-    { url: `${BASE}/bible-study`, priority: 0.7, changeFrequency: "weekly", lastModified },
+    { url: `${BASE}/bible-study/plans`, priority: 0.7, changeFrequency: "weekly", lastModified },
     { url: `${BASE}/hope-line`, priority: 0.7, changeFrequency: "monthly", lastModified },
+    { url: `${BASE}/books`, priority: 0.7, changeFrequency: "monthly", lastModified },
   ];
 
   // Dynamic help topics
@@ -158,6 +134,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
   }));
 
+  const bookRoutes: MetadataRoute.Sitemap = BOOKS.map((book) => ({
+    url: `${BASE}/books/${book.slug}`,
+    priority: 0.7,
+    changeFrequency: "monthly" as const,
+    lastModified,
+  }));
+
   return [
     ...staticRoutes,
     ...helpTopicRoutes,
@@ -166,5 +149,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...hurtingHeartRoutes,
     ...scrollRoutes,
     ...sermonRoutes,
-  ].map(withAlternates);
+    ...bookRoutes,
+  ];
 }

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { SiteChrome } from "@/components/SiteChrome";
-import { alternateLinks } from "@/lib/i18n";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -48,7 +47,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Hope of Glory Ministry" }],
   creator: "Hope of Glory Ministry",
   publisher: "Hope of Glory Ministry",
-  alternates: alternateLinks("/"),
+  // NOTE: no blanket `alternates` here. Setting it in the root layout would
+  // force every inheriting page to declare the homepage as its canonical and
+  // advertise 8 "translated" alternates that currently just redirect to
+  // English — an actively harmful, contradictory hreflang cluster. The i18n
+  // scaffold (alternateLinks/buildLocalizedPath) stays ready in @/lib/i18n;
+  // re-wire per-page alternates here once real translated routes ship.
   openGraph: {
     title: "Hope of Glory Ministry",
     description:

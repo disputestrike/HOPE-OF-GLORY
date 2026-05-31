@@ -18,6 +18,7 @@ const sections = [
     links: [
       { href: "/ask", label: "Ask Hope" },
       { href: "/read", label: "Read" },
+      { href: "/books", label: "Free Books" },
       { href: "/daily-faith", label: "Daily Faith" },
       { href: "/scroll", label: "The Scroll" },
       { href: "/trust-the-scriptures", label: "Trust the Scriptures" },
@@ -61,6 +62,44 @@ export function Footer() {
       role="contentinfo"
     >
       <div className="container-prose py-16">
+        {/* Free ebook CTA */}
+        <div
+          className="mb-14 rounded-sm border p-6 md:p-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+          style={{
+            borderColor: "var(--border-soft)",
+            background: "rgba(212, 175, 55, 0.06)",
+          }}
+        >
+          <div className="max-w-prose">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold m-0 mb-2">
+              Free ebook
+            </p>
+            <p
+              className="m-0 mb-1 text-warm"
+              style={{ fontFamily: "var(--font-display)", fontSize: "var(--fs-h3)" }}
+            >
+              I Am He
+            </p>
+            <p className="m-0 text-muted text-sm">
+              How the God of Israel reveals Himself in Jesus the Messiah —
+              tracing &ldquo;I am he&rdquo; from Moses to Isaiah to Christ.
+              Read it free or download the PDF. No email, no charge.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/books/i-am-he" className="btn btn--primary whitespace-nowrap">
+              Read free
+            </Link>
+            <a
+              href="/ebooks/i-am-he-hope-of-glory.pdf"
+              className="btn btn--ghost whitespace-nowrap"
+              download
+            >
+              ↓ Download the ebook
+            </a>
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           {sections.map((section) => (
             <div key={section.heading}>
