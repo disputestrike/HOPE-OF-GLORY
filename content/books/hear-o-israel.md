@@ -53,6 +53,26 @@ This is why the question "who is God?" is never merely intellectual. To know the
 
 The most hopeful thing about the Shema is the word "our." "Yahweh is *our* God." The infinite Creator is not a distant abstraction to be guessed at; He has made Himself known, entered into covenant, and given His name. The rest of this book traces that self-revelation — and it starts with the most famous self-introduction in history, at a burning bush.
 
+## Loved with the whole self
+
+Notice that the Shema does not stop at "Yahweh is one." It immediately commands a response: "You shall love Yahweh your God with all your heart, with all your soul, and with all your might" (Deuteronomy 6:5). The confession of who God is leads straight into the claim God makes on us. The doctrine is not meant to be filed away; it is meant to capture the whole person — the affections ("heart"), the very life ("soul"), and the strength and resources ("might"). Nothing is left over for a rival.
+
+This is why true monotheism is not a cold arithmetic of "one God rather than many," but a jealous love. To say "Yahweh is one" and then divide your heart among a dozen other devotions is to deny the Shema with your life while reciting it with your lips. The prophets called such a divided heart spiritual adultery. The God who is one asks not merely to be believed in but to be loved — wholly, the way He is wholly God.
+
+And here is the mercy hidden in the command: we are made to love something with our whole selves. We will pour out our heart, soul, and might on *something* — a person, a cause, a hunger, an image of ourselves. The Shema does not crush that capacity; it aims it at the only One large enough to receive it without breaking. To love Yahweh with everything is not the loss of the self but its homecoming. Augustine said it best: God has made us for Himself, and our hearts are restless until they rest in Him.
+
+## The God who speaks first
+
+There is a quiet assumption buried in the Shema that is easy to miss, and it overturns most of what people assume about religion. Notice the first word: "*Hear.*" Not "search," not "climb," not "achieve" — *hear.* Israel's faith does not begin with humanity reaching up to find God; it begins with God speaking, and humanity listening. The initiative is His.
+
+This is the great difference between the God of the Bible and the gods of human imagination. The idols must be sought out, flattered, and figured out; the living God *introduces Himself*. He sought Abraham, not the reverse. He came down to a burning bush. He descended on Sinai. He spoke through the prophets. The whole Bible is the record of a God who will not stay hidden:
+
+> "God, having in the past spoken to the fathers through the prophets at many times and in various ways, has at the end of these days spoken to us by his Son." — Hebrews 1:1-2 (WEB)
+
+This means knowing God is not finally a matter of human cleverness. The philosophers can reason their way to the *idea* of a first cause, and that is no small thing (Romans 1 says creation itself testifies to a Creator). But to know God as "*our* God" — by name, in covenant, as a person — we are dependent on His speech. He must tell us who He is, or we will only ever guess. And the staggering claim of the Shema is that He *has* told us. The conversation is already open. Our part is the first word of the creed itself: *hear.*
+
+And what we are told to hear is not a set of abstractions but the name and character of a Person who can be loved. Which raises the next question Moses asked at the bush, and we ask still: *what is His name?*
+
 ---
 
 # Chapter Two — The Name
@@ -73,6 +93,26 @@ Pause on what this implies. A God whose name is "I AM" did not begin. He has no 
 
 Israel held this name in such awe that they would not pronounce it, saying "the LORD" instead. It is the most sacred word in the Hebrew Scriptures. So keep this in mind for later, because it will matter enormously: when the New Testament says God gave Jesus "the name which is above every name" (Philippians 2:9), and applies to Jesus the words Yahweh spoke — that is not a small thing. It is a claim staked on this very name from the bush. But we are getting ahead of ourselves. First we must ask whether this transcendent "I AM" can have anything to do with us at all.
 
+## The name that keeps its word
+
+There is a second layer to the name that is easy to miss. The Hebrew *ehyeh* ("I am" / "I will be") is not only a statement of timeless existence; in its setting it is also a promise. God reveals this name at the very moment He is about to *act* — to come down, hear the cry of slaves, and rescue them. So the name carries the sense: "I am the One who is there, who will be there, who will be what I will be *for you*." The God whose being is self-existent is also the God who binds Himself to a people by covenant and keeps His word.
+
+This is why, when God passes before Moses and proclaims the meaning of His name, it overflows not with abstract metaphysics but with character:
+
+> "Yahweh! Yahweh, a merciful and gracious God, slow to anger, and abundant in loving kindness and truth, keeping loving kindness for thousands, forgiving iniquity and disobedience and sin." — Exodus 34:6-7 (WEB)
+
+That is the content of the Name. The "I AM" is merciful, gracious, patient, faithful, and forgiving. The same passage adds that He "will by no means clear the guilty" — His mercy is not the indulgence of evil. Hold those two together: a God abundant in steadfast love, who also takes sin with deadly seriousness. The whole drama of redemption is the question of how the God of Exodus 34 can be *both* at once — and the answer, the rest of the Bible will say, is a cross. The Name is not a riddle to be solved but a Person to be trusted.
+
+## The name we stopped saying — and the name restored
+
+Something poignant happened to the Name over the centuries. Out of reverence, Israel stopped pronouncing it aloud, substituting *Adonai* ("Lord") whenever they read it. Most English Bibles preserve this by printing "the LORD" in small capitals wherever the Hebrew has YHWH. The intention was holy — to guard the Name from misuse, in keeping with the command, "You shall not misuse the name of Yahweh your God" (Exodus 20:7). But over time the personal name of God receded almost into silence, and "God" can come to feel like a generic title rather than the name of Someone.
+
+This matters for everything that follows, because the prophets promised that one day the Name would be *known* again — not merely spoken, but understood and trusted:
+
+> "Therefore my people shall know my name. Therefore they shall know in that day that I am he who speaks. Behold, it is I." — Isaiah 52:6 (WEB)
+
+A day was coming when God's people would know His name in a new and personal way. And the New Testament makes a breathtaking move: it takes the Greek translation's word for the Name — *Kyrios*, "Lord," the very word that stood in for YHWH — and lavishes it on Jesus. "God highly exalted him, and gave to him the name which is above every name" (Philippians 2:9). The name that Israel would not even pronounce, God places on Jesus, "that at the name of Jesus every knee should bow... and that every tongue should confess that Jesus is Lord" (Philippians 2:10-11). This is not a coincidence of vocabulary. It is the deliberate claim that the long-guarded Name has now been spoken in full — as a Person, with a face. The Name we stopped saying has come to find us.
+
 ---
 
 # Chapter Three — Is God a Man?
@@ -92,6 +132,26 @@ Most striking of all is a recurring figure the Old Testament calls **the Angel o
 ## A nearness the heart longs for
 
 When Jacob wakes from his dream of the ladder he cries, "Surely Yahweh is in this place, and I didn't know it" (Genesis 28:16). That is the ache of the whole Old Testament — the sense that the transcendent God is somehow present, and the longing to truly see Him. The Scriptures keep raising a hope they cannot yet satisfy: that the God who is "I AM" might one day be seen and known, face to face, without anyone being destroyed. That hope is not idle. It is being prepared. But first we must notice something hidden inside the oneness itself.
+
+## "I will dwell among them"
+
+The deepest desire of the God of the Bible is not to stay safely transcendent but to *dwell with* His people. The whole design of the tabernacle flows from one stated purpose:
+
+> "Let them make me a sanctuary, that I may dwell among them." — Exodus 25:8 (WEB)
+
+The infinite Creator, who cannot be contained by the highest heaven (1 Kings 8:27), chooses to pitch a tent in the middle of a camp of former slaves so He can be near them. This is the astonishing pattern of the whole story: not a God who keeps His distance, but a God who keeps coming closer.
+
+Yet there is a barrier, and the Old Testament is honest about it. When Moses asks to see God's glory, the answer is sobering: "You cannot see my face, for man may not see me and live" (Exodus 33:20). The problem is not that God is unwilling to be near, but that we are sinful and He is holy, and holiness is not safe for the unholy. So God draws near *behind a veil*, through sacrifice, in glimpses — His back, not His face; a cloud, not the full blaze. The transcendent God genuinely comes near, but the nearness is always mediated, always pointing beyond itself to a day when the veil might finally be taken away and we could see His face and live. That ache — *to dwell with God and see Him without dying* — is the hunger the rest of the Bible sets out to satisfy. Hold it; it will be answered in a manger and an empty tomb.
+
+## Both at once: high and near
+
+The deepest answer to "Is God a man?" is not a flat "no." It is "No — and yet." For the same Scriptures that put God beyond our reach also insist He stoops to the lowest. Isaiah holds both in a single breath, and it is worth reading slowly:
+
+> "For the high and lofty One who inhabits eternity, whose name is Holy, says: 'I dwell in the high and holy place, with him also who is of a contrite and humble spirit, to revive the spirit of the humble, and to revive the heart of the contrite ones.'" — Isaiah 57:15 (WEB)
+
+Read that again. The One who "inhabits eternity," whose name is "Holy," dwells in "the high and holy place" — *and* with the crushed and lowly. Not instead of His transcendence, but alongside it. This is the signature of the true God: He is most high and most near at once, and His nearness runs not to the proud and self-sufficient but to the broken. "Yahweh is near to those who have a broken heart, and saves those who have a crushed spirit" (Psalm 34:18).
+
+False gods are either far (cold abstractions, deist clockmakers) or near in a debased way (idols you can manage and manipulate). The God of the Bible refuses both errors. He is too holy to be controlled and too loving to stay away. And this is precisely the tension the incarnation resolves: in Jesus, "the high and lofty One who inhabits eternity" came to dwell with the contrite — not by ceasing to be God, but by taking up our nature so that the unapproachable became approachable, and the God no one could see and live became the God a fisherman could lean against at supper. "Is God a man?" The Bible's astonishing answer is that the eternal God *became* one, without ever stopping being God — so that we might live.
 
 ---
 
@@ -115,6 +175,28 @@ This is not a Christian imposition on the text. Ancient Jewish interpreters wres
 
 Then the prophet Daniel sees the curtain pulled back. In heaven, "the Ancient of Days" takes His throne — and then "one like a son of man came with the clouds of the sky," approached the Ancient of Days, and was given "dominion, and glory, and a kingdom, that all the peoples, nations, and languages should serve him" (Daniel 7:13-14). Here are two distinct figures in the one heavenly throne-room, and to the human-yet-heavenly one is given the worship and everlasting kingdom that, by the Shema, belong to God alone. The fullness within the One is coming into focus. The Old Testament has been preparing us, slowly, to meet Him.
 
+## The Word and the Wisdom of God
+
+Two more threads deserve a closer look, because the New Testament will grab both of them. The first is the **Word** of God. Genesis says God *spoke* creation into being — "God said, 'Let there be light,' and there was light" — and the Psalms turn that into a near-personification: "By Yahweh's word the heavens were made, all their army by the breath of his mouth" (Psalm 33:6). God's Word is not mere sound; it is the living agent by which He makes and rules the world. Ancient Jewish translators were so struck by this that, when they rendered the Scriptures into Aramaic, they often spoke of the *Memra* (the "Word") of the Lord as the one who acted, created, and saved — a way of speaking about God's nearness without diminishing His transcendence.
+
+The second thread is **Wisdom**. In Proverbs, Wisdom speaks as a person who was with God before the world began:
+
+> "When he established the heavens, I was there... then I was the craftsman by his side. I was his delight day by day, always rejoicing before him." — Proverbs 8:27, 30 (WEB)
+
+Read it slowly: Wisdom is "by his side," God's delight, a craftsman at creation — distinct enough to be *beside* God, yet so bound to God as to be His own Wisdom. Christians do not claim Proverbs 8 is a bare proof-text for the Son; it is poetry about God's wisdom. But notice the *shape* of the language — a someone, with God, through whom God creates and delights — and then hear how John opens his Gospel: "In the beginning was the Word, and the Word was with God, and the Word was God... All things were made through him" (John 1:1-3). The Word who spoke creation, the Wisdom who was the craftsman beside God — these were never merely figures of speech. They were the shadow of a Person, falling backward across the Hebrew Scriptures from a light that had not yet risen.
+
+## The Angel who is Yahweh
+
+Of all the Old Testament's hints of fullness within the One, the strangest and most insistent is a figure called *the Angel of Yahweh* — and He repays a closer look, because He is plainly not an ordinary angel. Ordinary angels refuse worship and speak *for* God ("thus says the Lord"). This figure receives worship and speaks *as* God, in the first person, while still being somehow distinct from the God who sends Him.
+
+Watch it happen. To Hagar, alone in the desert, "the angel of Yahweh" speaks — and then she names the One who spoke to her *as God Himself*:
+
+> "She called the name of Yahweh who spoke to her, 'You are a God who sees,' for she said, 'Have I even stayed alive after seeing him?'" — Genesis 16:13 (WEB)
+
+At the burning bush, "the angel of Yahweh appeared to him in a flame of fire" (Exodus 3:2) — and then it is *Yahweh* and *God* who speaks from it, saying "I am the God of your father" (Exodus 3:6), and Moses "was afraid to look at God." The Angel and Yahweh are named interchangeably. When Jacob blesses Joseph's sons, he prays to "the God before whom my fathers Abraham and Isaac walked" and "the angel who has redeemed me from all evil" as one and the same (Genesis 48:15-16). When Gideon and later Manoah realize they have seen "the angel of Yahweh" face to face, they cry out in terror that they will die — the dread reserved for seeing *God* (Judges 6:22-23; 13:21-22).
+
+What are we to make of a "messenger" who is both sent by Yahweh and *is* Yahweh, who bears the divine name, receives worship, and forgives or redeems? Ancient readers felt the pressure of it. The pattern does not prove the doctrine of the Trinity by itself — we keep saying so — but it lays the track. It teaches Israel, slowly, that the one God can be present as a distinct *someone* who is fully Himself, can be seen and spoken with, without ceasing to be the unseeable God on the throne. By the time the Word becomes flesh, the category is not foreign. The God who walked as the Angel of Yahweh through the patriarchs' stories was preparing His people for the day He would walk among them as a man.
+
 ---
 
 # Chapter Five — Father, Son, and Holy Spirit
@@ -134,6 +216,22 @@ This is not three gods. That would be tritheism, and it would break the Shema. N
 ## Why the word "Trinity" is not in the Bible — and the reality is
 
 Some object that the word "Trinity" never appears in Scripture. True — and neither does "monotheism," yet the Bible is thoroughly monotheistic. "Trinity" is the church's faithful shorthand for what the Bible everywhere teaches: one God (Deuteronomy 6:4), the Father is God, the Son is God (John 1:1; John 20:28), the Spirit is God (Acts 5:3-4), and they are distinct. The word summarizes the data; it does not invent it. The God who said "let us" in the garden, who appeared as the Angel who is Yahweh, who showed Daniel two thrones, has stepped fully into the light. He is one — and He is fullness of life and love within Himself.
+
+## One God, undivided in work
+
+It helps to see *how* the persons act, because the Bible never shows them working against one another or even merely side by side, like a committee. They act *together*, inseparably, in everything God does. Creation is from the Father, through the Son ("all things were made through him," John 1:3), by the Spirit who hovered over the waters. Salvation is planned by the Father, accomplished by the Son, and applied by the Spirit. Paul can rework the Shema itself around two of the persons without breaking it: "to us there is one God, the Father... and one Lord, Jesus Christ" (1 Corinthians 8:6) — taking the two words of the Shema, "God" and "Lord (Yahweh)," and naming the Father and the Son, while still insisting there is *one*.
+
+This is why the doctrine is not three gods cooperating but one God acting in the fullness of His own life. And it answers the deepest objection of all — *why three?* Because God is love (1 John 4:8), and love requires an object. A solitary single person could not have *been* love before creation; he could only have become loving once he had someone to love. But the triune God did not need to create in order to love, for the Father has eternally loved the Son in the Spirit. "You loved me before the foundation of the world," Jesus prays (John 17:24). The fullness within the One means that love is not something God *does*; it is something God eternally *is*. That is not an abstract puzzle. It is the best news about the universe: at the bottom of all reality is not cold force or lonely power, but self-giving love, older than time.
+
+## The Spirit is God, not God's energy
+
+It is worth pausing on the third person, because the Holy Spirit is the one most often misunderstood — reduced to a force, an influence, an "it." Scripture will not allow it. The Spirit is not God's *energy*; the Spirit is God, a *someone* who can be spoken to, grieved, and lied to. In the early church, when a man named Ananias lied about a gift, Peter's words are decisive:
+
+> "Why has Satan filled your heart to lie to the Holy Spirit...? You haven't lied to men, but to God." — Acts 5:3-4 (WEB)
+
+Read the two sentences together: to lie to the Holy Spirit *is* to lie to God. The equation could not be plainer. And the Spirit acts as only a person can: He "searches all things, yes, the deep things of God" (1 Corinthians 2:10), He speaks ("the Holy Spirit said, 'Set apart for me Barnabas and Saul,'" Acts 13:2), He can be grieved ("don't grieve the Holy Spirit of God," Ephesians 4:30), He intercedes for us "with groanings which can't be uttered" (Romans 8:26). You do not grieve a force or lie to an influence. You grieve a person you have wronged.
+
+This matters intensely for the Christian life, because the Spirit is how the transcendent God comes to dwell *inside* His people — the deepest fulfillment of "I will dwell among them." "Don't you know that you are a temple of God, and that God's Spirit lives in you?" (1 Corinthians 3:16). The God who once filled a tabernacle with cloud and a temple with glory now fills *people* with Himself. The Spirit is not a lesser divine helper but God in His nearest nearness — the same one Yahweh, drawing so close as to take up residence in the human heart.
 
 ---
 
@@ -159,6 +257,24 @@ Either this is blasphemy — giving God's glory to a creature — or it is the u
 
 And notice the reach of it — "all the ends of the earth." The one God is not a tribal deity for one people. He is the Creator of every nation, and His salvation is offered to all. As Paul told the Athenians, "He made from one blood every nation of men to dwell on all the surface of the earth... that they should seek the Lord, if perhaps they might reach out for him and find him, though he is not far from each one of us" (Acts 17:26-27). The Shema's "our God" was always meant to open outward until the whole earth is filled with the knowledge of His glory.
 
+## The jealousy that is love
+
+There is one more word that troubles modern readers: God says He is *jealous*. "You shall not bow yourself down to them, nor serve them, for I, Yahweh your God, am a jealous God" (Exodus 20:5). Jealousy sounds like a flaw — petty, insecure, controlling. But there is a jealousy that is not a vice; it is the proper response of love to betrayal. A husband who felt *nothing* at his wife's unfaithfulness would not be more loving but less. He would be indifferent. God's jealousy is the measure of how real His love is: He will not share the heart that belongs to Him with idols that can only destroy it, any more than a faithful spouse will calmly hand the beloved over to what will ruin them.
+
+This reframes the whole question of God's exclusivity. "Besides me there is no savior" and "I am a jealous God" are not the tyrant's demands; they are the lover's. The prophets press the image relentlessly: idolatry is *adultery*, and the God who pursues His unfaithful people is the wounded but unrelenting husband who will not let them go (see the whole book of Hosea). So when God forbids other gods, He is not protecting His ego; He is protecting *us* — for to worship what cannot save is to give our hearts to what cannot keep them. The first commandment is the first mercy. The God who will not share His glory is the God who will not share *you* with the things that would devour you.
+
+## One door, wide open
+
+People sometimes recoil at the exclusivity: *only one God, only one Savior, only one way?* It can sound narrow. But consider what the alternative would actually mean. If there were many saviors, many of them would be false, and you could not know which lifeline would hold your weight. The Bible's claim is not that God has cruelly limited the exits, but that He has provided a sure one — and flung it wide open to everyone.
+
+For the same prophet who says "besides me there is no savior" issues the most universal invitation in the Old Testament:
+
+> "Look to me, and be saved, all the ends of the earth; for I am God, and there is no other." — Isaiah 45:22 (WEB)
+
+The exclusivity and the welcome are one sentence. *There is no other* — and therefore *all the ends of the earth* may come to this One and be saved. It is one door, but it is wide, and it is open, and no one who comes to it is turned away. The New Testament keeps both halves: "There is salvation in no one else" (Acts 4:12), *and* "whoever calls on the name of the Lord will be saved" (Romans 10:13) — and just before that, "the same Lord is Lord of all, and is rich to all who call on him" (Romans 10:12). No "Jew or Greek," no insider or outsider; the one Savior is rich to *all* who call.
+
+So the question raised by God's oneness is not "why so narrow?" but "will you come to the One who is there?" A single bridge over a chasm is not an insult; it is a rescue, if it is the bridge that holds. The Bible's witness is that this One holds — and that He bids the whole earth cross over.
+
 ---
 
 # Chapter Seven — Knowing God
@@ -182,6 +298,24 @@ Which means the question this whole book has been circling lands, finally, on yo
 You can begin to know Him today. Turn from whatever has held the place that belongs to God alone — that is repentance. Trust the Son in whom the invisible God has drawn near — that is faith. Call on Him, for "everyone who will call on the name of the Lord will be saved" (Romans 10:13). You might pray, simply: *God, I want to know you — the true God, not an idol of my own making. I have given your place to other things, and I turn from them. I trust Jesus, in whom you came near. Make yourself known to me, and be my God.*
 
 The God whose name is "I AM" has been saying, in effect, from the burning bush to the empty tomb: *I am here. I am near. Hear, and live.*
+
+## The Spirit who teaches us to say "Father"
+
+Do not miss how intimate the knowing finally becomes. The God of the burning bush, before whom Moses hid his face, the God whose glory could not be looked upon and lived — this same God, by His Spirit, teaches the people He saves to call Him by the tenderest of names:
+
+> "You received the Spirit of adoption, by whom we cry, 'Abba! Father!' The Spirit himself testifies with our spirit that we are children of God." — Romans 8:15-16 (WEB)
+
+*Abba* is the word of a child to a trusted father — closer to "Papa" than to a formal title. That the transcendent "I AM" should be addressed so by former rebels is the whole distance of the Bible traveled in a single word: from the unapproachable fire of Sinai to a child climbing into a Father's lap. And it is the Spirit — God Himself within us — who makes us able to say it. We do not work our way up to this intimacy; it is given. The doctrine of God, rightly received, does not end in a lecture hall. It ends in a family. The point of knowing who God is, is to come home to Him.
+
+## Where all true theology ends
+
+There is a test for whether you have learned the doctrine of God rightly, and it is not whether you can win a debate. It is whether your knowing turns to *worship*. The apostle Paul, having written the most theologically dense chapters in all his letters — page after page on the nature and ways of God — cannot hold it in. The argument breaks open into song:
+
+> "Oh the depth of the riches both of the wisdom and the knowledge of God! How unsearchable are his judgments, and his ways past tracing out!... For from him and through him and to him are all things. To him be the glory forever! Amen." — Romans 11:33, 36 (WEB)
+
+That is where all true theology ends — not in a conclusion but in a doxology; not "therefore I have figured God out," but "to him be the glory forever." The more truly you come to know this God — one, eternal, holy, near, triune, the only Savior — the smaller you become and the larger He grows, until the only fitting response is to fall down. The theologians who knew God best were not the ones with the cleverest systems but the ones who ended on their faces.
+
+So if this book has done its work, it has not merely filled your mind; it has bent your knee. The knowledge of God is given not to make us experts but to make us worshippers — and one day, to make us see. "Beloved, now we are children of God, and it is not yet revealed what we will be. But we know that when he is revealed, we will be like him; for we will see him just as he is" (1 John 3:2). The ache of Moses, who could see only God's back, and of Jacob, who marveled that God was in that place — that ache will finally be answered. We will see His face, and live.
 
 > "You will seek me, and find me, when you search for me with all your heart." — Jeremiah 29:13 (WEB)
 
