@@ -32,8 +32,8 @@ export const BOOKS: Book[] = [
       "Who is God? A book of discipleship and apologetics on the Shema (“Yahweh is one”), the divine name “I AM” at the burning bush, the plurality the Hebrew Scriptures themselves reveal within the one God, and the triune God made known in Jesus — for the believer, the atheist, the Jewish reader, and the Muslim. Free to read and download.",
     file: "hear-o-israel.md",
     pdf: "/ebooks/hear-o-israel-hope-of-glory.pdf",
-    pages: 15,
-    readingTimeMin: 35,
+    pages: 33,
+    readingTimeMin: 48,
     anchor: {
       ref: "Deuteronomy 6:4 · WEB",
       text: "Hear, Israel: Yahweh is our God. Yahweh is one.",
@@ -123,8 +123,8 @@ export const BOOKS: Book[] = [
       "The cross is the receipt, the blood is the price, and the empty tomb is the proof the payment was accepted. A book on the meaning of the cross — the debt of sin, why blood, the Passover and the cup, the cry of dereliction, Barabbas and the great exchange, “It is finished” (tetelestai, “paid in full”), and the resurrection. Deeply evangelistic, for the believer and the seeker. Free to read and download.",
     file: "the-highest-price.md",
     pdf: "/ebooks/the-highest-price-hope-of-glory.pdf",
-    pages: 17,
-    readingTimeMin: 35,
+    pages: 21,
+    readingTimeMin: 30,
     anchor: {
       ref: "Romans 5:8 · WEB",
       text: "God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
