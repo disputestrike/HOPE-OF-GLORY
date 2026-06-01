@@ -94,8 +94,8 @@ export const BOOKS: Book[] = [
       "Read the Old Testament the way Jesus read it. From the seed of the woman and the offspring of Abraham to Joseph, the Passover lamb, the tabernacle, the Son of David, Melchizedek, the scapegoat, Isaiah 53, and the pierced One of Zechariah — one portrait, drawn over centuries, of a single Person. For the believer, the doubter, and the Jewish reader. Free to read and download.",
     file: "christ-hidden-in-plain-sight.md",
     pdf: "/ebooks/christ-hidden-in-plain-sight-hope-of-glory.pdf",
-    pages: 18,
-    readingTimeMin: 35,
+    pages: 28,
+    readingTimeMin: 40,
     anchor: {
       ref: "Luke 24:27 · WEB",
       text: "Beginning from Moses and from all the prophets, he explained to them in all the Scriptures the things concerning himself.",

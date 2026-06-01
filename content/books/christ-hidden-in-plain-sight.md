@@ -70,6 +70,26 @@ Reading Christ in the Old Testament can be done badly — by force, by allegoric
 
 So let us begin where the Bible begins, with a promise made in the ruins of the first disaster.
 
+## How a type actually works
+
+Before we walk the road, we need one tool in hand, or we will misuse everything that follows. A *type* is a real person, event, or institution in the Old Testament that God designed to prefigure a greater reality in Christ — what the New Testament calls a "shadow." The key word is *shadow*, because it tells us both that the resemblance is real and that the shadow is not the thing itself:
+
+> "These are a shadow of the things to come; but the body is Christ's." — Colossians 2:17 (WEB)
+
+A shadow genuinely corresponds to the object that casts it — a man's shadow is shaped like a man, not a horse. So the types really do resemble Christ; the correspondence is not invented. But a shadow is also thinner than the reality, and it disappears once the substance arrives. That is exactly how the New Testament reads the tabernacle ("a copy and shadow of the heavenly things," Hebrews 8:5) and the law ("a shadow of the good things to come, and not the very image," Hebrews 10:1).
+
+This gives us two guardrails. First, we are not free to find Christ by force in random details; a true type is one the text's own pattern bears and that Scripture confirms. Second, once the substance has come, we do not go back to living in the shadows — the lamb, the priest, the temple have done their work by pointing us to Him. With that tool in hand, we can walk the road safely, watching the shadow take the shape of a man long before the Man arrives.
+
+## You can search the Scriptures and still miss Him
+
+There is a sobering warning attached to this whole way of reading, and Jesus spoke it to the most expert Bible students of His day. The scribes and Pharisees knew the Old Testament by heart — they could recite it, debate it, count its letters — and they missed the One it was about, standing in front of them. Jesus said to their faces:
+
+> "You search the Scriptures, because you think that in them you have eternal life; and these are they which testify about me; yet you will not come to me, that you may have life." — John 5:39-40 (WEB)
+
+Read that carefully, because it is possible to do everything this book recommends — trace the types, master the patterns, admire the portrait — and still never meet the Person. The Pharisees treated the Scriptures as an end in themselves, a body of knowledge to possess, rather than a finger pointing to a Savior to receive. They had the map and refused the journey; they studied the menu and would not eat.
+
+So this book comes with a caution as well as an invitation. The goal is not to make you clever about the Old Testament. The goal is for the portrait to do to you what it did to the disciples on the Emmaus road — to make your heart burn, and to send you running to the risen Christ Himself. Knowledge of the Bible that does not bring you to Jesus has missed the entire point. The Scriptures are the witnesses; He is the One they testify about. Do not stop at the witnesses. Come to Him.
+
 ---
 
 # Chapter Two — The Seed of the Woman
@@ -111,6 +131,26 @@ As the patriarch Jacob blesses his sons, he speaks a strange prophecy over Judah
 
 A ruler is coming from the tribe of Judah to whom the obedience of *the peoples* — the nations — belongs. The seed of the woman, the offspring of Abraham, will be a king from Judah. The portrait is gaining features. Now it needs a face, and the next layer of the Old Testament gives us one — in the most unexpected of brothers.
 
+## "The seed of the woman"
+
+Linger on a strange phrase in that first promise. God says the deliverer will be the offspring "of the woman" (Genesis 3:15). In a world that traced descent through fathers, this is unusual wording — the seed *of the woman*. It hangs in the air for thousands of years until a prophet sharpens it into a sign:
+
+> "Behold, the virgin will conceive, and bear a son, and shall call his name Immanuel." — Isaiah 7:14 (WEB)
+
+A son born of a virgin — "God with us." And the New Testament closes the circuit with a phrase chosen to echo Eden: when the fullness of time came, God sent forth His Son, "born of a woman" (Galatians 4:4). Not "born of a man and a woman," but, pointedly, "born of a woman" — the seed of the woman at last, conceived by the Holy Spirit, entering the human family from the inside to crush the serpent's head from within.
+
+This matters for more than poetry. The deliverer had to be truly one of us — a real human being, the woman's own offspring — to stand in our place and undo what the first man did. "For since death came by man, the resurrection of the dead also came by man" (1 Corinthians 15:21). The seed of the woman is the last Adam, born into our race to win back what the first Adam lost. The promise spoken in the ruins of Eden was waiting for a virgin's "yes" and a manger in Bethlehem.
+
+## The kinsman who buys back
+
+Why did the deliverer have to be born into the family at all — why a *kinsman*? Israel's law gives the answer in a beautiful institution: the *goel*, the kinsman-redeemer. If an Israelite fell into debt or slavery or lost the family land, a near relative had the right and the duty to step in and "redeem" — to pay the price and buy back what was lost (Leviticus 25:47-49). The redeemer had to be a *relative*; a stranger could not do it. The book of Ruth turns this into a love story: Boaz, the kinsman-redeemer, buys back the lost inheritance and takes the destitute widow Ruth as his bride — and from that union comes King David, and in time, the Messiah.
+
+This is why the seed had to be "born of a woman," one of our own blood. We had sold ourselves into slavery to sin and forfeited our inheritance, and only a kinsman could buy us back. So the eternal Son became our relative — "he himself in the same way partook of" flesh and blood, "that through death he might... deliver" us (Hebrews 2:14-15). And from the depth of his suffering, Job had already cried out in hope of exactly such a Redeemer:
+
+> "But as for me, I know that my Redeemer lives. In the end, he will stand upon the earth. After my skin is destroyed, then I will see God in my flesh." — Job 19:25-26 (WEB)
+
+"My Redeemer lives... I will see God in my flesh." Job, in his ash heap, was reaching for a living Kinsman-Redeemer who would one day stand upon the earth — and would let him see God. The seed of the woman is that Redeemer: near enough to be our brother, able to pay the price, willing to take the ruined and the widowed as His own bride.
+
 ---
 
 # Chapter Three — Joseph, the Rejected Brother Who Saves
@@ -139,6 +179,14 @@ This is the logic of the cross written centuries early. Wicked human hands do th
 Notice what is happening across these chapters. Long before there is a doctrine of atonement, the Bible is teaching its readers a *shape* — the shape of a beloved son, rejected by his own, descending into a pit and a prison, raised to a throne, and using his exaltation to forgive and feed the very people who betrayed him. By the time Jesus arrives, the shape is familiar to anyone soaked in Scripture. He does not break the pattern. He fulfills it.
 
 The Old Testament keeps doing this — teaching us the melody so that we will recognize the song when the singer finally comes. The next layer teaches it through blood.
+
+## The stone the builders rejected
+
+Joseph is not the only rejected-deliverer in the pattern; he is one note in a chord the whole Old Testament keeps striking. Moses, too, was rejected by his own people before he saved them — Stephen makes the point pointedly: "This Moses, whom they refused, saying, 'Who made you a ruler and a judge?' — God has sent him as both ruler and deliverer" (Acts 7:35). Rejection, then deliverance: it happens again and again, until a psalm turns it into a proverb about a stone:
+
+> "The stone which the builders rejected has become the head of the corner. This is Yahweh's doing. It is marvelous in our eyes." — Psalm 118:22-23 (WEB)
+
+The builders — the ones whose job is to know which stones matter — throw one aside as worthless, and it turns out to be the cornerstone, the very stone the whole building depends on. Jesus quoted this verse about Himself at the climax of His conflict with the religious leaders (Matthew 21:42), and the apostles made it a centerpiece of their preaching: "He is 'the stone which was regarded as worthless by you, the builders, which has become the head of the corner'" (Acts 4:11). The pattern set in Joseph — rejected by his brothers, exalted to save them — is the shape of the Messiah Himself: "He came to his own, and those who were his own didn't receive him" (John 1:11), and that very rejection became the world's salvation. The builders threw Him away. God made Him the cornerstone.
 
 ---
 
@@ -174,6 +222,22 @@ The serpent — the symbol of the curse from Genesis 3 — is lifted up, and the
 
 The portrait now has blood in it, and a way of salvation: a substitute, a lifted-up cure, a people redeemed not by effort but by faith. Next the Old Testament builds Him a house — and shows us it was only ever a model.
 
+## The greater Exodus
+
+The Exodus was so clearly the pattern of salvation that the prophets began to speak of a *new* and greater Exodus still to come — and the Gospels deliberately frame Jesus' death as exactly that. On the Mount of Transfiguration, when Moses and Elijah appear with Jesus, Luke tells us precisely what they discussed:
+
+> "[They] appeared in glory, and spoke of his departure, which he was about to accomplish at Jerusalem." — Luke 9:31 (WEB)
+
+The word translated "departure" is, in the Greek, *exodos* — His "exodus." Moses, who led the first Exodus, stands beside Jesus and speaks of the greater one Jesus is about to accomplish at Jerusalem. The first Exodus brought Israel out of slavery to Pharaoh through the blood of a lamb and the waters of the sea; the new Exodus would bring a people out of slavery to sin and death through the blood of *the* Lamb and the waters of a borrowed tomb. Isaiah had promised it — a second, greater rescue surpassing the first (Isaiah 43:16-19) — and Jesus walked into Jerusalem at Passover to lead it. To read the Exodus rightly is to see it leaning forward, the whole time, toward a cross and an empty grave.
+
+## "Out of Egypt I called my son"
+
+There is a phrase about the Exodus that the New Testament picks up in a way that, at first, looks like a stretch — until you see the pattern. Looking back on the Exodus, God said through Hosea:
+
+> "When Israel was a child, then I loved him, and called my son out of Egypt." — Hosea 11:1 (WEB)
+
+In Hosea this plainly means *Israel* — God's "son" (Exodus 4:22) — brought out of Egypt. Yet Matthew quotes it of the child Jesus, carried to Egypt to escape Herod and then brought back: "that it might be fulfilled which was spoken by the Lord through the prophet, saying, 'Out of Egypt I called my son'" (Matthew 2:15). Is Matthew misusing the verse? No — he has grasped something profound: *Jesus is the true Israel.* Where the nation God called His "son" failed in the wilderness, grumbling and rebelling, Jesus, the true Son, retraces Israel's steps and succeeds — driven into the wilderness, tested forty days, refusing the rebellion Israel committed. He is everything Israel was meant to be and was not. So Israel's own history becomes prophetic: the son called out of Egypt, the people passed through the waters, the nation tested in the desert — all of it was a shadow of the true Son who would relive and redeem the whole story. To read Israel's history rightly is to watch it rehearse, in advance, the life of her Messiah.
+
 ---
 
 # Chapter Five — Moses, the Tabernacle, and the Pattern of Heaven
@@ -202,6 +266,14 @@ A prophet "like Moses" was coming, and Israel was to listen to *Him*. The New Te
 
 The portrait now has a temple, a torn veil, and a mediator greater than Moses. Next the Old Testament gives Him a crown.
 
+## Bread, water, and the Rock that followed
+
+The wilderness itself was a portrait gallery. Israel ate bread from heaven each morning — manna — and drank water from a struck rock, and the New Testament reads both as shadows of Christ. Jesus took the manna and made it about Himself: "I am the bread of life... the bread which comes down out of heaven, that anyone may eat of it and not die" (John 6:48-50). And Paul, astonishingly, identifies the rock that gave water in the desert as Christ Himself:
+
+> "[They] all drank the same spiritual drink. For they drank of a spiritual rock that followed them, and the rock was Christ." — 1 Corinthians 10:4 (WEB)
+
+The rock had to be *struck* before the water flowed (Exodus 17:6) — and when, later, Moses struck it a second time instead of merely speaking to it, his disobedience kept him from the Promised Land, because he marred the picture: the Rock is struck *once*, and thereafter the water flows freely to all who ask. Christ, the true Rock, was struck once at Calvary, and from His pierced side flowed the living water for a thirsty world. Bread for the hungry, water for the parched, light in the pillar of fire by night — at every point of need in the wilderness, God was sketching the Christ who would one day say, "If anyone is thirsty, let him come to me and drink" (John 7:37). The desert was full of Him.
+
 ---
 
 # Chapter Six — The King: David, Goliath, and the Son of David
@@ -229,6 +301,24 @@ There is even a curious geographical thread: David takes the head of the Philist
 David himself wrote something that Jesus used to stump the experts. In Psalm 110, David writes, "Yahweh says to my Lord, 'Sit at my right hand, until I make your enemies your footstool'" (Psalm 110:1). Jesus asked the teachers: if the Messiah is merely David's son, why does David call Him "my Lord"? (Matthew 22:41-46). The answer the Old Testament was driving toward is that the Son of David is also David's Lord — the human king who is somehow also divine. The crown the Old Testament forges for the Messiah is too heavy for a merely human head.
 
 The portrait now wears David's crown. But there is one more layer — the deepest and most painful — where the Old Testament shows the King must first be a Lamb, a Priest, and a pierced Shepherd. To that we now turn.
+
+## The Good Shepherd the prophets promised
+
+David was the shepherd-king — taken "from following the sheep" to shepherd Israel (2 Samuel 7:8) — but Israel's later kings shepherded badly, scattering and fleecing the flock. So God spoke through Ezekiel a promise with two halves that should not fit together, yet do. First, *God Himself* would come to shepherd His people:
+
+> "I myself will be the shepherd of my sheep... I will seek that which was lost, and will bring back that which was driven away, and will bind up that which was broken." — Ezekiel 34:15-16 (WEB)
+
+And second, in the very same passage, God promises to set over them "one shepherd, my servant David" (Ezekiel 34:23) — a coming son of David who would shepherd them. So which is it: God Himself, or the Son of David? The answer, when He came, was *both at once.* Jesus, the Son of David, stood up and said, "I am the good shepherd. The good shepherd lays down his life for the sheep" (John 10:11) — taking up the very promise God had made about *Himself.* The shepherd-king of Bethlehem was a shadow of a greater Shepherd-King, who is both David's son and David's Lord, God come to seek the lost sheep in person. The crown the Old Testament forges for the Messiah keeps turning out to fit only the head of one who is both man and God.
+
+## The king who would also suffer
+
+David gives us more than a royal line; he gives us, in his own psalms, the voice of a suffering anointed one — and the New Testament hears the Messiah speaking through him. David, hunted and betrayed though innocent, wrote songs of anguish that reach far beyond his own experience. Psalm 22 — "My God, my God, why have you forsaken me?... they have pierced my hands and feet" — describes a death by crucifixion a thousand years before Jesus and centuries before the practice existed. Psalm 16 declares, "you will not... allow your holy one to see corruption" — which Peter says David could not have meant of himself (David's tomb was right there), but of the Messiah's resurrection (Acts 2:29-31).
+
+And David's greatest psalm about the King is one in which the King is also a *priest forever* and David's own *Lord*:
+
+> "Yahweh says to my Lord, 'Sit at my right hand, until I make your enemies your footstool for your feet.'... Yahweh has sworn... 'You are a priest forever in the order of Melchizedek.'" — Psalm 110:1, 4 (WEB)
+
+A King at God's right hand whom David calls "my Lord," and a King who is also an eternal Priest — Jesus pressed this very psalm on the experts (Matthew 22:41-45), and they could not answer. The shepherd-king of Bethlehem foreshadowed a King who would reign by first being pierced, who would conquer His enemies by dying for them, and who would wear both crown and priestly robe. David sang of his own sufferings, and in them the Spirit was sketching the sufferings of great David's greater Son.
 
 ---
 
@@ -266,6 +356,28 @@ Finally, the prophet Daniel sees the end of the story. In a night vision he watc
 
 This was Jesus' favorite title for Himself — "the Son of Man" — and at His trial He claimed Daniel's vision outright: "you will see the Son of Man sitting at the right hand of Power, and coming with the clouds of the sky" (Mark 14:62), for which He was condemned. The rejected Lamb and the enthroned Son of Man are the same person. The story that began with a promise to a serpent ends with a kingdom that never ends.
 
+## The Branch: priest and king in one
+
+The prophets gave the coming One a quiet, recurring title: the **Branch** — a shoot growing up from the felled stump of David's fallen dynasty. And what they said about this Branch gathers the whole portrait into one figure. Zechariah is told to crown the high priest Joshua as a living sign, and to say:
+
+> "Behold, the man whose name is the Branch... he shall build Yahweh's temple. He shall bear the glory, and shall sit and rule on his throne. He shall be a priest on his throne." — Zechariah 6:12-13 (WEB)
+
+"A priest on his throne." In Israel, this was unthinkable — the kings came from Judah, the priests from Levi, and no one could hold both offices; King Uzziah was struck with leprosy for daring to enter the priest's role (2 Chronicles 26:16-21). Yet the Branch would be *both* — king and priest at once, ruling from a throne and ministering at an altar. Only one figure in all of Scripture unites the two: the King after the order of Melchizedek, who is both Son of David and great High Priest. Jeremiah names this Branch with a name that says it all:
+
+> "I will raise to David a righteous Branch... and this is his name by which he will be called: Yahweh our righteousness." — Jeremiah 23:5-6 (WEB)
+
+"Yahweh our righteousness" — the Branch is not only David's heir but bears the divine name, and *is* the righteousness His people need. King, Priest, and the Lord our righteousness, in one Person. The stump looked dead; David's line seemed finished in exile. But from the felled stump a Branch grew, and His name is Jesus.
+
+## The new heart the prophets promised
+
+The portrait is not only of a person; it is of what that person would *accomplish* — and the prophets, gazing forward, saw the deepest need of all answered. The problem was never merely that Israel lacked good laws; it was that the human heart itself was bent. Outward rules cannot fix an inward rebellion. So the prophets promised something only God could do: a new covenant that would change the heart from the inside.
+
+> "I will make a new covenant... I will put my law in their inward parts, and write it in their heart... for I will forgive their iniquity, and I will remember their sin no more." — Jeremiah 31:31-34 (WEB)
+
+> "I will give you a new heart, and I will put a new spirit within you. I will take away the stony heart out of your flesh, and I will give you a heart of flesh." — Ezekiel 36:26 (WEB)
+
+A new heart, a new spirit, the law written within, sins remembered no more — this is the summit of the Old Testament's longing, and it could not be reached by the old system of stone tablets and animal blood. It waited for the One who, on the night before He died, lifted a cup and said, "This cup is the new covenant in my blood" (Luke 22:20). The whole portrait — seed, lamb, priest, king, suffering servant — converges not merely on a figure to admire but on a salvation to receive: forgiveness that is final, and a heart made new by His Spirit. The Christ hidden in the Old Testament came to do the one thing the Old Testament could only promise — to write God's life on the human heart.
+
 ## The portrait, unveiled
 
 Step back and look at the finished portrait. The seed of the woman who crushes the serpent. The offspring of Abraham who blesses the nations. The beloved son carrying the wood up the mountain. The rejected brother who is sold for silver and saves those who betrayed him. The Passover Lamb whose blood turns away death. The serpent lifted up so the dying can look and live. The tabernacle's torn veil. The prophet greater than Moses. The Son of David with an everlasting throne. The Priest after the order of Melchizedek. The scapegoat who carries sin away. The Servant pierced for our transgressions. The pierced One whom Yahweh calls "me." The Son of Man on the clouds.
@@ -302,6 +414,14 @@ A careful question. The Hebrew word *zera* ("seed/offspring") is grammatically c
 
 Several honest reasons. First, the portrait had two faces the experts had trouble holding together — a conquering King *and* a suffering Servant — and many expected only the King, so a crucified Messiah looked like a contradiction (it took the resurrection, and Jesus' own teaching on the Emmaus road, to see that the Servant had to suffer *before* He reigned). Second, recognition is not merely intellectual; Scripture says spiritual sight is needed to see spiritual things. And third — the New Testament is honest that *many did* believe: the first thousands of Christians were Jews who knew these Scriptures intimately and became convinced precisely *because* of them (Acts 2–4). Belief and unbelief both ran through Israel, as they run through every people.
 
+## "If it's all in the Old Testament, why bother with the Old Testament now that Jesus has come?"
+
+Because the Old Testament is not scaffolding to be torn down once the building stands; it is the very portrait that shows you who the building's Architect is. Jesus did not come to *replace* those Scriptures but to *fulfill* them — "I didn't come to destroy, but to fulfill" (Matthew 5:17) — and to throw them away is to lose two-thirds of God's self-revelation and most of the depth of the gospel. You cannot fully understand the Lamb without the Passover, the cross without the sacrifices, the kingdom without David, the new covenant without Jeremiah. The earliest Christians had *only* the Old Testament as their Bible, and they found Christ on every page. We read it not to go back into the shadows, but because the shadows make the substance unmistakable — and because the same God who spoke "at many times and in various ways" through the prophets has "at the end of these days spoken to us by his Son" (Hebrews 1:1-2). To love Jesus is to love the Scriptures that are "able to make you wise for salvation through faith" in Him (2 Timothy 3:15).
+
+## "Why all the shadows? Why didn't God just send Jesus at the beginning?"
+
+For the same reason a great teacher does not begin with the final, hardest truth, but prepares the class to receive it. The centuries of types and promises were God teaching the world its vocabulary — *sacrifice, covenant, kingship, priesthood, lamb, exodus, atonement* — so that when the reality arrived, His people would have eyes to recognize Him and minds to understand what He had done. Drop a stranger into the last act of a play and he is lost; the long buildup is what makes the climax land. The shadows also proved the plan was no improvisation: a salvation foretold across two thousand years, in dozens of authors who could not have colluded, all converging on one Person, is not an accident patched together after a failure — it is a design unfolding on purpose. The wait was not God being slow. It was God being a patient teacher, drawing the portrait line by line, so that when at last He said, "Behold," we would know the face.
+
 ---
 
 ## Appendix — The Portrait in Key Texts
@@ -330,6 +450,10 @@ A reference table of the threads traced in this book.
 ## Conclusion — Come and See
 
 The Old Testament is not a closed museum. It is a portrait gallery, and every hall leads to the same face. Jesus did not abolish the Hebrew Scriptures; He fulfilled them — "I didn't come to destroy, but to fulfill" (Matthew 5:17). He is the seed, the lamb, the temple, the prophet, the king, the priest, and the pierced Shepherd, gathered into one life, one death, and one resurrection.
+
+Walk back down the gallery one last time. The covering God provided in Eden and the Redeemer Job longed to see "in my flesh." The seed of the woman, born of a virgin, the kinsman who buys us back. The beloved son carrying the wood up Moriah, and the rejected brother sold for silver who saves those who betrayed him — the very stone the builders threw away, become the cornerstone. The Passover Lamb on the door and the true Son called out of Egypt who succeeds where Israel failed. The Rock struck in the wilderness, the bread from heaven, the tabernacle's torn veil, the prophet greater than Moses. The shepherd-king of Bethlehem who is also the Good Shepherd God promised to be Himself; the suffering anointed of the Psalms; the Branch who is priest on his throne, named "Yahweh our righteousness." The Priest after Melchizedek, the scapegoat who carries sin away, the Servant pierced for our transgressions, the pierced One whom Yahweh calls "me," the Son of Man on the clouds — and, through it all, the promise of a new covenant and a new heart that only He could give.
+
+It is one face, drawn over two thousand years by forty authors who could not have conspired, and every line was in place before He was born. That is not the work of coincidence; it is the signature of one Author behind the whole Book. And it means the Old Testament was never merely Israel's national history or a collection of moral tales. It was a long, patient unveiling — God teaching the world to recognize His Son.
 
 If you are a believer, read your Old Testament again with these eyes, and let your heart burn. If you are still weighing it, do what the first disciples did — bring your doubt and "come and see" (John 1:46). And if you are ready, the whole portrait has only ever been inviting you to one thing:
 
