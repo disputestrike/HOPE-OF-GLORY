@@ -72,30 +72,31 @@ export function Footer() {
         >
           <div className="max-w-prose">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold m-0 mb-2">
-              Free ebook
+              Free books
             </p>
             <p
               className="m-0 mb-1 text-warm"
               style={{ fontFamily: "var(--font-display)", fontSize: "var(--fs-h3)" }}
             >
-              I Am He
+              Read the long form — free.
             </p>
             <p className="m-0 text-muted text-sm">
-              How the God of Israel reveals Himself in Jesus the Messiah —
-              tracing &ldquo;I am he&rdquo; from Moses to Isaiah to Christ.
-              Read it free or download the PDF. No email, no charge.
+              Full-length discipleship and apologetics — <em>Hear, O Israel</em>,{" "}
+              <em>I Am He</em>, <em>Christ Hidden in Plain Sight</em>, and{" "}
+              <em>The Highest Price and the Greatest Love</em>. Read online or
+              download the PDF. No email, no charge.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/books/i-am-he" className="btn btn--primary whitespace-nowrap">
-              Read free
+            <Link href="/books" className="btn btn--primary whitespace-nowrap">
+              Browse free books
             </Link>
             <a
               href="/ebooks/i-am-he-hope-of-glory.pdf"
               className="btn btn--ghost whitespace-nowrap"
               download
             >
-              ↓ Download the ebook
+              ↓ Download “I Am He”
             </a>
           </div>
         </div>

@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-Build the free PDF ebook from a Markdown manuscript.
+Build free PDF ebooks from every Markdown manuscript in content/books/.
 
-Input:  content/books/i-am-he.md
-Output: public/ebooks/i-am-he-hope-of-glory.pdf
+For each content/books/<slug>.md, writes public/ebooks/<slug>-hope-of-glory.pdf.
+Title, subtitle, and the cover verse(s) are read from the manuscript's front
+matter (the first `# `, `### `, and `> ` lines), so adding a new book is just
+dropping a new .md file and re-running:
 
-Pure-Python (reportlab) so it runs without a browser or pandoc. Greek renders
-natively (LTR) in Arial; Hebrew runs are stripped of niqqud and reversed so
-short phrases display in correct visual right-to-left order in an LTR engine.
-The scholarly transliteration that always accompanies the Hebrew carries the
-vowel points, so nothing is lost. The web reader renders full pointed Hebrew.
+    pnpm ebook:build
 
-Usage:  python scripts/build-ebook.py
+Pure-Python (reportlab). Greek renders natively (LTR) in Arial; Hebrew runs are
+stripped of niqqud and reversed for correct visual right-to-left order, with the
+scholarly transliteration carrying the vowels.
 """
+import glob
 import os
 import re
 import sys
@@ -30,9 +31,8 @@ from reportlab.platypus import (
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "content", "books", "i-am-he.md")
+BOOKS_DIR = os.path.join(ROOT, "content", "books")
 OUT_DIR = os.path.join(ROOT, "public", "ebooks")
-OUT = os.path.join(OUT_DIR, "i-am-he-hope-of-glory.pdf")
 
 NAVY = HexColor(0x0B1F3A)
 GOLD = HexColor(0xD4AF37)
@@ -52,13 +52,11 @@ pdfmetrics.registerFontFamily(
     italic="Arial-Italic", boldItalic="Arial-BoldItalic",
 )
 
-HEBREW = re.compile(r"[֐-׿֑-ׇ]")
 NIQQUD = re.compile(r"[֑-ׇ]")
 HEBREW_RUN = re.compile(r"[֐-׿][֐-׿ ‏‎]*")
 
 
 def fix_rtl(text: str) -> str:
-    """Strip niqqud and reverse Hebrew runs for correct visual order in LTR."""
     def repl(m: "re.Match[str]") -> str:
         run = NIQQUD.sub("", m.group(0))
         return run[::-1]
@@ -70,12 +68,10 @@ def _esc(s: str) -> str:
 
 
 def inline(text: str) -> str:
-    """Convert markdown emphasis to reportlab mini-markup with guaranteed
-    well-nested tags (a stack-based toggler, not a regex). Handles arbitrary
-    interleaving like ``**bold *italic***`` that breaks naive substitution."""
+    """Markdown emphasis -> reportlab markup, well-nested via a stack toggler."""
     text = fix_rtl(text)
-    out: list[str] = []
-    stack: list[str] = []
+    out: list = []
+    stack: list = []
     i, n = 0, len(text)
     while i < n:
         ch = text[i]
@@ -84,9 +80,8 @@ def inline(text: str) -> str:
                 marker, i = "b", i + 2
             else:
                 marker, i = "i", i + 1
-            tag = "b" if marker == "b" else "i"
             if marker in stack:
-                reopen: list[str] = []
+                reopen = []
                 while stack:
                     t = stack.pop()
                     out.append(f"</{t}>")
@@ -97,8 +92,8 @@ def inline(text: str) -> str:
                     stack.append(t)
                     out.append(f"<{t}>")
             else:
-                stack.append(tag)
-                out.append(f"<{tag}>")
+                stack.append(marker)
+                out.append(f"<{marker}>")
         else:
             j = i
             while j < n and text[j] != "*":
@@ -107,11 +102,9 @@ def inline(text: str) -> str:
             i = j
     while stack:
         out.append(f"</{stack.pop()}>")
-    s = "".join(out)
-    return s.replace("—", "&mdash;").replace("–", "&ndash;")
+    return "".join(out).replace("—", "&mdash;").replace("–", "&ndash;")
 
 
-# ---- styles ----
 def style(name, **kw):
     base = dict(fontName="Arial", fontSize=11, leading=16.5, textColor=INK,
                 spaceAfter=9, alignment=TA_LEFT)
@@ -123,13 +116,11 @@ S = {
     "title": style("title", fontName="Arial-Bold", fontSize=30, leading=34,
                    textColor=NAVY, alignment=TA_CENTER, spaceAfter=14),
     "subtitle": style("subtitle", fontName="Arial-Italic", fontSize=14.5,
-                      leading=20, textColor=MUTED, alignment=TA_CENTER,
-                      spaceAfter=22),
-    "cover_meta": style("cover_meta", fontName="Arial", fontSize=11,
-                        leading=16, textColor=MUTED, alignment=TA_CENTER),
+                      leading=20, textColor=MUTED, alignment=TA_CENTER, spaceAfter=22),
+    "cover_meta": style("cover_meta", fontName="Arial", fontSize=11, leading=16,
+                        textColor=MUTED, alignment=TA_CENTER),
     "cover_verse": style("cover_verse", fontName="Arial-Italic", fontSize=13,
-                         leading=19, textColor=NAVY, alignment=TA_CENTER,
-                         spaceAfter=8),
+                         leading=19, textColor=NAVY, alignment=TA_CENTER, spaceAfter=4),
     "h1": style("h1", fontName="Arial-Bold", fontSize=22, leading=27,
                 textColor=NAVY, spaceBefore=8, spaceAfter=14),
     "h2": style("h2", fontName="Arial-Bold", fontSize=17, leading=22,
@@ -139,14 +130,15 @@ S = {
     "h4": style("h4", fontName="Arial-Bold", fontSize=11.5, leading=16,
                 textColor=INK, spaceBefore=8, spaceAfter=4),
     "body": style("body"),
-    "quote": style("quote", fontName="Arial-Italic", fontSize=11.5,
-                   leading=17, textColor=NAVY, leftIndent=18, rightIndent=10,
-                   spaceBefore=4, spaceAfter=10),
+    "quote": style("quote", fontName="Arial-Italic", fontSize=11.5, leading=17,
+                   textColor=NAVY, leftIndent=18, rightIndent=10, spaceBefore=4, spaceAfter=10),
     "li": style("li", leftIndent=16, spaceAfter=5),
     "cell": style("cell", fontSize=9.5, leading=13, spaceAfter=0),
     "cellh": style("cellh", fontName="Arial-Bold", fontSize=9.5, leading=13,
                    textColor=HexColor(0xFFFFFF), spaceAfter=0),
 }
+
+_running_title = "Hope of Glory Ministry"
 
 
 def header_footer(canvas, doc):
@@ -154,131 +146,49 @@ def header_footer(canvas, doc):
     canvas.setFont("Arial", 8)
     canvas.setFillColor(MUTED)
     if doc.page > 1:
-        canvas.drawString(inch, 0.6 * inch, "I AM HE")
-        canvas.drawRightString(LETTER[0] - inch, 0.6 * inch,
-                               "Hope of Glory Ministry")
+        canvas.drawString(inch, 0.6 * inch, _running_title)
+        canvas.drawRightString(LETTER[0] - inch, 0.6 * inch, "Hope of Glory Ministry")
         canvas.drawCentredString(LETTER[0] / 2, 0.6 * inch, str(doc.page))
     canvas.restoreState()
 
 
-def parse(md: str):
-    flow = []
-    lines = md.split("\n")
-    i = 0
-    # ---- cover ----
-    flow.append(Spacer(1, 1.6 * inch))
-    flow.append(Paragraph("I AM HE", S["title"]))
+def extract_meta(md: str) -> dict:
+    title, subtitle = "", ""
+    verses = []
+    for line in md.split("\n"):
+        s = line.strip()
+        if s.startswith("## "):
+            break  # end of front matter
+        if s.startswith("# ") and not title:
+            title = s[2:].strip()
+        elif s.startswith("### ") and not subtitle:
+            subtitle = s[4:].strip()
+        elif s.startswith("> ") and len(verses) < 2:
+            q = s[2:].strip()
+            if " — " in q:
+                quote, ref = q.rsplit(" — ", 1)
+            else:
+                quote, ref = q, ""
+            verses.append((quote.strip().strip("“”\""), ref.strip()))
+    return {"title": title, "subtitle": subtitle, "verses": verses}
+
+
+def cover_flow(meta: dict) -> list:
+    flow = [Spacer(1, 1.5 * inch), Paragraph(inline(meta["title"]), S["title"])]
     flow.append(HRFlowable(width="40%", thickness=1.2, color=GOLD,
                            spaceBefore=2, spaceAfter=16, hAlign="CENTER"))
-    flow.append(Paragraph(
-        "The Absolute Formula &mdash; How the God of Israel Reveals "
-        "Himself in Jesus the Messiah", S["subtitle"]))
+    if meta["subtitle"]:
+        flow.append(Paragraph(inline(meta["subtitle"]), S["subtitle"]))
     flow.append(Spacer(1, 0.5 * inch))
-    flow.append(Paragraph("&ldquo;See now that I, even I, am he. "
-                          "There is no god with me.&rdquo;", S["cover_verse"]))
-    flow.append(Paragraph("Deuteronomy 32:39 &middot; WEB", S["cover_meta"]))
-    flow.append(Spacer(1, 0.25 * inch))
-    flow.append(Paragraph("&ldquo;Unless you believe that I am he, "
-                          "you will die in your sins.&rdquo;", S["cover_verse"]))
-    flow.append(Paragraph("John 8:24 &middot; WEB", S["cover_meta"]))
-    flow.append(Spacer(1, 1.1 * inch))
+    for quote, ref in meta["verses"]:
+        flow.append(Paragraph("&ldquo;" + inline(quote) + "&rdquo;", S["cover_verse"]))
+        if ref:
+            flow.append(Paragraph(inline(ref), S["cover_meta"]))
+        flow.append(Spacer(1, 0.2 * inch))
+    flow.append(Spacer(1, 0.9 * inch))
     flow.append(Paragraph("HOPE OF GLORY MINISTRY", S["cover_meta"]))
     flow.append(Paragraph("A free book &middot; hopeofglory.ministry", S["cover_meta"]))
     flow.append(PageBreak())
-
-    # Skip the manuscript's own cover block (down to first '## A Note' or '---')
-    # We render everything after the first H1 line normally, but drop the
-    # duplicate title/subtitle/byline that the markdown opens with.
-    started = False
-    while i < len(lines):
-        raw = lines[i]
-        line = raw.rstrip()
-        stripped = line.strip()
-
-        # Begin real content at the first "## " or "# Chapter"/"---" after intro
-        if not started:
-            if stripped.startswith("## ") or stripped.startswith("# Chapter"):
-                started = True
-            else:
-                i += 1
-                continue
-
-        if not stripped:
-            i += 1
-            continue
-
-        # Horizontal rule -> chapter divider / page break for big sections
-        if stripped == "---":
-            flow.append(Spacer(1, 6))
-            flow.append(HRFlowable(width="100%", thickness=0.6, color=GOLD,
-                                   spaceBefore=4, spaceAfter=10))
-            i += 1
-            continue
-
-        # Tables
-        if stripped.startswith("|"):
-            block = []
-            while i < len(lines) and lines[i].strip().startswith("|"):
-                block.append(lines[i].strip())
-                i += 1
-            flow.append(build_table(block))
-            flow.append(Spacer(1, 8))
-            continue
-
-        # Blockquote (join consecutive > lines)
-        if stripped.startswith(">"):
-            buf = []
-            while i < len(lines) and lines[i].strip().startswith(">"):
-                buf.append(lines[i].strip()[1:].strip())
-                i += 1
-            text = " ".join(b for b in buf if b)
-            flow.append(Paragraph(inline(text), S["quote"]))
-            continue
-
-        # Headings
-        if stripped.startswith("#### "):
-            flow.append(Paragraph(inline(stripped[5:]), S["h4"]))
-            i += 1
-            continue
-        if stripped.startswith("### "):
-            flow.append(Paragraph(inline(stripped[4:]), S["h3"]))
-            i += 1
-            continue
-        if stripped.startswith("## "):
-            txt = stripped[3:]
-            if txt.startswith("Chapter") or "Appendix" in txt:
-                flow.append(PageBreak())
-            flow.append(Paragraph(inline(txt), S["h2"]))
-            i += 1
-            continue
-        if stripped.startswith("# "):
-            flow.append(PageBreak())
-            flow.append(Paragraph(inline(stripped[2:]), S["h1"]))
-            i += 1
-            continue
-
-        # Lists
-        if re.match(r"^[-*] ", stripped):
-            buf = []
-            while i < len(lines) and re.match(r"^[-*] ", lines[i].strip()):
-                buf.append(lines[i].strip()[2:])
-                i += 1
-            for item in buf:
-                flow.append(Paragraph("&bull;&nbsp;&nbsp;" + inline(item), S["li"]))
-            continue
-        if re.match(r"^\d+\. ", stripped):
-            buf = []
-            while i < len(lines) and re.match(r"^\d+\. ", lines[i].strip()):
-                buf.append(re.sub(r"^\d+\. ", "", lines[i].strip()))
-                i += 1
-            for n, item in enumerate(buf, 1):
-                flow.append(Paragraph(f"<b>{n}.</b>&nbsp;&nbsp;" + inline(item), S["li"]))
-            continue
-
-        # Paragraph (single line; manuscript uses one line per paragraph)
-        flow.append(Paragraph(inline(stripped), S["body"]))
-        i += 1
-
     return flow
 
 
@@ -287,17 +197,16 @@ def build_table(block):
     for r, row in enumerate(block):
         cells = [c.strip() for c in row.strip().strip("|").split("|")]
         if r == 1 and all(set(c) <= set("-: ") for c in cells):
-            continue  # separator row
+            continue
         rows.append(cells)
     header, body = rows[0], rows[1:]
     ncol = len(header)
     usable = LETTER[0] - 2 * inch
-    colw = [usable / ncol] * ncol
     data = [[Paragraph(inline(c), S["cellh"]) for c in header]]
     for row in body:
         row = (row + [""] * ncol)[:ncol]
         data.append([Paragraph(inline(c), S["cell"]) for c in row])
-    t = Table(data, colWidths=colw, repeatRows=1)
+    t = Table(data, colWidths=[usable / ncol] * ncol, repeatRows=1)
     t.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), NAVY),
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [HexColor(0xFFFFFF), HexColor(0xF6F1E3)]),
@@ -311,30 +220,100 @@ def build_table(block):
     return t
 
 
-def main():
-    if not os.path.exists(SRC):
-        print(f"ERROR: manuscript not found at {SRC}", file=sys.stderr)
-        sys.exit(1)
-    os.makedirs(OUT_DIR, exist_ok=True)
-    with open(SRC, encoding="utf-8") as f:
-        md = f.read()
+def body_flow(md: str) -> list:
+    flow = []
+    lines = md.split("\n")
+    i = 0
+    started = False
+    while i < len(lines):
+        stripped = lines[i].strip()
+        if not started:
+            if stripped.startswith("## ") or stripped.startswith("# Chapter"):
+                started = True
+            else:
+                i += 1
+                continue
+        if not stripped:
+            i += 1
+            continue
+        if stripped == "---":
+            flow.append(Spacer(1, 6))
+            flow.append(HRFlowable(width="100%", thickness=0.6, color=GOLD,
+                                   spaceBefore=4, spaceAfter=10))
+            i += 1
+            continue
+        if stripped.startswith("|"):
+            block = []
+            while i < len(lines) and lines[i].strip().startswith("|"):
+                block.append(lines[i].strip())
+                i += 1
+            flow.append(build_table(block))
+            flow.append(Spacer(1, 8))
+            continue
+        if stripped.startswith(">"):
+            buf = []
+            while i < len(lines) and lines[i].strip().startswith(">"):
+                buf.append(lines[i].strip()[1:].strip())
+                i += 1
+            flow.append(Paragraph(inline(" ".join(b for b in buf if b)), S["quote"]))
+            continue
+        if stripped.startswith("#### "):
+            flow.append(Paragraph(inline(stripped[5:]), S["h4"])); i += 1; continue
+        if stripped.startswith("### "):
+            flow.append(Paragraph(inline(stripped[4:]), S["h3"])); i += 1; continue
+        if stripped.startswith("## "):
+            txt = stripped[3:]
+            if txt.startswith("Chapter") or "Appendix" in txt:
+                flow.append(PageBreak())
+            flow.append(Paragraph(inline(txt), S["h2"])); i += 1; continue
+        if stripped.startswith("# "):
+            flow.append(PageBreak())
+            flow.append(Paragraph(inline(stripped[2:]), S["h1"])); i += 1; continue
+        if re.match(r"^[-*] ", stripped):
+            while i < len(lines) and re.match(r"^[-*] ", lines[i].strip()):
+                flow.append(Paragraph("&bull;&nbsp;&nbsp;" + inline(lines[i].strip()[2:]), S["li"]))
+                i += 1
+            continue
+        if re.match(r"^\d+\. ", stripped):
+            while i < len(lines) and re.match(r"^\d+\. ", lines[i].strip()):
+                item = re.sub(r"^(\d+)\. ", r"<b>\1.</b>&nbsp;&nbsp;", lines[i].strip())
+                flow.append(Paragraph(inline(re.sub(r"^\d+\. ", "", lines[i].strip())), S["li"]))
+                i += 1
+            continue
+        flow.append(Paragraph(inline(stripped), S["body"]))
+        i += 1
+    return flow
 
+
+def build_pdf(slug: str, md: str) -> tuple:
+    global _running_title
+    meta = extract_meta(md)
+    _running_title = meta["title"].title() if meta["title"].isupper() else meta["title"]
+    out = os.path.join(OUT_DIR, f"{slug}-hope-of-glory.pdf")
     doc = BaseDocTemplate(
-        OUT, pagesize=LETTER,
-        leftMargin=inch, rightMargin=inch,
+        out, pagesize=LETTER, leftMargin=inch, rightMargin=inch,
         topMargin=inch, bottomMargin=0.9 * inch,
-        title="I AM HE — Hope of Glory Ministry",
+        title=f"{meta['title']} — Hope of Glory Ministry",
         author="Hope of Glory Ministry",
-        subject="The Absolute Formula: How the God of Israel reveals Himself in Jesus",
     )
-    frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height,
-                  id="main")
-    doc.addPageTemplates([PageTemplate(id="main", frames=[frame],
-                                       onPage=header_footer)])
-    flow = parse(md)
-    doc.build(flow)
-    size = os.path.getsize(OUT)
-    print(f"OK  wrote {OUT}  ({size//1024} KB, {doc.page} pages)")
+    frame = Frame(doc.leftMargin, doc.bottomMargin, doc.width, doc.height, id="main")
+    doc.addPageTemplates([PageTemplate(id="main", frames=[frame], onPage=header_footer)])
+    doc.build(cover_flow(meta) + body_flow(md))
+    return out, doc.page
+
+
+def main():
+    os.makedirs(OUT_DIR, exist_ok=True)
+    files = sorted(glob.glob(os.path.join(BOOKS_DIR, "*.md")))
+    if not files:
+        print("No manuscripts found in content/books/", file=sys.stderr)
+        sys.exit(1)
+    for path in files:
+        slug = os.path.splitext(os.path.basename(path))[0]
+        with open(path, encoding="utf-8") as f:
+            md = f.read()
+        out, pages = build_pdf(slug, md)
+        print(f"OK  {slug}: {os.path.getsize(out)//1024} KB, {pages} pages")
 
 
 if __name__ == "__main__":
