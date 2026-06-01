@@ -220,6 +220,57 @@ It is finished. Come and receive it.
 
 ---
 
+# Honest Questions
+
+The cross provokes hard questions, and faith is not afraid of them. Here are the ones most worth pressing, answered plainly.
+
+## "Why couldn't God just forgive, without anyone dying?"
+
+Because real forgiveness is never free for the one who forgives — someone always absorbs the cost. If you forgive a debt owed to you, *you* bear the loss; the money does not reappear. A judge who simply waved away every crime would not be merciful but corrupt, and we would rightly protest. God's dilemma (really *ours*) is how to be both perfectly just — taking evil seriously — and the one who pardons sinners. "Just forgiving" would mean sin never truly mattered. The cross is God's answer: He does not ignore the debt; He *pays it Himself*, in His Son, so He can be "just, and the justifier of him who has faith in Jesus" (Romans 3:26). Justice satisfied; sinner forgiven; the cost borne by God.
+
+## "Isn't punishing an innocent man for the guilty unjust?"
+
+It would be — if the cross were God taking a random innocent bystander and venting wrath on him. But that is not the Christian claim. The One who bears the penalty is not a third party; He is God Himself, in the person of the Son, voluntarily taking the cost upon Himself. "God was in Christ reconciling the world to himself" (2 Corinthians 5:19). No one imposed this on an unwilling victim: "I lay down my life... No one takes it away from me, but I lay it down by myself" (John 10:17-18). When the offended party chooses to absorb the debt personally and willingly, that is not injustice — it is the highest love.
+
+## "Isn't this 'cosmic child abuse' — the Father punishing the Son?"
+
+This objection misreads the Trinity. The Father and the Son are not two separate beings, one harming the other; they are one God, of one mind and one will, acting together to save. The Son is not a helpless child dragged to the cross by an angry parent; He is the eternal God who "loved me, and gave himself up for me" (Galatians 2:20), in perfect unity with the Father whose love "commends" itself precisely *in* the giving (Romans 5:8). The cross is not the Father against the Son; it is the one God, Father and Son and Spirit, against our sin and *for* us, at infinite cost to Himself.
+
+## "If salvation is free and finished, can't people just sin all they want?"
+
+Paul asked the very same question — "Shall we continue in sin, that grace may abound?" — and answered, "May it never be!" (Romans 6:1-2). Grace is free, but it is not cheap, and it is never *inert*. The same gospel that forgives also transforms: those truly united to Christ have "died to sin" and are made new, given His Spirit, taught to "walk in newness of life" (Romans 6:4). A person who treats forgiveness as a license to keep sinning has not understood it — and may not yet have received it. Grace does not leave us where it found us; it is the very power that frees us *from* sin, not merely from its penalty. We obey not to *earn* the gift but because we have *received* it.
+
+## "How can one man's death pay for the sins of the whole world?"
+
+Because of *who* He is. If Jesus were merely a man, His death could at most stand in for one other man. But the One on the cross is the eternal Son of God, of infinite worth — and so His one sacrifice has infinite value, sufficient for all. "He is the atoning sacrifice for our sins, and not for ours only, but also for the whole world" (1 John 2:2). This is why it matters so much that the Bible insists on His deity (see our companion books *Hear, O Israel* and *I Am He*): only a sacrifice of infinite worth could pay a debt this large, "once for all" (Hebrews 10:10).
+
+## "What about those who never hear of Jesus?"
+
+Scripture says less about this than we might wish, and we should resist the urge to invent answers God did not give. But we can say three true things. First, God is perfectly just *and* perfectly merciful — the Judge of all the earth will do right (Genesis 18:25), and no one will be treated unfairly. Second, everyone has *some* light — the witness of creation and conscience (Romans 1:19-20) — and is responsible for what they do with it. Third, this question is most honestly faced by the one asking it: *you* have now heard. The uncertainty about others is not a reason to delay your own response to the One who is, at this moment, standing before you with an empty cross and an open hand.
+
+---
+
+## Appendix — Key Texts on the Cross
+
+A reference table of the threads traced in this book.
+
+| Truth | Key text (WEB) |
+|---|---|
+| All have sinned | "All have sinned, and fall short of the glory of God." (Romans 3:23) |
+| The wage and the gift | "The wages of sin is death, but the free gift of God is eternal life." (Romans 6:23) |
+| Life is in the blood | "It is the blood that makes atonement by reason of the life." (Leviticus 17:11) |
+| No remission without blood | "Apart from shedding of blood there is no remission." (Hebrews 9:22) |
+| The Lamb of God | "Behold, the Lamb of God, who takes away the sin of the world!" (John 1:29) |
+| The cup of judgment | "Let this cup pass away from me; nevertheless, not what I desire." (Matthew 26:39) |
+| The forsaking | "My God, my God, why have you forsaken me?" (Matthew 27:46; Psalm 22:1) |
+| The great exchange | "Him who knew no sin he made to be sin on our behalf." (2 Corinthians 5:21) |
+| Paid in full | "It is finished!" (John 19:30 — Greek *tetelestai*) |
+| The cancelled debt | "...nailing it to the cross." (Colossians 2:14) |
+| Raised for our justification | "...delivered up for our trespasses, and was raised for our justification." (Romans 4:25) |
+| Received by faith | "If you will confess... and believe... you will be saved." (Romans 10:9) |
+
+---
+
 ## Conclusion — The Receipt, Framed
 
 The cross is the receipt. The blood is the price. The empty tomb is the proof that the payment was accepted. Everything the Old Testament was reaching for — the lamb, the blood, the scapegoat, the suffering servant — was paid out in full on one Friday afternoon, and confirmed on one Sunday morning.

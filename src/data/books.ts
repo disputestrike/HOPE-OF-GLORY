@@ -144,6 +144,66 @@ export const BOOKS: Book[] = [
       "The Receipt, the Proof, and the Invitation",
     ],
   },
+  {
+    slug: "read-it-in-context",
+    title: "Read It in Context",
+    subtitle:
+      "A Christian's Honest Reply to the Hardest Questions About Jesus, the Bible, and Islam",
+    description:
+      "A rigorous, charitable reply to the hardest Christian–Muslim questions — tawhid and the Trinity, the charge that the Bible was corrupted (tahrif), whether the Old Testament predicts Muhammad, the identity and crucifixion of Jesus, and how a person is saved. Read in context, with humility and never hostility. For the Muslim reader, the Christian, and the seeker. Free to read and download.",
+    file: "read-it-in-context.md",
+    pdf: "/ebooks/read-it-in-context-hope-of-glory.pdf",
+    pages: 18,
+    readingTimeMin: 40,
+    anchor: {
+      ref: "1 Peter 3:15 · WEB",
+      text: "Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you, with humility and fear.",
+    },
+    audiences: [
+      "Muslim readers",
+      "Christians (apologetics)",
+      "Seekers",
+    ],
+    chapters: [
+      "The Rule of Context",
+      "One God: Tawhid and the Trinity",
+      "Has the Bible Been Corrupted?",
+      "Does the Old Testament Predict Muhammad?",
+      "Who Is Jesus: Prophet or More?",
+      "Heaven, Hell, and How a Person Is Saved",
+      "Reading It Together: An Invitation",
+    ],
+  },
+  {
+    slug: "deeper-reading",
+    title: "Deeper Reading",
+    subtitle:
+      "Seeing What You Have Been Reading Past — Context, Patterns, and the Hidden Architecture of the Bible",
+    description:
+      "Learn to read the Bible the way its first readers did. The four questions that unlock any passage, the language of numbers (why 40 keeps returning), the sacred calendar that rehearses the gospel, the thread from Eden to the temple to Christ, the prophets' enacted signs, and Genesis read against the ancient world — all to meet the Author. For the believer who senses there is more beneath the surface. Free to read and download.",
+    file: "deeper-reading.md",
+    pdf: "/ebooks/deeper-reading-hope-of-glory.pdf",
+    pages: 18,
+    readingTimeMin: 40,
+    anchor: {
+      ref: "Psalm 119:18 · WEB",
+      text: "Open my eyes, that I may see wondrous things out of your law.",
+    },
+    audiences: [
+      "Christians (discipleship)",
+      "Bible students",
+      "Seekers",
+    ],
+    chapters: [
+      "The Lost Art of Reading in Context",
+      "The Language of Numbers",
+      "Sacred Time: Days, Sabbaths, and Feasts",
+      "Sacred Space: Land, Temple, and Direction",
+      "Signs Acted Out",
+      "Reading Genesis in Its Ancient World",
+      "Reading to Meet the Author",
+    ],
+  },
 ];
 
 export function getBook(slug: string): Book | undefined {

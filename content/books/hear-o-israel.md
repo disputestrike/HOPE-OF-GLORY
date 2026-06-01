@@ -187,6 +187,57 @@ The God whose name is "I AM" has been saying, in effect, from the burning bush t
 
 ---
 
+# Honest Questions
+
+No doctrine raises more honest questions than the doctrine of God. Here are the ones most often asked — from believers and skeptics alike — answered briefly and without evasion.
+
+## "Isn't the Trinity a contradiction — three is not one?"
+
+Only if we say God is three *and* one in the *same way* — three persons and one person, or three gods and one god. That would be a contradiction, and the church has never taught it. We say God is one in one respect (one Being, one "What") and three in another (three persons, three "Whos"). One *what*, three *whos*. There is no more contradiction in that than in saying a single human being has one nature and a single will, or that one triangle has three sides — the categories are different. Mystery is not the same as contradiction. The doctrine is *above* our full comprehension, as the infinite God must be; it is not *against* reason.
+
+## "Was the Trinity invented at the Council of Nicaea (325)?"
+
+No. Nicaea *defended* what the church had believed and worshipped from the start, against a new teaching (Arianism) that the Son was a created being. The raw materials were all there centuries earlier: the Word who "was God" (John 1:1, c. AD 90), the worship of Jesus in the earliest letters (Philippians 2:9-11, a hymn Paul *quotes*, meaning it was older still), baptism in the threefold name (Matthew 28:19), and the apostolic blessing of Father, Son, and Spirit (2 Corinthians 13:14). Councils put fences around old beliefs; they do not manufacture them. The word "Trinity" is later shorthand; the reality is apostolic.
+
+## "If Jesus is God, why did He pray, and why did He say 'the Father is greater than I' (John 14:28)?"
+
+Because the Son became truly human. Christians do not believe Jesus stopped being God; we believe the eternal Son took on a full human nature — "the Word became flesh" (John 1:14). As man, He prayed, grew tired, wept, and depended on the Father. "The Father is greater than I" speaks of His role and His state in the incarnation (the sent One, in the lowliness of human flesh), not of a lesser nature — for in the very same Gospel He says, "I and the Father are one" (John 10:30), and "he who has seen me has seen the Father" (John 14:9). A son can be fully equal to his father in nature while submitting to him in role. So it is with the eternal Son.
+
+## "Doesn't Jesus' not knowing the day or hour (Mark 13:32) prove He isn't God?"
+
+It proves He is truly *human*. In taking our nature, the Son lived within real human limits — He "increased in wisdom" as a child (Luke 2:52), grew hungry, and, in His humanity, did not draw on all divine knowledge at every moment. This is the wonder of the incarnation, not its undoing: the infinite One stooped to live a genuinely human life. The same Jesus also knew people's hidden thoughts (Mark 2:8), knew the future in detail, and accepted worship. Scripture holds His full deity and full humanity together; cherry-picking the human moments no more disproves His deity than the divine moments disprove His humanity.
+
+## "What about Psalm 82, where God calls others 'gods'?"
+
+Psalm 82 pictures God standing in judgment over the "gods" — most likely Israel's *judges* or rulers (or, on another reading, spiritual powers) who were entrusted with authority and abused it: "I said, 'You are gods'... Nevertheless you shall die like men" (Psalm 82:6-7). The point is the *opposite* of polytheism: these so-called "gods" are mortal and will be judged by the one true God. When Jesus cites this psalm (John 10:34-36), He is making a lesser-to-greater argument — if Scripture could call mere mortal judges "gods" in that delegated sense, the charge of blasphemy against the One the Father truly sanctified and sent is unfounded. Psalm 82 does not dilute monotheism; it dramatizes it.
+
+## "Isn't it arrogant to say there is only one true God?"
+
+Every worldview makes a truth claim, including the claim that "all paths are equally valid" (which is itself an exclusive claim that excludes those who disagree). The question is not whether someone is making a claim, but whether the claim is *true*. If God has actually revealed Himself — with a name, in history, supremely in a Person who rose from the dead — then to receive that revelation is not arrogance but humility before the evidence. And the God who says "besides me there is no savior" also says, in the same breath, "Look to me, and be saved, all the ends of the earth" (Isaiah 45:22). The exclusivity and the open invitation are the same sentence.
+
+---
+
+## Appendix — Key Texts on the One God
+
+A reference table for the doctrine of God traced in this book.
+
+| Truth | Key text (WEB) |
+|---|---|
+| God is one | "Hear, Israel: Yahweh is our God. Yahweh is one." (Deuteronomy 6:4) |
+| God's name is "I AM" | "I AM WHO I AM... I AM has sent me to you." (Exodus 3:14) |
+| God is not a creature | "God is not a man, that he should lie." (Numbers 23:19) |
+| Plurality on page one | "Let us make man in our image." (Genesis 1:26) |
+| The Spirit at creation | "The Spirit of God was hovering over the surface of the waters." (Genesis 1:2) |
+| Two figures, one throne | "One like a son of man came... to the Ancient of Days." (Daniel 7:13-14) |
+| The Word was God | "The Word was with God, and the Word was God." (John 1:1) |
+| The threefold name | "baptizing them in the name of the Father and of the Son and of the Holy Spirit." (Matthew 28:19) |
+| The triune blessing | "The grace of the Lord Jesus Christ, God's love, and the fellowship of the Holy Spirit." (2 Corinthians 13:14) |
+| The only Savior | "I, even I, am Yahweh; and besides me there is no savior." (Isaiah 43:11) |
+| One God for all nations | "Look to me, and be saved, all the ends of the earth." (Isaiah 45:22) |
+| Knowing God is life | "This is eternal life, that they should know you, the only true God." (John 17:3) |
+
+---
+
 ## Conclusion — Hear, and Live
 
 The most important sentence in the world is still true: *Yahweh is our God. Yahweh is one.* This book has not undermined that confession; it has tried to open it — to show that the oneness of God is not a lonely, flat oneness but a fullness of life and love, eternally Father, Son, and Holy Spirit; that this one God has a name, "I AM," and a face, Jesus Christ; that He alone saves, and He is near.

@@ -278,6 +278,55 @@ If the whole of the Old Testament was a portrait of this one Person — what wil
 
 ---
 
+# Honest Questions
+
+If the whole Old Testament really points to Jesus, fair questions follow. Here are the ones a thoughtful reader — believer or skeptic — should press, answered without dodging.
+
+## "Aren't Christians just reading Jesus back into texts that meant something else?"
+
+It is a fair worry, and the safeguard is the method we set out in chapter one. We are not free to find Jesus anywhere we like. A responsible reading honors three things: what the text meant to its first hearers, how the New Testament itself handles it, and whether the pattern is really in the text or imposed on it. Many of the connections in this book are not Christian inventions at all — they are made *by the New Testament writers themselves* (Paul on the seed, Matthew on Isaiah 42, Hebrews on Melchizedek and the tabernacle, John on the Passover lamb). And several were seen as messianic by Jewish interpreters *before* Christ. We are following a trail, not bulldozing one.
+
+## "How do you know these are real patterns and not coincidences you cherry-picked?"
+
+Two tests. First, *density*: a single resemblance might be coincidence, but dozens of independent lines — seed, lamb, priest, king, suffering servant, pierced one, son of man — all converging on one Person, across many centuries and authors who could not have coordinated, is not what coincidence looks like. Second, *direction*: the Old Testament does not merely happen to resemble Jesus; it openly *anticipates* — it makes promises (an everlasting throne, a new covenant, a pierced one mourned), raises hopes it cannot satisfy, and points forward. A coincidence does not leave a nation waiting. We also hold the looser patterns humbly and say so (as with David and Golgotha) — which is itself a check against cherry-picking.
+
+## "Jewish interpreters read these passages differently — Isaiah 53 is Israel, not the Messiah."
+
+This is true and deserves respect, not dismissal. Some Jewish traditions read the Servant of Isaiah 53 as the nation of Israel suffering among the nations; others, both ancient and medieval, read it messianically. The text itself, read closely, strains the national reading: the Servant suffers *for the sins of the people* and is "cut off out of the land of the living for the disobedience of my people" (Isaiah 53:8) — the Servant is distinguished *from* the people he suffers for, which is hard to square with Israel suffering for Israel. We do not claim the messianic reading is the only one ever held; we claim it is the most natural reading of the words, and the reading the New Testament and many before it embraced. We make the case from the text and leave the verdict to the honest reader.
+
+## "Is Paul's 'seed is singular' argument (Galatians 3:16) really fair to the Hebrew?"
+
+A careful question. The Hebrew word *zera* ("seed/offspring") is grammatically collective — it can mean "descendants" generally, and often does. So Paul is not making a crude grammar claim that the word *must* be singular. His point is theological and contextual: the *promise* of worldwide blessing through Abraham's seed comes to its focus and fulfillment in *one* descendant, the Messiah, through whom alone the many become Abraham's children (Galatians 3:29). Paul is reading the whole trajectory of the promise, not just one word. The narrowing of the line — Seth, Shem, Abraham, Isaac, Jacob, Judah, David — was always funneling toward one.
+
+## "If Jesus fulfilled all this, why didn't more of His own people believe?"
+
+Several honest reasons. First, the portrait had two faces the experts had trouble holding together — a conquering King *and* a suffering Servant — and many expected only the King, so a crucified Messiah looked like a contradiction (it took the resurrection, and Jesus' own teaching on the Emmaus road, to see that the Servant had to suffer *before* He reigned). Second, recognition is not merely intellectual; Scripture says spiritual sight is needed to see spiritual things. And third — the New Testament is honest that *many did* believe: the first thousands of Christians were Jews who knew these Scriptures intimately and became convinced precisely *because* of them (Acts 2–4). Belief and unbelief both ran through Israel, as they run through every people.
+
+---
+
+## Appendix — The Portrait in Key Texts
+
+A reference table of the threads traced in this book.
+
+| The pattern | Old Testament | Fulfilled in Christ |
+|---|---|---|
+| Seed of the woman | Genesis 3:15 | The offspring who crushes the serpent |
+| Offspring of Abraham | Genesis 12:3; 22 | Galatians 3:16; the beloved Son carrying the wood |
+| Scepter from Judah | Genesis 49:10 | The King to whom the nations belong |
+| Rejected brother who saves | Genesis 37–50 | Sold for silver; exalted to save those who betrayed Him |
+| Passover lamb | Exodus 12 | "Christ, our Passover" (1 Corinthians 5:7); John 1:29 |
+| Serpent lifted up | Numbers 21:9 | "The Son of Man must be lifted up" (John 3:14) |
+| The torn veil | Exodus 26; Leviticus 16 | The veil torn at His death (Matthew 27:51) |
+| Prophet like Moses | Deuteronomy 18:15 | "You shall listen to him" (Acts 3:22) |
+| Son of David, everlasting throne | 2 Samuel 7:16 | "Of his Kingdom there will be no end" (Luke 1:33) |
+| Priest after Melchizedek | Psalm 110:4 | A priest "by the power of an endless life" (Hebrews 7) |
+| The scapegoat | Leviticus 16 | "Bore the sins of many" (Hebrews 9:28) |
+| The pierced Servant | Isaiah 53:5 | "Pierced for our transgressions" |
+| The pierced One mourned | Zechariah 12:10 | "They will look on him whom they pierced" (John 19:37) |
+| The Son of Man on the clouds | Daniel 7:13-14 | Jesus' claim at His trial (Mark 14:62) |
+
+---
+
 ## Conclusion — Come and See
 
 The Old Testament is not a closed museum. It is a portrait gallery, and every hall leads to the same face. Jesus did not abolish the Hebrew Scriptures; He fulfilled them — "I didn't come to destroy, but to fulfill" (Matthew 5:17). He is the seed, the lamb, the temple, the prophet, the king, the priest, and the pierced Shepherd, gathered into one life, one death, and one resurrection.

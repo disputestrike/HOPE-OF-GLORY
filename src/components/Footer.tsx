@@ -81,10 +81,10 @@ export function Footer() {
               Read the long form — free.
             </p>
             <p className="m-0 text-muted text-sm">
-              Full-length discipleship and apologetics — <em>Hear, O Israel</em>,{" "}
-              <em>I Am He</em>, <em>Christ Hidden in Plain Sight</em>, and{" "}
-              <em>The Highest Price and the Greatest Love</em>. Read online or
-              download the PDF. No email, no charge.
+              A growing library of full-length discipleship and apologetics —
+              who God is, who Jesus is, Christ across the Old Testament, the
+              cross, and honest answers to the hardest questions. Read online
+              or download the PDF. No email, no charge.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
