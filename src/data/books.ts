@@ -153,8 +153,8 @@ export const BOOKS: Book[] = [
       "The cross is the receipt, the blood is the price, and the empty tomb is the proof the payment was accepted. A book on the meaning of the cross — the debt of sin, why blood, the Passover and the cup, the cry of dereliction, Barabbas and the great exchange, “It is finished” (tetelestai, “paid in full”), and the resurrection. Deeply evangelistic, for the believer and the seeker. Free to read and download.",
     file: "the-highest-price.md",
     pdf: "/ebooks/the-highest-price-hope-of-glory.pdf",
-    pages: 21,
-    readingTimeMin: 30,
+    pages: 30,
+    readingTimeMin: 42,
     anchor: {
       ref: "Romans 5:8 · WEB",
       text: "God commends his own love toward us, in that while we were yet sinners, Christ died for us.",
