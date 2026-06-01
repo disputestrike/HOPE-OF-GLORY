@@ -4,6 +4,7 @@ import Link from "next/link";
 import { sql } from "drizzle-orm";
 import { marked } from "marked";
 import { EngagementActions } from "@/components/EngagementActions";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import { ArticleLd, BreadcrumbListLd } from "@/components/StructuredData";
 import { LAUNCH_SERMONS, getStaticSermon } from "@/data/launch-schedule";
 import { optionalDb } from "@/lib/server-db";
@@ -160,8 +161,8 @@ export default async function SermonPage({ params }: { params: Params }) {
             {s.seriesTitle ?? "Sermon"}
           </Link>
           <h1>{s.title}</h1>
-          <p className="text-gold mt-4" style={{ fontSize: "var(--fs-body-lg)" }}>
-            {s.primaryPassage}
+          <p className="mt-4" style={{ fontSize: "var(--fs-body-lg)" }}>
+            <ScriptureRef reference={s.primaryPassage} />
           </p>
           {s.summary ? (
             <p className="text-muted mt-4 max-w-readable" style={{ fontSize: "var(--fs-body-lg)" }}>

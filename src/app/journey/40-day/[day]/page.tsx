@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EngagementActions } from "@/components/EngagementActions";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import { FORTY_DAY_JOURNEY, getDay } from "@/data/forty-day-journey";
 
 type Params = Promise<{ day: string }>;
@@ -59,7 +60,9 @@ export default async function JourneyDayPage({ params }: { params: Params }) {
           <blockquote className="scripture-display border-none m-0 p-0">
             {d.scriptureText}
           </blockquote>
-          <p className="scripture-ref">{d.scriptureRef} · WEB</p>
+          <p className="scripture-ref">
+            <ScriptureRef reference={d.scriptureRef} /> · WEB
+          </p>
         </section>
 
         <section className="mb-10 prose-ministry">

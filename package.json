@@ -34,6 +34,7 @@
     "backup:db": "tsx scripts/backup-db.ts",
     "backup:cleanup": "tsx scripts/backup-cleanup.ts",
     "ebook:build": "python scripts/build-ebook.py",
+    "verses:build": "tsx scripts/build-verse-bundle.ts",
     "worker": "tsx src/server/worker/index.ts",
     "voice": "tsx src/server/voice/index.ts",
     "stream": "tsx src/server/stream/index.ts"

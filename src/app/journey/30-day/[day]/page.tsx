@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { NeedHelpBanner } from "@/components/NeedHelpBanner";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import {
   HURTING_HEART_JOURNEY,
   HURTING_HEART_TOTAL_DAYS,
@@ -92,7 +93,9 @@ export default async function HurtingHeartDayPage({
           <blockquote className="scripture-display border-none m-0 p-0">
             {d.scriptureText}
           </blockquote>
-          <p className="scripture-ref">{d.scriptureRef} · WEB</p>
+          <p className="scripture-ref">
+            <ScriptureRef reference={d.scriptureRef} /> · WEB
+          </p>
         </section>
 
         {/* On crisis days, surface the full help banner prominently before the reflection. */}

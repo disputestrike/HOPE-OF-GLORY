@@ -313,12 +313,23 @@ export default function HomePage() {
             </div>
             <div className="card">
               <p className="card__eyebrow">Try one of these</p>
-              <ul className="m-0 text-muted">
-                <li>Who is Jesus?</li>
-                <li>What does Habakkuk 2:14 mean?</li>
-                <li>Is the Bible reliable?</li>
-                <li>I'm grieving. Where is God?</li>
-                <li>How can I begin to follow Christ?</li>
+              <ul className="m-0 p-0 list-none flex flex-col gap-2">
+                {[
+                  "Who is Jesus?",
+                  "What does Habakkuk 2:14 mean?",
+                  "Is the Bible reliable?",
+                  "I'm grieving. Where is God?",
+                  "How can I begin to follow Christ?",
+                ].map((q) => (
+                  <li key={q}>
+                    <Link
+                      href={`/ask?q=${encodeURIComponent(q)}` as `/ask?q=${string}`}
+                      className="text-muted hover:text-gold"
+                    >
+                      {q} →
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -347,12 +358,23 @@ export default function HomePage() {
             </div>
             <div className="card">
               <p className="card__eyebrow">Study lanes</p>
-              <ul className="m-0 text-muted">
-                <li>The Word of God as foundation</li>
-                <li>YHWH, Trinity, and the Holy Spirit</li>
-                <li>Christ in the Old Testament</li>
-                <li>Israel, Gentiles, and the nations</li>
-                <li>Revelation and Christian apologetics</li>
+              <ul className="m-0 p-0 list-none flex flex-col gap-2">
+                {[
+                  { label: "The Word of God as foundation", slug: "word-of-god-foundation" },
+                  { label: "YHWH, Trinity, and the Holy Spirit", slug: "yhwh-gods-true-name" },
+                  { label: "Christ in the Old Testament", slug: "messianic-prophecy" },
+                  { label: "Israel, Gentiles, and the nations", slug: "israel" },
+                  { label: "Revelation and Christian apologetics", slug: "revelation" },
+                ].map((lane) => (
+                  <li key={lane.slug}>
+                    <Link
+                      href={`/scroll/${lane.slug}` as `/scroll/${string}`}
+                      className="text-muted hover:text-gold"
+                    >
+                      {lane.label} →
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

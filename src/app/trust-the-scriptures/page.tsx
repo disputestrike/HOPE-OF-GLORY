@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ScriptureRef } from "@/components/ScriptureRef";
 
 export const metadata: Metadata = {
   title: "Trust the Scriptures",
@@ -15,26 +16,30 @@ const trustLanes = [
     body:
       "Jesus treated the Law, the Prophets, and the Psalms as the Word of God. He corrected bad interpretation, but he did not treat Scripture as broken, disposable, or unreliable.",
     refs: ["Matthew 5:17-18", "Luke 24:27", "Luke 24:44-47", "John 10:35"],
+    study: { href: "/scroll/word-of-god-foundation", label: "The Word of God as the foundation" },
   },
   {
     title: "The text was copied, not invented",
     body:
       "The Bible was transmitted through manuscripts. That means we can compare copies, identify variants, and test claims. Variants exist, but the core message is not hidden or lost.",
     refs: ["Isaiah 40:8", "Matthew 24:35", "1 Peter 1:24-25"],
+    study: { href: "/scroll/tahrif-bible-corruption", label: "Tahrif and corruption claims" },
   },
   {
     title: "History gives real-world handles",
     body:
       "Scripture names places, rulers, customs, conflicts, journeys, cities, exile, return, crucifixion, and resurrection witnesses. Christianity makes claims in public history.",
     refs: ["Luke 1:1-4", "Acts 26:26", "1 Corinthians 15:3-8"],
+    study: { href: "/read/apologetics/why-trust-the-bible", label: "Why Trust the Bible?" },
   },
   {
     title: "Archaeology can clarify the setting",
     body:
       "Archaeology does not replace faith, and it does not prove every doctrine. But it often confirms the world the Bible describes and corrects claims that Scripture was careless about history.",
     refs: ["Psalm 119:160", "John 19:35", "2 Peter 1:16"],
+    study: { href: "/scroll/manuscripts-history-archaeology", label: "Manuscripts, history, archaeology" },
   },
-];
+] as const;
 
 const witnesses = [
   {
@@ -133,11 +138,20 @@ export default function TrustTheScripturesPage() {
               <article key={lane.title} className="card">
                 <h2 className="m-0 mb-3 text-base text-warm">{lane.title}</h2>
                 <p className="text-muted text-sm">{lane.body}</p>
-                <ul className="m-0 flex flex-wrap gap-2 p-0 text-xs uppercase tracking-[0.12em] text-gold">
+                <ul className="m-0 flex flex-wrap gap-x-3 gap-y-2 p-0 text-xs uppercase tracking-[0.12em]">
                   {lane.refs.map((ref) => (
-                    <li key={ref}>{ref}</li>
+                    <li key={ref}>
+                      <ScriptureRef reference={ref} />
+                    </li>
                   ))}
                 </ul>
+                <Link
+                  href={lane.study.href as `/${string}`}
+                  className="btn btn--ghost text-sm mt-4"
+                  style={{ padding: "0.5rem 1rem" }}
+                >
+                  {lane.study.label} →
+                </Link>
               </article>
             ))}
           </div>

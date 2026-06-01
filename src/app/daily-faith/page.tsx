@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EmailSubscribeForm } from "@/components/EmailSubscribeForm";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import { getTodaysLaunchSermon } from "@/data/launch-schedule";
 
 export const metadata: Metadata = {
@@ -10,17 +11,55 @@ export const metadata: Metadata = {
     "After the 40-Day Journey, keep walking. Daily Scripture, daily prayer, daily message, daily question, daily obedience step, daily share. The long rhythm of a life lived with Christ.",
 };
 
-const modules = [
-  { title: "Today's Scripture", body: "A passage to read, slowly, in the World English Bible." },
-  { title: "Today's Prayer", body: "A few honest sentences you can pray as your own — or a starting place to write your own." },
-  { title: "Today's Message", body: "A short reflection. Sometimes a sermon clip. Always pointing to Christ." },
-  { title: "Today's Question", body: "One question Scripture asks of you today. Sit with it. Don't rush past it." },
-  { title: "Today's Obedience Step", body: "One small, specific thing to do today. Forgive someone. Pray for someone. Send the message. Make the call." },
-  { title: "Today's Share", body: "Something simple to pass on — a verse card, a clip, a sentence — to one person who might need it." },
-];
-
 export default function DailyFaithPage() {
   const today = getTodaysLaunchSermon();
+  const sermonHref = `/sermons/${today.slug}` as `/sermons/${string}`;
+
+  const modules: {
+    title: string;
+    body: string;
+    scripture?: string;
+    href: `/${string}`;
+    cta: string;
+  }[] = [
+    {
+      title: "Today's Scripture",
+      scripture: today.primaryPassage,
+      body: "Read today's passage slowly in the World English Bible. Hover the reference to read it now.",
+      href: sermonHref,
+      cta: "Open today's reading",
+    },
+    {
+      title: "Today's Prayer",
+      body: "Pray a few honest sentences as your own — or send a request and we will pray with you.",
+      href: "/prayer",
+      cta: "Pray with us",
+    },
+    {
+      title: "Today's Message",
+      body: today.summary,
+      href: sermonHref,
+      cta: "Read the message",
+    },
+    {
+      title: "Today's Question",
+      body: "Bring one honest question to the Word today, and sit with it. Don't rush past it.",
+      href: "/ask",
+      cta: "Ask Hope",
+    },
+    {
+      title: "Today's Obedience Step",
+      body: "One small, specific thing to do today. Forgive someone. Make the call. Take the next step.",
+      href: "/journey/40-day",
+      cta: "Continue the Journey",
+    },
+    {
+      title: "Today's Share",
+      body: "Pass something simple on — a verse, a message, a sentence — to one person who needs it.",
+      href: "/messages",
+      cta: "Browse Messages",
+    },
+  ];
 
   return (
     <section className="section">
@@ -58,9 +97,21 @@ export default function DailyFaithPage() {
           <h2>Six daily modules</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {modules.map((m) => (
-              <article key={m.title} className="card">
+              <article key={m.title} className="card flex flex-col">
                 <p className="card__eyebrow">{m.title}</p>
-                <p className="m-0 text-muted text-sm">{m.body}</p>
+                {m.scripture ? (
+                  <p className="m-0 mb-2 text-sm">
+                    <ScriptureRef reference={m.scripture} />
+                  </p>
+                ) : null}
+                <p className="m-0 mb-4 text-muted text-sm flex-1">{m.body}</p>
+                <Link
+                  href={m.href}
+                  className="btn btn--ghost text-sm self-start"
+                  style={{ padding: "0.5rem 1rem" }}
+                >
+                  {m.cta} →
+                </Link>
               </article>
             ))}
           </div>

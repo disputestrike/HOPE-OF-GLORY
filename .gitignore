@@ -55,3 +55,6 @@ coverage/
 
 # Drizzle
 drizzle/meta/
+
+# Verse-bundle chapter cache (build artifact)
+.verse-cache/

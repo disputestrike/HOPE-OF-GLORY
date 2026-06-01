@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import { SCROLL_CATEGORIES, SCROLL_TOPICS } from "@/data/scroll-topics";
 
 export const metadata: Metadata = {
@@ -87,10 +88,10 @@ export default function ScrollPage() {
                       </Link>
                     </h3>
                     <p className="text-muted text-sm m-0 mb-4">{topic.summary}</p>
-                    <ul className="m-0 p-0 list-none text-xs uppercase tracking-[0.12em] text-gold">
+                    <ul className="m-0 p-0 list-none text-xs uppercase tracking-[0.12em]">
                       {topic.keyScriptures.slice(0, 3).map((ref) => (
                         <li key={ref} className="inline-block mr-3 mb-2">
-                          {ref}
+                          <ScriptureRef reference={ref} />
                         </li>
                       ))}
                     </ul>

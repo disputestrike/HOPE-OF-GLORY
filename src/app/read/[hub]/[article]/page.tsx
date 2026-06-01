@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { marked } from "marked";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EngagementActions } from "@/components/EngagementActions";
+import { ScriptureRef } from "@/components/ScriptureRef";
 import { ArticleLd } from "@/components/StructuredData";
 import { HUBS, getArticle } from "@/data/read-library";
 
@@ -117,8 +118,8 @@ export default async function ArticlePage({ params }: { params: Params }) {
             <ul className="m-0">
               {article.keyScriptures.map((s) => (
                 <li key={s.ref} className="mb-2">
-                  <span className="text-gold uppercase tracking-[0.12em] text-xs">
-                    {s.ref}
+                  <span className="uppercase tracking-[0.12em] text-xs">
+                    <ScriptureRef reference={s.ref} />
                   </span>
                   {s.note ? (
                     <span className="text-muted text-sm"> — {s.note}</span>

@@ -20,6 +20,11 @@ const STARTERS = [
   "How can I begin to follow Christ?",
 ];
 
+/** WEB reader link for a reference (kept inline so the verse bundle isn't shipped to the client). */
+function webReaderUrl(reference: string): string {
+  return `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=WEB`;
+}
+
 export function AskHopeChat() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -153,7 +158,21 @@ export function AskHopeChat() {
                 </p>
                 {m.citations && m.citations.length > 0 ? (
                   <p className="text-muted text-xs mt-2 m-0">
-                    References: {m.citations.join(", ")}
+                    References:{" "}
+                    {m.citations.map((ref, i) => (
+                      <span key={ref}>
+                        {i > 0 ? ", " : ""}
+                        <a
+                          href={webReaderUrl(ref)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gold underline decoration-dotted underline-offset-2"
+                        >
+                          {ref}
+                        </a>
+                      </span>
+                    ))}{" "}
+                    · WEB
                   </p>
                 ) : null}
               </li>
