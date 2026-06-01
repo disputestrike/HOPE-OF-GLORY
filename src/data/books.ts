@@ -116,6 +116,36 @@ export const BOOKS: Book[] = [
     ],
   },
   {
+    slug: "the-lamb-and-the-cup",
+    title: "The Lamb and the Cup",
+    subtitle:
+      "Why the Lamb Had to Drink What We Could Not Survive — the Bloodline of Redemption from Eden to the Throne",
+    description:
+      "Follow one scarlet thread through the whole Bible: the Lamb of God and the two cups. From the covering in Eden and Abraham's “God will provide the lamb,” through the Passover blood on the door, the sacrifices, and Isaiah's suffering Servant, to Gethsemane — where Jesus drank the cup of judgment that belonged to us so we could receive the cup of salvation — and on to the Lamb upon the throne of heaven. A flagship teaching that preaches the entire gospel through the entire Bible. Free to read and download.",
+    file: "the-lamb-and-the-cup.md",
+    pdf: "/ebooks/the-lamb-and-the-cup-hope-of-glory.pdf",
+    pages: 30,
+    readingTimeMin: 42,
+    anchor: {
+      ref: "John 1:29 · WEB",
+      text: "Behold, the Lamb of God, who takes away the sin of the world!",
+    },
+    audiences: [
+      "Christians (discipleship)",
+      "Seekers",
+      "Jewish readers",
+    ],
+    chapters: [
+      "The Covering We Could Not Make",
+      "God Will Provide the Lamb",
+      "When I See the Blood",
+      "The Language of Sacrifice",
+      "The Lamb Led to Slaughter",
+      "The Lamb and the Cup",
+      "The Lamb Upon the Throne",
+    ],
+  },
+  {
     slug: "the-highest-price",
     title: "The Highest Price and the Greatest Love",
     subtitle: "What Really Happened on the Cross — and Why It Is the Best News in the World",
