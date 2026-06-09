@@ -146,7 +146,52 @@ The argument is a *defense* of a unique and unrepeatable claim, not a dilution o
 
 ---
 
-# Chapter Two — Jesus Had Human Limitations: Does That Disprove His Deity?
+# Chapter Two — What "Son of God" Really Means
+
+## "God Begets Not, Nor Is He Begotten"
+
+No objection is more central to the Muslim heart than this one. It is recited in the shortest and one of the most beloved chapters of the Quran, Surah al-Ikhlas (112): "Say, He is Allah, the One... He neither begets nor is begotten, and there is none comparable to Him." And in Surah Maryam (19:88-92), the charge is delivered with horror: "They say, 'The Most Merciful has taken a son.' You have done an atrocious thing. The heavens almost rupture from it, the earth splits open, and the mountains collapse in devastation, that they attribute to the Most Merciful a son."
+
+This is not a small disagreement. To the Muslim, "Son of God" sounds like the most blasphemous thing a human being could say — as if Christians believe God took a wife and physically produced a child. If that were what Christians meant, the horror would be justified. **And here is the first thing every soldier of faith must say clearly: Christians reject that idea just as completely.**
+
+## What Christians Are *Not* Saying
+
+The Christian faith does not teach — has never taught — that God took a consort and produced a biological offspring. The idea that God the Father had physical relations with Mary and thereby "fathered" Jesus is not the Christian doctrine; it is a pagan idea, the kind found in Greek and Roman mythology, where Zeus fathered demigods. Christians find that idea as repugnant as any Muslim does.
+
+Strikingly, the Quran itself, in Surah al-Ma'idah (5:116), pictures God asking Jesus: "Did you say to people, 'Take me and my mother as two gods besides Allah?'" The Trinity it rejects there is *God, Jesus, and Mary* — and Christians reject that "trinity" too. Mary is not part of the Godhead. No Christian creed ever placed her there. So on the conception being condemned, the Christian says: *amen, we reject it as well.* The question is whether the Christian doctrine of the Son is that conception — and it is not.
+
+## "Son of God" in Its Own Language
+
+To understand what "Son of God" means, we must — as always — stay in the original. In the Hebrew Scriptures, "son of God" is a title of *relationship and representation*, never of biological procreation.
+
+- **The nation of Israel** is called God's son: "Israel is my son, my firstborn" (Exodus 4:22). God did not father a nation biologically.
+- **The king of Israel** is called God's son: "You are my son. Today I have become your father" (Psalm 2:7); "I will be his father, and he will be my son" (2 Samuel 7:14). This is covenant language, spoken at the king's enthronement — adoption into a unique relationship and role.
+- **Angels** are called "sons of God": "the sons of God came to present themselves before Yahweh" (Job 1:6; 38:7). No one imagines God biologically produced angels.
+- **Peacemakers** are called sons of God: "Blessed are the peacemakers, for they shall be called children of God" (Matthew 5:9).
+
+In every case, "son of God" describes one who shares the character, the relationship, and the representative authority of God — not one biologically generated. To be "son of" something in Hebrew idiom means to share its nature: "sons of thunder" (Mark 3:17) were not fathered by thunder; "son of perdition" (John 17:12) was not biologically produced by destruction. It is an idiom of likeness and belonging.
+
+So when Jesus is called the Son of God, the claim is not that God procreated. The claim is that Jesus shares the very nature of God, stands in a unique relationship to the Father, and represents Him perfectly. As Jesus said: "Whoever has seen me has seen the Father" (John 14:9).
+
+## What "Begotten" Actually Means — *Monogenēs*
+
+The old translations call Jesus the "only begotten" Son (John 3:16, KJV). This phrase has caused enormous confusion, because "begotten" in English implies biological generation. But the Greek word is *monogenēs* — and it does not mean "biologically begotten."
+
+*Monogenēs* is built from *monos* ("only, one") and *genos* ("kind, type, class"). It means **"one of a kind, unique, the only one of its sort."** The proof is in how the New Testament itself uses it: Hebrews 11:17 calls Isaac Abraham's *monogenēs* son — "his only born son" — even though Abraham also had Ishmael. Isaac was not Abraham's only biological son; he was his *unique* son, the one and only son of the promise. *Monogenēs* there cannot mean "the only one biologically produced," because Ishmael existed. It means *unique, irreplaceable, one of a kind.*
+
+So "the only begotten Son" means **the unique Son — the one and only of His kind** — not a Son who was biologically generated at a point in time. Modern translations capture this: "his one and only Son" (John 3:16). The word was never about procreation. It was always about uniqueness.
+
+## "Begotten, Not Made" — The Eternal Relationship
+
+When Christians do speak of the Son being "begotten," they mean something the Nicene Creed stated with great care: "begotten, not made... of one substance with the Father." The key phrase is **"not made."** To be *made* is to be created — to have a beginning, to be a creature. The Son is explicitly *not* made. He is "begotten" in the sense of an eternal relationship of origin within the one God — the way light proceeds from a flame without the flame ever existing before the light it gives.
+
+The Scripture pictures this: the Son is "the radiance of his glory and the exact representation of his being" (Hebrews 1:3). A radiance is not created by the light after the light exists; it streams from it eternally, sharing its very nature. The Son is eternally from the Father, of one being with the Father — not a creature the Father produced, but the eternal Word who "was God" and "was with God" in the beginning (John 1:1).
+
+So the full answer to "God begets not" is this: *We agree God does not biologically beget. We do not believe God took a wife or produced a creature. When we call Jesus the Son of God, we mean He is the eternal, unique Word who shares the Father's very nature — light from light, true God from true God, begotten not made.* The horror the Quran expresses is at a doctrine Christians also reject. The doctrine Christians actually hold is the eternal Sonship of the Word — and on that, the conversation can finally begin honestly.
+
+---
+
+# Chapter Three — Jesus Had Human Limitations: Does That Disprove His Deity?
 
 ## "He Went to the Bathroom. He Got Hungry. He Was Tired."
 
@@ -236,7 +281,7 @@ To take John 14:28 out of John's whole portrait and treat it as a definitive sta
 
 ---
 
-# Chapter Three — One God or Three? The Trinity vs. Monotheism
+# Chapter Four — One God or Three? The Trinity vs. Monotheism
 
 ## The Muslim Objection: *Shirk*
 
@@ -306,7 +351,7 @@ The resurrection and ascension of Jesus were the public *enthronement* of the et
 
 ---
 
-# Chapter Four — Has the Bible Been Changed?
+# Chapter Five — Has the Bible Been Changed?
 
 ## The *Tahrif* Accusation
 
@@ -382,7 +427,65 @@ The first church council with a canon list matching our New Testament was the Co
 
 ---
 
-# Chapter Five — The Hard God of the Old Testament
+# Chapter Six — Contradictions, Mistranslations, and the Charge of a Broken Bible
+
+## The General Principle: Difference Is Not Contradiction
+
+Before answering specific objections, the foundational point must be set down: a *difference* between two accounts is not a *contradiction*. A contradiction is when two statements cannot both be true at the same time and in the same sense. A difference is when two truthful witnesses describe the same reality from different angles, with different details, for different purposes. Four witnesses to a car accident will each report different details — one saw the color, one heard the sound, one noticed the driver. They do not contradict; they complement. The same is true of the four Gospels. We will take the hardest cases one at a time.
+
+## "Almah Doesn't Mean Virgin" — The Isaiah 7:14 Mistranslation Charge
+
+This is one of the most confident objections raised against the virgin birth. Matthew 1:23 cites Isaiah 7:14 — "Behold, the virgin shall conceive and bear a son" — as fulfilled in Jesus. Critics argue that the Hebrew word in Isaiah is *almah*, which means merely "young woman," not "virgin." The Hebrew word for "virgin," they say, is *bethulah*. Therefore Matthew (or the Christians) mistranslated to invent a virgin birth.
+
+Stay in the original, and the objection collapses.
+
+First, *almah* refers to a young woman of marriageable age, and in every one of its occurrences in the Hebrew Bible, the word describes an unmarried young woman — which, in that culture, meant a virgin. There is no place in the Old Testament where *almah* refers to a married woman or a woman known not to be a virgin. The word carries the strong connotation of virginity by its very social meaning.
+
+Second — and this is the decisive point — the charge that "Christians mistranslated *almah* as virgin" is historically impossible, because **the Jews translated it that way first.** Around 250–150 BC, roughly two centuries before Jesus was born, Jewish scholars in Alexandria translated the Hebrew Scriptures into Greek — the translation we call the Septuagint. When these Jewish translators came to Isaiah 7:14, they rendered *almah* with the Greek word *parthenos* — which specifically and unambiguously means "virgin." They had no Christian motive; there were no Christians. Jewish scholars, working from the Hebrew, with full command of their own language, chose *parthenos*. Matthew, writing later, simply quoted the standard Greek translation his readers already used. The "mistranslation" was made by Jewish scholars before Christianity existed — which means it was not a mistranslation at all, but the natural understanding of the word.
+
+## The Two Genealogies — Matthew vs. Luke
+
+Matthew (1:1-17) and Luke (3:23-38) both give a genealogy of Jesus, and they differ — most notably, they name different fathers for Joseph (Matthew says Jacob; Luke says Heli) and trace different lines back through David (Matthew through Solomon; Luke through Nathan). Critics call this a flat contradiction.
+
+There are two long-standing explanations, either of which resolves it.
+
+**Explanation one: Matthew gives Joseph's line; Luke gives Mary's line.** Matthew traces the *legal, royal* line — the line of kings from David through Solomon down to Joseph, establishing Jesus's *legal* claim to the throne of David through His legal father. Luke, who throughout his Gospel highlights Mary's perspective (the annunciation, Mary's song), traces the *biological* line through Mary, back through her ancestor Nathan (another son of David) to David, and ultimately to Adam — establishing Jesus's blood descent from David and His connection to all humanity. The mention of "Heli" in Luke would then be Joseph's father-in-law (Mary's father), since Jewish genealogies were typically recorded through the male head.
+
+**Explanation two: levirate marriage and legal vs. biological fatherhood.** Under the Torah's levirate law (Deuteronomy 25:5-6), if a man died childless, his brother would marry the widow, and the firstborn son would legally be counted as the dead brother's heir. This produces situations where a person legally has two fathers — one biological, one legal. Matthew and Luke may be tracing these two distinct but legitimate lines.
+
+The key point: two genealogies serving two purposes — legal kingship and biological descent — is not a contradiction. It is exactly what you would expect when one writer is establishing Jesus's royal claim and the other His human lineage. The early readers, fluent in how Jewish genealogies worked, were not troubled by this.
+
+## "Matthew Rips Verses Out of Context" — Typology, Not Prediction
+
+Critics note that when Matthew cites the Old Testament as "fulfilled" in Jesus, the original passages often were not predictions at all. Matthew 2:15 quotes Hosea 11:1 — "Out of Egypt I called my son" — but in Hosea that verse is plainly about the *nation of Israel* coming out of Egypt in the Exodus, not a prediction of the Messiah. So is Matthew misusing Scripture?
+
+No — Matthew is using a recognized Jewish reading method called **typology**. The conviction behind it is that God writes history in patterns, so that earlier events foreshadow later ones. Israel was God's "son" called out of Egypt; Jesus is God's true Son, who as an infant is also called out of Egypt, recapitulating and fulfilling Israel's story as the true and faithful Israel. Matthew is not claiming Hosea was making a verbal prediction; he is showing that Jesus completes the *pattern* — He is everything Israel was meant to be. This was a normal and respected mode of Jewish interpretation, not a sleight of hand. It reads the whole story as one design, with Jesus as its culmination.
+
+## "How Did Judas Die?" — Hanging and Falling
+
+Matthew 27:5 says Judas "hanged himself." Acts 1:18 says he "fell headlong, [and] he burst open in the middle, and all his intestines gushed out." Contradiction?
+
+The two accounts describe different moments of the same event, and they harmonize naturally. Judas hanged himself (Matthew); subsequently — whether the rope or branch broke, or after the body had hung in the sun and begun to decompose — the body fell and burst open on the rocky ground below (Acts). Matthew describes the *act* of suicide; Acts describes the gruesome *aftermath* of the body's discovery. Both can be, and most plausibly are, true. One reports the cause; the other reports the result.
+
+## "Jesus Predicted His Return Within That Generation — and Was Wrong"
+
+This is the strongest skeptic objection in this chapter. In Matthew 24:34, Jesus says: "Most certainly I tell you, this generation will not pass away until all these things are accomplished." Critics argue Jesus predicted His second coming within the lifetime of His hearers — and was simply wrong, a failed prophet.
+
+Several careful readings answer this.
+
+First, much of Matthew 24 — the desolation of the Temple, the warnings to flee Judea, the distress in Jerusalem — was fulfilled precisely within that generation, in the Roman destruction of Jerusalem and the Temple in 70 AD, roughly forty years later, within the lifetime of Jesus's hearers. Jesus had said "not one stone here will be left on another" (Matthew 24:2), and that came to pass exactly. Much of the chapter is about that near event, not the final return — and it happened on schedule.
+
+Second, the Greek word translated "generation" — *genea* — can mean a generation of people living at one time, but it can also carry the sense of a *kind, race, or people*. On this reading, Jesus is saying the Jewish people (or the family of faith) will not pass away before all is accomplished — a promise of preservation, remarkably borne out in history.
+
+Third, Jesus explicitly states in the *same discourse* that the timing of the final return is *not* known to Him in His earthly ministry: "But of that day and hour no one knows... but my Father only" (Matthew 24:36). It would be incoherent to read verse 34 as a confident prediction of the date of the end when verse 36 explicitly disclaims knowledge of that date. The careful reader holds the chapter together: the near judgment on Jerusalem came within the generation, exactly as said; the final return is deliberately left undated, by Jesus's own statement.
+
+## "There Are Thousands of Contradictions in the Bible"
+
+This sweeping claim usually dissolves into a handful of differences in detail — how many angels at the tomb (one mentioned, or two present), how many blind men healed at Jericho, the exact wording on the cross — each of which has the same explanation: independent witnesses reporting the same events with different focus and detail, exactly as real testimony does. None of the alleged contradictions touch a single doctrine, and the vast majority are differences of emphasis, not assertions that cannot both be true. A book scrubbed of all such differences would be the *evidence* of collusion. Their presence is the fingerprint of independent, honest testimony.
+
+---
+
+# Chapter Seven — The Hard God of the Old Testament
 
 ## "God Commanded Genocide — the Amalekites"
 
@@ -444,9 +547,25 @@ Several distinctions are essential.
 
 The Bible does not give us a 21st-century document imposing modern norms on ancient societies. It gives us a story that begins in the fallen world as it was and moves consistently — through the law, through the prophets, through the cross, through the community of "neither slave nor free" — toward the full redemption of every human being made in God's image.
 
+## "Eternal Hell for Finite Sin Is Unjust"
+
+The objection: how can a loving God sentence a person to *infinite, eternal* punishment for the *finite* sins of a short human life? The punishment seems wildly out of proportion to the crime. This is one of the most emotionally powerful objections raised against the Christian God, and it deserves a serious answer.
+
+Several things must be said.
+
+**First: the gravity of an offense is measured partly by the one offended against.** Striking a stranger and striking your own mother are the same physical act, but not the same moral weight. Sin is not merely breaking a rule; it is rebellion against the infinite, holy God who is the source of all goodness and life. An offense against an infinite God carries a weight that a finite framework cannot contain. The objection assumes sin is a small, contained thing; Scripture presents it as the rejection of the very Source of life itself.
+
+**Second: hell is better understood as the eternal *continuation* of a chosen rejection than as a disproportionate sentence imposed from outside.** The consistent picture in Scripture is that God "desires all people to be saved" (1 Timothy 2:4) and is "patient with us, not wishing that any should perish, but that all should come to repentance" (2 Peter 3:9). Hell is described as the tragic destiny of those who finally and permanently refuse the God who pursued them. The door of hell, in a real sense, is locked from the inside. The punishment is not God's eagerness to condemn; it is the ratification of a creature's settled, eternal "no" to the only Source of joy.
+
+**Third: this objection cuts against the one who raises it, because the cross is God's answer to it.** The God accused of cruelty is the God who stepped into human flesh and bore the full weight of judgment Himself, precisely so that no one *needs* to face it:
+
+> "For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life." — John 3:16 (WEB)
+
+The same sentence that speaks of perishing speaks, in the same breath, of the love that makes perishing unnecessary. God has done everything required to rescue every person who will turn to Him — at infinite cost to Himself. A God who merely wished to condemn would not have gone to a cross. The existence of hell is sobering; but the God who warns of it is the same God who emptied Himself to make a way out of it, and that way is open to anyone who will take it.
+
 ---
 
-# Chapter Six — Is Muhammad in the Bible?
+# Chapter Eight — Is Muhammad in the Bible?
 
 ## "Deuteronomy 18 Predicts Muhammad — The Prophet Like Moses"
 
@@ -538,7 +657,7 @@ The "original Christians were Muslims" argument also requires explaining why the
 
 ---
 
-# Chapter Seven — Did Jesus Die on the Cross?
+# Chapter Nine — Did Jesus Die on the Cross?
 
 ## "God Would Not Let a Prophet Die Like That"
 
@@ -577,6 +696,30 @@ Roman crucifixion was an engineered execution method refined over centuries. Bef
 In Jesus's case specifically: the soldiers came to break the legs of the three crucified men (to speed asphyxiation). They found Jesus already dead and did not break His legs. Instead, one soldier drove a spear into His side, and "blood and water immediately came out" (John 19:33-34). Medical analysis of this detail — the separation of blood and a clear fluid — is consistent with the pericardial and pleural effusion (fluid buildup around the heart and lungs) that occurs in severe trauma and suffocation, confirming death had already occurred. This was not accidental detail. It was the soldier's verification of death by a method Romans understood well.
 
 If Jesus had somehow survived all of this — six hours on the cross after a near-fatal flogging — He would have emerged from the tomb barely alive: unable to walk on pierced and shattered feet, with massive blood loss, unable to breathe normally with a spear wound in His chest. The idea that such a man could convince His disciples, who had watched Him be arrested, tried, flogged, and killed, that He had defeated death and was the risen Lord worthy of their complete commitment to the point of their own deaths — is not historically plausible. The swoon theory does not explain the transformation of the disciples from terrified fugitives to bold proclamers. It explains a medical emergency, which is a completely different story from what history records.
+
+## "How Can God Die? And Who Ran the Universe for Three Days?"
+
+This is one of the sharpest philosophical objections, and it is asked sincerely: God is immortal — He cannot die. If Jesus died, He was not God. And even granting the Christian view, who was holding the universe together during the three days Jesus lay dead in the tomb?
+
+The answer turns entirely on the doctrine of the Incarnation — the two natures of the one Person of Christ.
+
+The eternal Son of God has, since the Incarnation, two complete natures: a fully divine nature and a fully human nature, united in one Person. Death is something that happens to a *human nature* — the separation of the human soul from the human body. When Jesus died on the cross, His human body and human soul were separated; His human nature experienced genuine death. The divine nature did not, and cannot, cease to exist — the divine nature is, by definition, immortal and unchanging. But because the one Person of the Son truly possessed that human nature, it is true to say *the Son of God died* — He experienced death in and through His human nature, as the one Person who owned both.
+
+This is not theological hair-splitting; the New Testament states it directly. Paul tells the Ephesian elders to shepherd "the assembly of God which he purchased with his own blood" (Acts 20:28) — "the blood of God," a startling phrase that only makes sense if the one Person who is God truly shed human blood. The immortal One tasted death through the humanity He had taken on, "that by the grace of God he should taste of death for everyone" (Hebrews 2:9).
+
+As for who sustained the universe during those three days: the same divine Son who has always sustained it never stopped. "In him all things are held together" (Colossians 1:17) was as true on Holy Saturday as on any other day. The human body of Jesus lay in the tomb; the divine nature of the Son continued, without interruption, to uphold all things by the word of His power (Hebrews 1:3). The Person did not go out of existence; His human body was in death while His divine nature sustained the cosmos and His human spirit was, as He told the thief, in the presence of the Father ("today you will be with me in Paradise," Luke 23:43). The Incarnation is not a riddle that breaks under this question; it is the very framework that answers it.
+
+## "Three Days and Three Nights" — The Sign of Jonah Timing
+
+A frequently raised "gotcha": Jesus said, "As Jonah was three days and three nights in the belly of the great fish, so will the Son of Man be three days and three nights in the heart of the earth" (Matthew 12:40). But Jesus was crucified on Friday and rose on Sunday — that is at most two nights (Friday night, Saturday night) and one full day. So Jesus's own prophecy failed. How can it be "three days and three nights"?
+
+The answer lies in the Jewish method of reckoning time, which the original audience understood without difficulty. In Hebrew idiom, **any part of a day was counted as a whole day** — a principle the rabbis stated explicitly ("a day and a night make an *onah*, and a part of an *onah* is reckoned as a whole"). By this standard, which was the standard of Jesus's hearers, the counting works cleanly:
+
+- **Day 1:** Friday (Jesus died and was buried in the late afternoon — part of Friday counts as a full day and night).
+- **Day 2:** Saturday (the Sabbath, a full day and night).
+- **Day 3:** Sunday (Jesus rose early — part of Sunday counts as a full day and night).
+
+This is not special pleading invented to rescue the text; it is simply how the Hebrew calendar counted, and it is confirmed within the Gospels themselves. The same events are repeatedly described as Jesus rising "on the third day" (Matthew 16:21; Luke 24:46; 1 Corinthians 15:4) — and "on the third day" and "after three days" are used interchangeably for the same span (compare Matthew 27:63-64). If "three days and three nights" required three literal 24-hour periods, then the dozens of "on the third day" statements would contradict it within the same Gospels. They do not, because both phrases are idioms for the same inclusive Friday-to-Sunday reckoning. The objection imposes a modern, Western stopwatch on an ancient Hebrew figure of speech.
 
 ## "Why Does God Require Blood? Isn't That Primitive?"
 
@@ -618,7 +761,7 @@ The cross was the appointed place where justice and mercy met. The cup that huma
 
 ---
 
-# Chapter Eight — The Resurrection: The Hinge of Everything
+# Chapter Ten — The Resurrection: The Hinge of Everything
 
 ## Why Everything Stands or Falls Here
 
@@ -668,7 +811,7 @@ The resurrection does not require the reader to suspend historical judgment. It 
 
 ---
 
-# Chapter Nine — Did Constantine Create Christianity?
+# Chapter Eleven — Did Constantine Create Christianity?
 
 ## The Narrative That Won't Die
 
@@ -722,11 +865,11 @@ The resurrection of Jesus is a historical, datable, Jewish event — a specific 
 
 ---
 
-# Chapter Ten — Twenty More Answers: The Rapid-Fire Objections
+# Chapter Twelve — Thirty Rapid-Fire Answers: Every Angle
 
 ## The Questions That Come Fast
 
-Some objections are delivered as a rapid-fire list, each one presented as a knockout punch. Here are twenty of the most common, with concise answers. Every answer stays in the original text.
+Some objections are delivered as a rapid-fire list, each one presented as a knockout punch. Here are thirty of the most common, with concise answers. Every answer stays in the original text.
 
 **1. "Jesus prayed — you can't pray to yourself."**
 The Trinity is not one Person with multiple nicknames. It is one God in three distinct, eternally relational Persons. The Son's prayer to the Father is a real relational act within the divine life — not a monologue performed for an audience. The fact that Jesus prays to the Father is evidence of the Trinitarian distinction between Persons, not evidence against His deity. The Father and the Son are genuinely distinct; they are not the same Person. They share one nature; they are not one Person.
@@ -788,6 +931,36 @@ This objection assumes that penal substitution is an arbitrary transfer of guilt
 **20. "If God is all-powerful, why couldn't He just forgive without the cross?"**
 God is all-powerful — but what He does is always consistent with His own nature. His nature is both perfectly loving *and* perfectly just. A "forgiveness" that simply ignores the moral debt — pretends the offense against His holiness never happened — would not be forgiveness; it would be indifference, which is not love, and injustice, which is not holy. The cross is the resolution of the apparent contradiction between divine justice and divine mercy: God did not *ignore* the debt (that would violate His justice) or *demand* that humans pay it (they could not). He paid it Himself, from within the human condition, in His Son. The cross is not a workaround for a deficiency in divine power; it is the expression of a nature that is simultaneously and without contradiction perfectly just and perfectly merciful.
 
+**21. "Where did Cain get his wife? Who else was there?"**
+Genesis presents Adam and Eve as the first parents of the human race, and states that Adam "became the father of sons and daughters" (Genesis 5:4) over a long life. Cain's wife was a sister or other close relative. In the first generations, with the human gene pool fresh and undegraded, marriage among close relatives carried none of the genetic dangers it later would — which is precisely why the prohibition against it was not given until the time of Moses (Leviticus 18), thousands of years later, when it became biologically necessary. The text is not hiding a second creation; it is describing the early branching of a single family.
+
+**22. "Jesus cursed a fig tree for having no fruit — out of season. That's irrational."**
+The cursing of the barren fig tree (Mark 11:12-21) is an *enacted parable* — a prophetic sign-act of the kind Old Testament prophets regularly performed. The fig tree, in full leaf but without fruit, was a living picture of Israel's religious leadership: impressive foliage, the appearance of life, but no fruit of genuine righteousness. Mark deliberately wraps the fig tree around the cleansing of the Temple (the story is split in two, with the Temple in the middle), making the connection unmistakable. Jesus was not having a tantrum at agriculture; He was performing a parable about fruitless religion that looked alive but was not.
+
+**23. "Jesus didn't know who touched Him in the crowd — so He wasn't all-knowing."**
+When the woman with the flow of blood touched His garment, Jesus asked, "Who touched my clothes?" (Mark 5:30). Read in context, this is not ignorance — Jesus "perceived in himself that the power had gone out of him" and was drawing the woman *out* of the crowd to be publicly healed and commended for her faith, rather than letting her slip away as an anonymous taker of a magic favor. The question was pastoral, not a confession of ignorance. He knew exactly what had happened; He wanted her to come forward and meet Him face to face.
+
+**24. "Did Judas die by hanging or by falling? Matthew and Acts disagree."**
+Matthew says he hanged himself (Matthew 27:5); Acts says he fell and burst open (Acts 1:18). These are two stages of one event: Judas hanged himself, and afterward — the rope or branch breaking, or the body decomposing in the heat — the corpse fell and ruptured on the rocks below. One account gives the act; the other gives the aftermath. They fit together rather than excluding each other.
+
+**25. "Honor your father and mother — yet Jesus said to 'hate' your family. Contradiction."**
+In Luke 14:26, "If anyone comes to me, and doesn't disregard his own father, mother... he can't be my disciple," the word translated "hate" (Greek *miseō*) is a Semitic idiom of *comparative preference*, not emotional hatred. Matthew records the same teaching directly: "He who loves father or mother more than me isn't worthy of me" (Matthew 10:37). Jesus is saying that love for Him must be so supreme that every other loyalty looks like "hate" by comparison. He is the same teacher who condemned those who neglected their parents (Mark 7:9-13) and who cared for His own mother from the cross (John 19:26-27). The idiom, not a literal command to hate, is the key.
+
+**26. "Jesus said 'an eye for an eye' was wrong — so He contradicted Moses' law."**
+In the Sermon on the Mount (Matthew 5:38-39), Jesus is not abolishing the Torah; He is correcting its *misuse*. "An eye for an eye" (Exodus 21:24) was given as a limit on judicial punishment — restraining vengeance so that penalties were proportionate, not escalating blood feuds. By Jesus's day it was being twisted into a license for personal retaliation. Jesus restores the heart of the law: do not take private vengeance; absorb wrong rather than perpetuate it. He explicitly affirms in the same sermon that He came "not to destroy but to fulfill" the law (Matthew 5:17). He is deepening Moses, not contradicting him.
+
+**27. "Jesus said, 'I didn't come to bring peace, but a sword.' He preached violence."**
+"Don't think that I came to send peace on the earth. I didn't come to send peace, but a sword" (Matthew 10:34). The very next verses explain the "sword": it is the division that the gospel causes *within families and society* — "a man at odds against his father, and a daughter against her mother" (Matthew 10:35). Jesus is warning that allegiance to Him will divide households, not commanding armed violence. The same Jesus told Peter to put away his literal sword ("all who take the sword will die by the sword," Matthew 26:52) and pronounced peacemakers blessed (Matthew 5:9). The "sword" is the dividing line His truth draws through every loyalty, not a call to arms.
+
+**28. "Jesus told people to keep His identity secret — why hide if He's God?"**
+The so-called "messianic secret" (e.g., Mark 1:34, 44) reflects timing and strategy, not deception. "Messiah" in first-century Judea carried explosive political expectations — a military liberator who would expel Rome. Had Jesus let that label spread unqualified, the crowds would have tried to make Him a political king by force (which John 6:15 records them attempting). He restrained the title until He could define it on His own terms — through the cross — rather than have it hijacked into a violent revolt. He was not hiding His identity permanently; He was controlling its meaning until the right hour, and at His trial He confessed it openly (Mark 14:62).
+
+**29. "If salvation is by grace, why be good at all? Just sin freely."**
+Paul raised this exact objection himself and answered it: "Shall we continue in sin, that grace may abound? May it never be!" (Romans 6:1-2). Genuine saving faith *changes the person*. The believer is not someone who got a free pass to keep loving sin; they are someone who has been given a new heart that increasingly hates it. Good works are not the *root* of salvation (which is grace through faith), but they are its inevitable *fruit*: "we are his workmanship, created in Christ Jesus for good works" (Ephesians 2:10). A faith that produces no change was never the living thing the New Testament calls faith (James 2:17).
+
+**30. "All religions are basically the same — they all teach being good. Why insist on Jesus?"**
+The world's religions in fact make contradictory and mutually exclusive claims about the most important questions — who God is, what is wrong with humanity, and how it is fixed. They cannot all be true at once, because they directly disagree. But more to the point: every other system, at its core, tells the human being to *climb* — to achieve, to earn, to ascend to God by effort, ritual, or merit. The gospel alone says the climb is impossible *and unnecessary*, because God *descended* — "the Word became flesh" (John 1:14) — to do for us what we could never do for ourselves. Jesus did not say "I am one good way among many." He said, "I am the way, the truth, and the life. No one comes to the Father except through me" (John 14:6). The exclusivity is not arrogance; it is the necessary consequence of the claim that God Himself came in person to rescue us. If that claim is true, no lesser way could replace it.
+
 ---
 
 # Conclusion — For the Soldier of Faith
@@ -816,7 +989,7 @@ The invitation of the entire Bible is the same from Genesis to Revelation:
 
 > "'Come now, and let's reason together,' says Yahweh." — Isaiah 1:18 (WEB)
 
-God does not ask for blind faith. He asks for the faith of a person who has looked honestly at the evidence and is willing to follow the light they find. If you have followed this book through seven chapters of hard questions and honest answers — you have looked. What happens next is between you and the One the book is about.
+God does not ask for blind faith. He asks for the faith of a person who has looked honestly at the evidence and is willing to follow the light they find. If you have followed this book through twelve chapters of hard questions and honest answers — you have looked. What happens next is between you and the One the book is about.
 
 He is not hiding. The evidence for His claim is written in the manuscripts, in the prophecies, in the original languages, in the witness of hostile historians, in the seal of the resurrection. And the door He opened at the cross is still open.
 
@@ -829,17 +1002,36 @@ He is not hiding. The evidence for His claim is written in the manuscripts, in t
 | Objection | Key Text | Original Word/Concept |
 |---|---|---|
 | "Jesus never said 'I am God'" | John 8:58; John 10:33; John 20:28 | *egō eimi* — the divine I AM from Exodus 3:14 |
+| "Son of Man = just a human title" | Daniel 7:13-14; Matthew 26:64 | The one who rides the clouds and receives eternal dominion |
+| "God begets not — 'Son of God' is blasphemy" | Surah 112; John 3:16; Hebrews 11:17 | *monogenēs* = unique, not biologically begotten; "begotten not made" |
+| "'Son of God' means a literal child" | Exodus 4:22; Psalm 2:7; Job 1:6 | Hebrew idiom of relationship/nature, never procreation |
 | "Jesus didn't know things — not omniscient" | Mark 13:32; Philippians 2:7 | *kenōsis* — voluntary limitation in the Incarnation |
 | "Show me Jesus and God talking" | Matthew 3:17; Matthew 26:39; John 17:1-5 | The baptism, Gethsemane, the High Priestly Prayer |
+| "The Father is greater than I" | John 14:28; John 10:30; Philippians 2:7 | Incarnational role, not inferior nature |
 | "God is one — Trinity is three gods" | Genesis 1:26; Deuteronomy 6:4; Matthew 28:19 | *echad* (composite one); one *name*, three Persons |
-| "Trinity was invented at Nicaea" | 1 Corinthians 8:6; 2 Corinthians 13:14 | Nicaea defended the apostolic faith, not invented it |
+| "Trinity was invented at Nicaea" | Pliny 112 AD; Ignatius 107 AD; 1 Cor 8:6 | Nicaea (316–2) defended the apostolic faith, not invented it |
 | "Bible has been corrupted" | Dead Sea Scrolls; 5,800+ Greek manuscripts | *tahrif* — Quran itself honors the Bible as revelation |
+| "Mark 16 & John 8 were added later" | Footnoted in every honest translation | No doctrine depends on them; proves transparent transmission |
+| "Constantine assembled the Bible" | Muratorian Fragment 180 AD; Irenaeus 185 AD | Canon recognized 140+ years before Nicaea |
 | "Paul invented Christianity" | 1 Corinthians 15:3-8; Galatians 1:18-19 | Pre-Pauline creed within 2–5 years of the crucifixion |
+| "'Almah' means young woman, not virgin" | Isaiah 7:14; Matthew 1:23 | Jewish translators rendered it *parthenos* (virgin) 200 yrs pre-Christ |
+| "The two genealogies contradict" | Matthew 1; Luke 3 | Legal/royal line vs. biological line; two purposes |
+| "Jesus' 'this generation' prophecy failed" | Matthew 24:34, 36; 70 AD | Temple fell within the generation; final date undated by Jesus |
+| "Judas died two different ways" | Matthew 27:5; Acts 1:18 | Hanged, then the body fell — act and aftermath |
 | "God commanded genocide — Amalekites" | Genesis 15:16; 1 Samuel 15:3; Romans 5:8 | *cherem* — bounded divine judgment, not racial policy |
 | "OT God is wrath, Jesus is love" | Exodus 34:6-7; Matthew 5:17 | One God: the cross is where justice and mercy meet |
+| "Eternal hell for finite sin is unjust" | 1 Timothy 2:4; 2 Peter 3:9; John 3:16 | Rejection of the infinite Source; the door locked from inside |
+| "The Bible endorses slavery" | Exodus 21:2; Philemon 16; Galatians 3:28 | *eved* (indenture) ≠ chattel slavery; the gospel undid it |
 | "Deuteronomy 18 predicts Muhammad" | Deuteronomy 18:15; Acts 3:22; Acts 7:37 | "From your brothers" = Israelite; Jesus fulfills every point |
 | "John 14 Paraclete = Muhammad" | John 14:16-17; Acts 2:1-4 | No manuscript reads *periklutos*; Spirit indwells, not arrives in 600 years |
 | "Jesus didn't die on the cross" | Isaiah 53:3-6; 1 Corinthians 1:23; Tacitus | Three non-Christian sources; crucifixion was a scandal, not an invention |
+| "The Gospel of Barnabas is the true Gospel" | 14th-c. Dante & papal Jubilee references | Medieval forgery; no ancient writer ever cites it |
+| "How can the immortal God die?" | Acts 20:28; Colossians 1:17; Hebrews 2:9 | Two natures; human nature died, divine nature sustained all |
+| "'Three days and three nights' doesn't fit" | Matthew 12:40; 1 Corinthians 15:4 | Hebrew inclusive reckoning — any part of a day counts |
+| "No one saw the resurrection happen" | 1 Corinthians 15:3-8; empty tomb | Named witnesses in a creed within 2–5 years; transformed lives |
+| "Jesus is copied from Horus/Mithras/Osiris" | Actual Egyptian & Mithraic sources | Every claimed parallel absent from the primary texts |
+| "Where did Cain get his wife?" | Genesis 5:4; Leviticus 18 | Close kin; incest prohibition came later, when needed |
+| "All religions teach the same thing" | John 1:14; John 14:6 | Every other system says climb; the gospel says God descended |
 
 ---
 
