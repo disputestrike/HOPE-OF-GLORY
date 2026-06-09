@@ -144,6 +144,34 @@ This objection reads the argument exactly backward. Jesus is using a *lesser-to-
 
 The argument is a *defense* of a unique and unrepeatable claim, not a dilution of it. The crowd did not respond by saying "Oh, fair point, we overreacted." They tried to seize Him again (John 10:39). They understood His claim was not about derivative status.
 
+## "'Lord' Just Means Master — Jesus Is Only God's Agent"
+
+Here is a clever objection. The word "Lord," critics point out, is used all over the Bible for ordinary human masters — it does not by itself mean God. They reach for an example: when David sought Abigail as his wife, she bowed and called David and his servants "lord," saying, "Behold, your servant is a servant to wash the feet of the servants of my lord" (1 Samuel 25:41). So "lord" is just a respectful title for a human master or his *agents*. Therefore — the argument concludes — when the New Testament calls Jesus "Lord," it only means He is an honored *agent* of God, a representative, not God Himself.
+
+Stay in the original, and the objection unravels in stages.
+
+**First, the honest concession:** the word "lord" — Hebrew *adon*, Greek *kyrios* — genuinely does have a range of meanings. It can mean a human master, a polite "sir" (Sarah called Abraham "lord," Genesis 18:12), or the divine LORD Himself. Christians do not argue "Jesus is called Lord, therefore He is God" as a flat word-equation. That would indeed prove too little. The argument is about *which* Scriptures are applied to Jesus, and *how*.
+
+**Second, the decisive fact about *kyrios*:** when the Hebrew Scriptures were translated into Greek (the Septuagint, used everywhere in Jesus's day), the translators rendered the personal divine name *Yahweh* with the Greek word *kyrios* — "Lord." So *kyrios* became the standard Greek stand-in for the very name of God. This matters enormously, because the New Testament repeatedly takes Old Testament passages that are explicitly about *Yahweh* and applies them directly to Jesus, using *kyrios*:
+
+> "For, 'Whoever will call on the name of the Lord will be saved.'" — Romans 10:13 (WEB)
+
+Paul is quoting Joel 2:32 — "whoever calls on the name of *Yahweh* will be saved" — and applying it to Jesus. To call on Jesus *is* to call on the name of Yahweh. That is not the language of an honored agent; that is identification with God Himself.
+
+**Third, the knockout text — Philippians 2:** Paul takes one of the most aggressively monotheistic passages in all of Isaiah, where Yahweh swears that worship belongs to Him *alone*:
+
+> "I have sworn by myself... to me every knee will bow, every tongue will swear." — Isaiah 45:23 (WEB)
+
+— and Paul applies it, word for word, to Jesus:
+
+> "...at the name of Jesus every knee should bow... and every tongue confess that Jesus Christ is Lord, to the glory of God the Father." — Philippians 2:10-11 (WEB)
+
+The knee that Yahweh said would bow to Him alone, Paul says bows to Jesus. An agent does not receive the worship that God reserved exclusively for Himself. Abigail's "lord" never received the knee of every creature in heaven and earth.
+
+**Fourth, the agent argument backfires.** It is true that in Hebrew thought an agent (*shaliach*) carries the full authority of the one who sent him — "a man's agent is like the man himself." But watch what the agents of God actually do when offered worship: the angel in Revelation refuses it twice — "See you don't do it!... Worship God!" (Revelation 19:10; 22:9). Peter refuses it from Cornelius — "Stand up! I myself am also a man" (Acts 10:26). True agents of God recoil from worship and deflect it to God. Jesus does the opposite. He *accepts* worship (Matthew 14:33; 28:9; John 20:28). He forgives sins against God — which the scribes rightly say "only God" can do (Mark 2:7). He says not "thus says the Lord" like every prophet-agent before Him, but "*but I say to you*" (Matthew 5:22), speaking on His own authority. He is the One through whom all things were created (John 1:3; Colossians 1:16). An agent represents the sender's will; Jesus shares the sender's nature: "I and the Father are one" (John 10:30).
+
+So when the early Christians confessed "Jesus is Lord" (Romans 10:9), they were not paying Him the courtesy Abigail paid David. They were applying to Him the name and the worship of Yahweh — and dying rather than offer that same word, *kyrios*, to Caesar. The agent objection, examined in the original, proves the opposite of what it intends: Jesus is not the agent who points away from God; He is the Lord to whom every knee will bow.
+
 ---
 
 # Chapter Two — What "Son of God" Really Means
@@ -478,6 +506,30 @@ First, much of Matthew 24 — the desolation of the Temple, the warnings to flee
 Second, the Greek word translated "generation" — *genea* — can mean a generation of people living at one time, but it can also carry the sense of a *kind, race, or people*. On this reading, Jesus is saying the Jewish people (or the family of faith) will not pass away before all is accomplished — a promise of preservation, remarkably borne out in history.
 
 Third, Jesus explicitly states in the *same discourse* that the timing of the final return is *not* known to Him in His earthly ministry: "But of that day and hour no one knows... but my Father only" (Matthew 24:36). It would be incoherent to read verse 34 as a confident prediction of the date of the end when verse 36 explicitly disclaims knowledge of that date. The careful reader holds the chapter together: the near judgment on Jerusalem came within the generation, exactly as said; the final return is deliberately left undated, by Jesus's own statement.
+
+## "God Rested on the Seventh Day — So Your God Gets Tired"
+
+This is one of the most frequently repeated objections, and one of the easiest to answer once you go to the Hebrew. The argument: Genesis says "God rested" after creation (Genesis 2:2), and Exodus even says He "was refreshed" (Exodus 31:17). But a God who needs rest and refreshment is weak — He gets tired like a man, He needs to recover. So either the Bible's God is limited, or it contradicts the verses that say God never tires. Some press it further: a God who "rests" must sleep, and a sleeping God is no God at all.
+
+The whole objection rests on a single mistranslation in the hearer's mind — and the Hebrew dissolves it instantly.
+
+The word translated "rested" in Genesis 2:2-3 is the Hebrew *shabat* (שָׁבַת). It does **not** mean "to recover from exhaustion." It means **"to cease, to stop, to desist"** — to bring an activity to its completion and stop doing it. It is the root of the word *Shabbat* — Sabbath. God did not collapse on the seventh day from tiredness; He *ceased* the work of creation because it was finished. The very next words say so: "he rested... from all his work which he had done." It is the language of *completion*, not fatigue. A composer who finishes a symphony and lays down his pen has not been exhausted by the final note; he has *finished*.
+
+This is not a Christian rescue of an awkward text. It is what the word means, and Scripture confirms it explicitly. The same God is described in the clearest possible terms:
+
+> "Haven't you known? Haven't you heard? The everlasting God, Yahweh, the Creator of the ends of the earth, doesn't faint. He isn't weary. His understanding is unsearchable." — Isaiah 40:28 (WEB)
+
+> "Behold, he who keeps Israel will neither slumber nor sleep." — Psalm 121:4 (WEB)
+
+God does not faint, does not grow weary, does not slumber, does not sleep. So when Genesis says He "rested," it *cannot* mean He was tired — because the same Scriptures say He is never tired. It must mean what *shabat* actually means: He ceased the work that was complete.
+
+What about Exodus 31:17 — "he rested, and was refreshed"? The word "refreshed" (*vayinnafash*, from *nephesh*) is anthropomorphic language — God describing Himself in human terms so we can understand Him, exactly as the Bible speaks of God's "arm," His "eyes," His "hand," His "nostrils." God does not have a literal arm; the language paints a picture. In the same way, "was refreshed" pictures the satisfaction of a finished work — the way an artist steps back from a completed masterpiece — not the recovery of a depleted laborer. The decisive interpretive key is the explicit statements that God never tires: those govern how we read the poetic ones.
+
+Jesus Himself settles the matter. When challenged for healing on the Sabbath, He said:
+
+> "My Father is still working until now, and I am working." — John 5:17 (WEB)
+
+If God's "rest" meant He had fallen inactive or asleep after creation, Jesus could not say the Father "is still working." God ceased the specific work of *creating*; He never ceased His work of *sustaining and saving*. The seventh-day rest was never about God's need for recovery. It was the establishment of a rhythm — a gift handed to humanity, who *do* tire — and a sign pointing forward to the deeper rest God offers in Christ: "There remains therefore a Sabbath rest for the people of God" (Hebrews 4:9). The objection mistakes a word for completion as a word for exhaustion, and the original language corrects it in a single stroke.
 
 ## "There Are Thousands of Contradictions in the Bible"
 
@@ -1003,6 +1055,7 @@ He is not hiding. The evidence for His claim is written in the manuscripts, in t
 |---|---|---|
 | "Jesus never said 'I am God'" | John 8:58; John 10:33; John 20:28 | *egō eimi* — the divine I AM from Exodus 3:14 |
 | "Son of Man = just a human title" | Daniel 7:13-14; Matthew 26:64 | The one who rides the clouds and receives eternal dominion |
+| "'Lord' just means master — Jesus is only God's agent" | Romans 10:13; Philippians 2:10-11; Isaiah 45:23 | *kyrios* renders *Yahweh*; agents refuse worship — Jesus accepts it |
 | "God begets not — 'Son of God' is blasphemy" | Surah 112; John 3:16; Hebrews 11:17 | *monogenēs* = unique, not biologically begotten; "begotten not made" |
 | "'Son of God' means a literal child" | Exodus 4:22; Psalm 2:7; Job 1:6 | Hebrew idiom of relationship/nature, never procreation |
 | "Jesus didn't know things — not omniscient" | Mark 13:32; Philippians 2:7 | *kenōsis* — voluntary limitation in the Incarnation |
@@ -1017,6 +1070,7 @@ He is not hiding. The evidence for His claim is written in the manuscripts, in t
 | "'Almah' means young woman, not virgin" | Isaiah 7:14; Matthew 1:23 | Jewish translators rendered it *parthenos* (virgin) 200 yrs pre-Christ |
 | "The two genealogies contradict" | Matthew 1; Luke 3 | Legal/royal line vs. biological line; two purposes |
 | "Jesus' 'this generation' prophecy failed" | Matthew 24:34, 36; 70 AD | Temple fell within the generation; final date undated by Jesus |
+| "God rested — so He gets tired / sleeps" | Genesis 2:2; Isaiah 40:28; John 5:17 | *shabat* = ceased (finished), not exhausted; God never tires |
 | "Judas died two different ways" | Matthew 27:5; Acts 1:18 | Hanged, then the body fell — act and aftermath |
 | "God commanded genocide — Amalekites" | Genesis 15:16; 1 Samuel 15:3; Romans 5:8 | *cherem* — bounded divine judgment, not racial policy |
 | "OT God is wrath, Jesus is love" | Exodus 34:6-7; Matthew 5:17 | One God: the cross is where justice and mercy meet |

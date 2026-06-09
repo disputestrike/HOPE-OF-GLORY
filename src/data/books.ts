@@ -213,8 +213,8 @@ export const BOOKS: Book[] = [
       "A soldier-of-faith handbook for the hardest 'gotcha' questions — Jesus never said 'I am God,' 'God begets not' and the meaning of Son of God, the Trinity vs. tawhid, the Bible corrupted (tahrif), the almah/virgin mistranslation, contradictions and 'failed' prophecies, the Amalekites and hell, Muhammad in the Bible, the crucifixion and 'can God die,' the resurrection, Constantine and the pagan-copycat myth, plus thirty rapid-fire answers. Every answer is driven by the original Hebrew and Greek text, with WEB Scripture throughout, so you know exactly why the objection fails — and how to explain it. For the Christian who wants to be ready, the seeker with honest questions, and the Muslim reader who wants to hear the full argument. Free to read and download.",
     file: "hard-questions.md",
     pdf: "/ebooks/hard-questions-hope-of-glory.pdf",
-    pages: 65,
-    readingTimeMin: 115,
+    pages: 67,
+    readingTimeMin: 120,
     anchor: {
       ref: "1 Peter 3:15 · WEB",
       text: "Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you, with humility and fear.",
