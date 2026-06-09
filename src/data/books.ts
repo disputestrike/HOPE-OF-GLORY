@@ -205,6 +205,37 @@ export const BOOKS: Book[] = [
     ],
   },
   {
+    slug: "hard-questions",
+    title: "Hard Questions",
+    subtitle:
+      "What the Original Text Actually Says — Every Major Objection Against Jesus, the Bible, and the Gospel Answered",
+    description:
+      "A soldier-of-faith handbook for the hardest 'gotcha' questions — Jesus never said 'I am God,' the Trinity is three gods, the Bible has been corrupted, Muhammad is in Deuteronomy 18, God commanded genocide, Jesus didn't die on the cross, and more. Every answer is driven by the original Hebrew and Greek text, with WEB Scripture throughout, so you know exactly why the objection fails — and how to explain it. For the Christian who wants to be ready, the seeker with honest questions, and the Muslim reader who wants to hear the full argument. Free to read and download.",
+    file: "hard-questions.md",
+    pdf: "/ebooks/hard-questions-hope-of-glory.pdf",
+    pages: 31,
+    readingTimeMin: 50,
+    anchor: {
+      ref: "1 Peter 3:15 · WEB",
+      text: "Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you, with humility and fear.",
+    },
+    audiences: [
+      "Christians (apologetics)",
+      "Muslim readers",
+      "Skeptics",
+      "Seekers",
+    ],
+    chapters: [
+      "Did Jesus Claim to Be God?",
+      "Jesus Had Human Limitations",
+      "One God or Three? The Trinity vs. Monotheism",
+      "Has the Bible Been Changed?",
+      "The Hard God of the Old Testament",
+      "Is Muhammad in the Bible?",
+      "Did Jesus Die on the Cross?",
+    ],
+  },
+  {
     slug: "deeper-reading",
     title: "Deeper Reading",
     subtitle:
