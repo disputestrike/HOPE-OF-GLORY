@@ -213,7 +213,7 @@ export const BOOKS: Book[] = [
       "Learn to read the Bible the way its first readers did. The four questions that unlock any passage, the language of numbers (why 40 keeps returning), the sacred calendar that rehearses the gospel, the thread from Eden to the temple to Christ, the prophets' enacted signs, and Genesis read against the ancient world — all to meet the Author. For the believer who senses there is more beneath the surface. Free to read and download.",
     file: "deeper-reading.md",
     pdf: "/ebooks/deeper-reading-hope-of-glory.pdf",
-    pages: 18,
+    pages: 26,
     readingTimeMin: 40,
     anchor: {
       ref: "Psalm 119:18 · WEB",
