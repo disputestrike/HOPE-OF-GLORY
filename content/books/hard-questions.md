@@ -172,6 +172,30 @@ The knee that Yahweh said would bow to Him alone, Paul says bows to Jesus. An ag
 
 So when the early Christians confessed "Jesus is Lord" (Romans 10:9), they were not paying Him the courtesy Abigail paid David. They were applying to Him the name and the worship of Yahweh — and dying rather than offer that same word, *kyrios*, to Caesar. The agent objection, examined in the original, proves the opposite of what it intends: Jesus is not the agent who points away from God; He is the Lord to whom every knee will bow.
 
+## "No One Has Ever Seen God — But People Saw Jesus"
+
+The objection is built from real verses: "No one has seen God at any time" (John 1:18); "No man has seen God at any time" (1 John 4:12); God "dwells in unapproachable light, whom no man has seen, nor can see" (1 Timothy 6:16). But thousands of people *saw* Jesus — touched Him, ate with Him, buried Him. Therefore, the argument concludes, Jesus cannot be God.
+
+The answer is hidden in plain sight — in the second half of the very verse the objection quotes:
+
+> "No one has seen God at any time. The one and only Son, who is in the bosom of the Father, has declared him." — John 1:18 (WEB)
+
+The same sentence that says "no one has seen God" says that the Son "has declared him" — has made the invisible God known, visible. John is not stating a problem; he is announcing the solution. The invisible God has revealed Himself in the Son.
+
+To see how this works, notice that the Bible *also* says certain people did "see God." Jacob said, "I have seen God face to face" (Genesis 32:30). Moses and seventy elders "saw the God of Israel... they saw God, and ate and drank" (Exodus 24:9-11). Isaiah said, "I saw the Lord sitting on a throne, high and lifted up" (Isaiah 6:1). Yet Exodus 33:20 records God saying, "You cannot see my face, for man may not see me and live." So which is it — has God been seen, or not?
+
+Both are true, because they describe two different things. No one has ever seen the **unveiled divine essence in its full glory** — that sight no mortal could survive (Exodus 33:20). But God has, many times, made Himself **visible in a form humans can encounter** — and people "saw God" in that accommodated sense. The distinction is the whole point.
+
+And that distinction is exactly what the Incarnation completes. The unseeable God took on visible human flesh:
+
+> "The Word became flesh and lived among us." — John 1:14 (WEB)
+
+> "He is the image of the invisible God." — Colossians 1:15 (WEB)
+
+> "In him all the fullness of the Godhead dwells bodily." — Colossians 2:9 (WEB)
+
+So when Philip asked to be shown the Father, Jesus answered, "Have I been with you such a long time, and do you not know me, Philip? He who has seen me has seen the Father" (John 14:9). Far from disproving His deity, "no one has seen God" sets the stage for the Incarnation: the God no one could see has shown Himself, at last, in the face of His Son. To have seen Jesus is to have seen, in flesh we could bear to look at, the invisible God.
+
 ---
 
 # Chapter Two — What "Son of God" Really Means
@@ -307,6 +331,36 @@ There are two levels to this answer.
 
 To take John 14:28 out of John's whole portrait and treat it as a definitive statement of ontological inferiority is like reading one side of a conversation and ignoring everything else the person said. Read the whole Gospel, and the One who says "the Father is greater than I" is the same One who accepted Thomas's "My Lord and my God" without correction. He is not less than God; He is the eternal Son who chose to walk as a servant, and who is now going back to the Father to be glorified with "the glory which I had with you before the world existed."
 
+## Gethsemane — Was Jesus Afraid? "Let This Cup Pass From Me"
+
+This is one of the most pressed objections, and a sincere one. In the garden of Gethsemane, on the night before His death, Jesus is "deeply distressed and troubled" (Mark 14:33); He says, "My soul is exceedingly sorrowful, even to death" (Mark 14:34); Luke records that "his sweat became like great drops of blood falling down on the ground" (Luke 22:44); and He falls on His face and prays, "My Father, if it is possible, let this cup pass away from me; nevertheless, not what I desire, but what you desire" (Matthew 26:39). The objection follows: a God would not be afraid of death. A *willing* sacrifice would not beg to avoid it. So Jesus is just a frightened man — not God, and not a willing offering.
+
+Stay in the original, and look at one word: **the cup.**
+
+Jesus was not flinching at the prospect of physical pain or Roman nails. Lesser men — His own martyred apostles, countless others — faced execution with composure; it would be strange for the Son of God to break down in terror at what they endured calmly. Something far greater was in that cup. In the Hebrew prophets, "the cup" is a fixed and terrible image — it is the **cup of the wrath of God**, the judgment of God against sin, which the guilty must drink:
+
+> "For in Yahweh's hand there is a cup, full of foaming wine mixed with spices. He pours it out. Indeed the wicked of the earth drink it to its very dregs." — Psalm 75:8 (WEB)
+
+> "Awake, awake, stand up, Jerusalem, you who have drunk at Yahweh's hand the cup of his wrath." — Isaiah 51:17 (WEB)
+
+> "Take this cup of the wine of wrath from my hand, and cause all the nations... to drink it." — Jeremiah 25:15 (WEB)
+
+Jesus, a Jew steeped in the prophets, knew exactly what cup He faced. It was not death; it was *judgment* — the full, undiluted cup of divine wrath against all the sin of the world, which He was about to drink in our place. He, the sinless One, in unbroken communion with the Father from eternity, was about to "become sin" for us (2 Corinthians 5:21) and bear the punishment we had earned. His sorrow was not the weakness of a coward; it was the truest possible measure of the horror of what He had freely undertaken. The agony is the *gauge* of the love.
+
+And the prayer — "not what I desire, but what you desire" — is the Incarnation doing precisely what it came to do. The human will of the incarnate Son, feeling the full weight of the cup, submitted itself perfectly to the Father's will. In the first garden, the first Adam said in effect, *my will, not Yours*, and the world fell. In this garden, the last Adam said, *Your will, not mine* — and began to lift the world back up. The two gardens answer each other.
+
+Was it willing? Completely. The same Jesus said:
+
+> "No one takes [my life] away from me, but I lay it down by myself. I have power to lay it down, and I have power to take it again." — John 10:18 (WEB)
+
+> "...who for the joy that was set before him endured the cross, despising its shame..." — Hebrews 12:2 (WEB)
+
+Real agony and free choice are not opposites. A sacrifice that feels every ounce of the cost and offers itself *anyway* is more loving, not less. And He did not, in the end, ask to escape — He resolved to drink. Minutes later, when Peter drew a sword to defend Him, Jesus rebuked him:
+
+> "The cup which the Father has given me, shall I not surely drink it?" — John 18:11 (WEB)
+
+He asked in the garden whether the cup could pass; the answer was no; and He drank it to the dregs at Calvary. As for the charge that He was "praying to Himself" — He was not. The Son, in His genuine human nature, was addressing the Father — the real relational distinction within the one God (see the next chapter). Gethsemane is not evidence against His deity. It is the clearest window in all of Scripture into what the cross actually cost — and into a love willing to pay it.
+
 ---
 
 # Chapter Four — One God or Three? The Trinity vs. Monotheism
@@ -358,6 +412,20 @@ To be precise about what Christians actually believe:
 The Trinity is: one God, eternally existing as three distinct, co-equal, co-eternal Persons — Father, Son, and Holy Spirit — who share one divine nature. Each Person is fully God, not one-third of God. The Father is not the Son; the Son is not the Spirit; they are one in being and three in Person.
 
 The Muslim concern about *shirk* is a concern about worshipping *creatures* alongside God. Christians share this concern completely. The Son and the Spirit are not creatures elevated to divine status. They are the eternal, uncreated God — the inner life of the one God, made known in history.
+
+## "But Jesus Himself Affirmed the Shema — 'The Lord Is One'"
+
+A scribe once asked Jesus which commandment is the greatest, and Jesus answered by quoting the Shema: "The first is, 'Hear, Israel, the Lord our God, the Lord is one'" (Mark 12:29). The objection: Jesus Himself recited the great confession of strict monotheism. He did not say "I am God"; He affirmed that God is *one*. So Jesus was a monotheistic Jew who pointed away from Himself to the one God — not a man claiming deity.
+
+The answer is that **Christians affirm the Shema too — and the Trinity is the Shema, not its denial.** The oneness of God is not in dispute between Christians and the objector; it is shared ground. The Trinity does not teach three gods; it teaches that the one God of the Shema exists eternally as Father, Son, and Spirit. As shown earlier in this chapter, the Hebrew word for "one" in the Shema is *echad* — the word used for composite unity ("the two shall become one flesh," Genesis 2:24) — not *yachid*, the word for an absolute, solitary singularity. To affirm "the Lord is one" is fully compatible with the fullness within that one God.
+
+But there is something far more striking. The apostle Paul — a former strict Pharisee, a man who would sooner die than commit idolatry — took the Shema itself and placed Jesus *inside* it:
+
+> "Yet to us there is one God, the Father, of whom are all things, and we for him; and one Lord, Jesus Christ, through whom are all things, and we live through him." — 1 Corinthians 8:6 (WEB)
+
+The Shema says, "the Lord our God, the Lord is *one*" — in Greek, "one God... one Lord." Paul takes that one confession and distributes it: the "one God" is the Father, *and* the "one Lord" is Jesus Christ — while still insisting there is only one. For a monotheistic Jew to split the Shema between the Father and Jesus, without abandoning monotheism, is staggering. It shows that the earliest Christians understood the "one" of the Shema to *include* the Son, not to exclude Him.
+
+And note what Jesus does immediately *after* affirming the Shema in Mark 12. A few verses later (Mark 12:35-37), He raises Psalm 110:1 — "The Lord said to my Lord" — to show that the Messiah is David's *Lord*, not merely David's son, pressing His own identity beyond that of any mere human descendant. In the same conversation, Jesus affirms that God is one *and* presses the question of how the Messiah can be David's Lord. Affirming the one God and claiming to share that one God's identity are not contradictory in Jesus's own mouth — they are two sides of who He is.
 
 ## "John 17:3 — Jesus Called the Father 'the Only True God'"
 
@@ -651,6 +719,8 @@ Several problems stand against this argument.
 
 **Third: the timeline.** Jesus tells His disciples to "stay in Jerusalem and wait" (Acts 1:4) — the Counselor is coming soon, within their experience. The Spirit arrives at Pentecost, fifty days after the resurrection (Acts 2:1-4), exactly as promised. The fulfillment of John 14 is Acts 2 — the outpouring of the Holy Spirit on the disciples, exactly when and how Jesus described.
 
+**Fourth: "he speaks what he hears" describes the Spirit, not a man.** A common follow-up objection seizes on John 16:13 — "He will not speak from himself; but whatever he hears, he will speak" — and on the masculine pronoun "he," to argue the Comforter must be a human prophet who *hears* revelation and relays it. But two things answer this. The masculine pronoun (*ekeinos*) simply follows the grammatical gender of the masculine noun *paraklētos*; Greek pronouns track grammatical gender, not biological sex — and Jesus has *already named* who the Comforter is: "the Spirit of truth" (John 14:17; 16:13) and "the Holy Spirit" (John 14:26). He is not leaving the identity open. And "speaks what he hears, not from himself" is not the mark of a coming prophet — it is the *exact relationship the Son already has with the Father*: "I can do nothing of myself... as I hear, I judge" (John 5:30); "I say the things which I have heard from him" (John 8:26). The Spirit relating to the Father and Son the same way the Son relates to the Father is Trinitarian harmony, not a human messenger. Most decisively, Jesus says the Comforter's whole mission is to glorify *Him*: "He will glorify me, for he will take of what is mine, and will declare it to you" (John 16:14). A prophet who arrives six centuries later to bring a new and final message does not exist to glorify Jesus and take what is His. The Spirit does.
+
 ## The Test of a True Prophet — and the Evidence That Passes It
 
 Deuteronomy 18:21-22 gives an empirical test for prophecy: "If the prophet speaks in Yahweh's name, and the thing doesn't follow, nor come to pass, that is the thing which Yahweh has not spoken." The prophet whose predictions do not come true is not speaking for God. And the prophet who predicts something in God's name that does come true has unmistakable credentials.
@@ -794,6 +864,22 @@ The cross is not God demanding blood from a powerless victim; it is God, in Jesu
 *God was in Christ.* The Judge did not send someone else; He came Himself. He did not demand that humanity pay what it could not pay; He entered the human condition and paid it from within. This is not primitive ritual; it is the most sophisticated act of justice and love in the history of the universe — love that was not sentimental enough to ignore the debt, and justice that was not cold enough to let humanity bear it alone.
 
 The question "why does God need blood?" misunderstands the grammar of the transaction. God did not *need* sacrifice; He provided it. "God will provide the lamb for himself" — Abraham said it over his son at Moriah (Genesis 22:8), and he said it before the ram appeared in the thicket, as if he already knew. And God did provide the Lamb. The cross was not weakness; it was the lamb in the thicket, finally, for the whole world.
+
+## "My God, My God, Why Have You Forsaken Me?" — Did God Abandon Jesus?
+
+From the cross, Jesus cried, "My God, my God, why have you forsaken me?" (Matthew 27:46). The objection takes several forms: If Jesus were God, He could not be forsaken *by* God. If God abandoned Him, then either Jesus failed, or the Godhead was torn apart. And "*my* God" shows Jesus has a God above Him — so He is not God.
+
+The first thing to see is that **Jesus is quoting Scripture.** These are the opening words of Psalm 22 — a psalm every devout Jew knew by heart. In Jewish practice, to quote the first line of a passage was to invoke the *whole* of it. And Psalm 22, which opens in apparent abandonment, is the single most detailed prophecy of crucifixion ever written — composed centuries before crucifixion was even practiced:
+
+> "They have pierced my hands and my feet... They divide my garments among them, and cast lots for my clothing." — Psalm 22:16-18 (WEB)
+
+Those words were being fulfilled, literally, around the cross at that very moment — the soldiers were casting lots for His clothing as He spoke. And the psalm does not end in despair. It turns to triumph and vindication:
+
+> "For he has not despised nor abhorred the affliction of the afflicted... they will come and declare his righteousness to a people that will be born, for he has done it." — Psalm 22:24, 31 (WEB)
+
+Far from a cry of lost faith, Jesus — in His last strength — points every watcher to the one Scripture that scripts the entire scene and ends in resurrection victory and a people "that will be born." It is, in a sense, His final sermon: *all of this is written; it is being fulfilled before your eyes.*
+
+What was happening theologically? In that hour the Son was bearing the sin of the world — "Yahweh has laid on him the iniquity of us all" (Isaiah 53:6); God "made him to be sin on our behalf" (2 Corinthians 5:21). He was drinking the cup of judgment to its dregs, experiencing in His human nature the judicial God-forsakenness that our sin deserved — so that we would never have to. This is the cost of substitution, not the rupture of the Trinity. The eternal union of Father and Son cannot be divided, for the divine nature is indivisible; but the incarnate Son tasted, in His human experience, the abandonment that was the wage of *our* sin. "My God" is the incarnate Son, in His humanity, addressing the Father — exactly as the sufferer of Psalm 22 does. He was forsaken, in that hour, so that we could be welcomed forever. It is the most expensive sentence ever spoken, and every word of it was for us.
 
 ## Isaiah 53 — Written 700 Years Before the Event
 
@@ -1056,11 +1142,15 @@ He is not hiding. The evidence for His claim is written in the manuscripts, in t
 | "Jesus never said 'I am God'" | John 8:58; John 10:33; John 20:28 | *egō eimi* — the divine I AM from Exodus 3:14 |
 | "Son of Man = just a human title" | Daniel 7:13-14; Matthew 26:64 | The one who rides the clouds and receives eternal dominion |
 | "'Lord' just means master — Jesus is only God's agent" | Romans 10:13; Philippians 2:10-11; Isaiah 45:23 | *kyrios* renders *Yahweh*; agents refuse worship — Jesus accepts it |
+| "No one has seen God — but people saw Jesus" | John 1:18; Exodus 33:20; Colossians 2:9 | Unveiled essence vs. God made visible; the Incarnation |
+| "Jesus affirmed the Shema — 'the Lord is one'" | Mark 12:29; 1 Corinthians 8:6 | *echad* (composite one); Paul puts Jesus inside the Shema |
 | "God begets not — 'Son of God' is blasphemy" | Surah 112; John 3:16; Hebrews 11:17 | *monogenēs* = unique, not biologically begotten; "begotten not made" |
 | "'Son of God' means a literal child" | Exodus 4:22; Psalm 2:7; Job 1:6 | Hebrew idiom of relationship/nature, never procreation |
 | "Jesus didn't know things — not omniscient" | Mark 13:32; Philippians 2:7 | *kenōsis* — voluntary limitation in the Incarnation |
 | "Show me Jesus and God talking" | Matthew 3:17; Matthew 26:39; John 17:1-5 | The baptism, Gethsemane, the High Priestly Prayer |
 | "The Father is greater than I" | John 14:28; John 10:30; Philippians 2:7 | Incarnational role, not inferior nature |
+| "Jesus was afraid — begged for the cup to pass" | Matthew 26:39; Psalm 75:8; John 18:11 | "The cup" = wrath/judgment, not death; willing yet costly |
+| "God forsook Jesus on the cross" | Matthew 27:46; Psalm 22:1, 24, 31 | Quoting Psalm 22, which ends in victory; bearing our judgment |
 | "God is one — Trinity is three gods" | Genesis 1:26; Deuteronomy 6:4; Matthew 28:19 | *echad* (composite one); one *name*, three Persons |
 | "Trinity was invented at Nicaea" | Pliny 112 AD; Ignatius 107 AD; 1 Cor 8:6 | Nicaea (316–2) defended the apostolic faith, not invented it |
 | "Bible has been corrupted" | Dead Sea Scrolls; 5,800+ Greek manuscripts | *tahrif* — Quran itself honors the Bible as revelation |
@@ -1078,6 +1168,7 @@ He is not hiding. The evidence for His claim is written in the manuscripts, in t
 | "The Bible endorses slavery" | Exodus 21:2; Philemon 16; Galatians 3:28 | *eved* (indenture) ≠ chattel slavery; the gospel undid it |
 | "Deuteronomy 18 predicts Muhammad" | Deuteronomy 18:15; Acts 3:22; Acts 7:37 | "From your brothers" = Israelite; Jesus fulfills every point |
 | "John 14 Paraclete = Muhammad" | John 14:16-17; Acts 2:1-4 | No manuscript reads *periklutos*; Spirit indwells, not arrives in 600 years |
+| "The Comforter 'hears and speaks' — it's a man" | John 16:13-14; John 5:30; 8:26 | Same relation the Son has to the Father; exists to glorify Jesus |
 | "Jesus didn't die on the cross" | Isaiah 53:3-6; 1 Corinthians 1:23; Tacitus | Three non-Christian sources; crucifixion was a scandal, not an invention |
 | "The Gospel of Barnabas is the true Gospel" | 14th-c. Dante & papal Jubilee references | Medieval forgery; no ancient writer ever cites it |
 | "How can the immortal God die?" | Acts 20:28; Colossians 1:17; Hebrews 2:9 | Two natures; human nature died, divine nature sustained all |
