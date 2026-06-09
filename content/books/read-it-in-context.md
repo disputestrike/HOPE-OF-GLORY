@@ -55,6 +55,26 @@ That is not a small overlap. It means the conversation between us is not between
 
 To "read in context" cuts both ways. It means a Christian must not quote the Qur'an out of context to score points, and it means a Muslim is invited to read the Bible whole rather than through a handful of contested verses. It also means we must let each text speak in its own voice before we judge it. In what follows I will try to state the Muslim objection as a thoughtful Muslim would state it — not a straw version — and then answer it from the Scriptures in context. If I ever fail to represent your view fairly, the failure is mine, and the remedy is the same rule: read it in context.
 
+## The same words, different meanings
+
+There is a particular trap in Christian–Muslim conversation that derails more dialogues than any other, and naming it kindly will save us much grief. It is this: we often use the *same words* while meaning *different things*. Both faiths say "God," "prophet," "Word of God," "gospel," "Messiah," even "Jesus." But the content poured into those words differs, sometimes enormously. When a Muslim says "Jesus," he means a great prophet who was not crucified and is not divine; when a Christian says "Jesus," he means God the Son, crucified and risen. Same name, very different person.
+
+This is not, I want to stress, anyone being *deceptive* — it is simply the ordinary hazard of two rich traditions sharing a vocabulary. But if we do not slow down and *define our terms*, we will talk past each other for hours, each thinking the other has agreed or disagreed when neither has understood. Honest dialogue does the patient work of asking, "When you say that word, what exactly do you mean?" The command Scripture gives the Christian fits here perfectly:
+
+> "Give diligence to present yourself approved by God, a workman who doesn't need to be ashamed, properly handling the word of truth." — 2 Timothy 2:15 (WEB)
+
+"Properly handling" — literally, cutting straight. To read in context is to handle words honestly: to let each text mean what it means, and to make sure that when we agree or disagree, we are actually talking about the same thing. Much of what looks like a deep clash between the faiths is, at least at first, a clash of definitions. Clear the fog of shared-but-different words, and the real questions stand out sharply — which is exactly what makes them worth facing.
+
+## Reading charitably, in both directions
+
+There is a golden rule for handling someone else's sacred text, and it is simply the Golden Rule applied to reading: interpret the other's faith as you would want yours interpreted. None of us wants our deepest convictions represented by their weakest or strangest version, quoted out of context, or reduced to a caricature. So a Christian writing about Islam must resist the cheap victory of attacking a straw Muslim, and a Muslim weighing Christianity should resist hearing only its critics. Scripture itself rebukes the rush to refute before understanding:
+
+> "He who answers before he hears, that is folly and shame to him." — Proverbs 18:13 (WEB)
+
+To "answer before he hears" — to fire off a rebuttal before truly grasping what the other believes — is named folly. This cuts against the grain of most religious argument online, which is built almost entirely on answering before hearing. The patient, harder, more honest way is to first state the other's view so fairly that they would say, "Yes, that is what I believe" — and only then to weigh it.
+
+This book tries to do that with Islam, and it asks the same courtesy in return for the Christian claims it makes. Reading charitably is not the same as agreeing; it is the precondition for an honest disagreement. We can differ sharply about who Jesus is and still refuse to bear false witness about each other. Indeed, the command not to bear false witness applies to how we represent our neighbor's beliefs, not only his actions. So let the comparison that follows be a fair fight or no fight at all — each view stated at its strongest, then tested by the texts in context.
+
 ---
 
 # Chapter Two — One God: Tawhid and the Trinity
@@ -85,6 +105,24 @@ The Muslim worry is that calling Jesus divine *associates* a creature with God �
 
 So the dispute between us is not really "one God versus three gods." We both insist God is one. The dispute is *who the one God is*: a solitary single person, or one God eternally rich in fellowship — Father, Son, and Spirit. That is a real and deep difference. But it is not the difference Muslims often think it is. We are not counting to three. We are saying the One is fuller than we imagined. (Our companion book *Hear, O Israel* traces this all through the Hebrew Scriptures.)
 
+## The Trinity Christians actually reject — and the one we confess
+
+Here is a striking thing that should bring our two faiths closer before it divides them. The Qur'an appears, in one place, to describe the Christian Trinity as God, Jesus, and *Mary* — and to reject worshiping Mary and Jesus as two gods alongside God (Surah 5:116). And to that, every faithful Christian says a hearty *amen*: we reject that "trinity" too. We do not believe God took a wife, that Mary is divine, or that there are three gods. If that is what the Trinity meant, it would be the very idolatry the Bible most forbids: "I am Yahweh. That is my name. I will not give my glory to another" (Isaiah 42:8).
+
+So part of the disagreement between us may rest on a misunderstanding of what Christians actually claim. The Trinity is not God plus two others promoted to deity. It is the confession that the *one* God — the one Yahweh of the Shema — has eternally existed as Father, Son, and Holy Spirit: one Being, three persons, no division of His oneness:
+
+> "In the beginning was the Word, and the Word was with God, and the Word was God... The Word became flesh, and lived among us." — John 1:1, 14 (WEB)
+
+The Son is not a creature beside God, nor a second deity, nor Mary's elevation — He is the eternal Word who *was God* and became flesh. Mary is honored as the mother of the Lord, never worshiped. When we understand each other accurately, the dispute narrows to one real and serious question: not "do Christians believe in three gods?" (we do not), but "is Jesus the eternal Word of the one God, or only a prophet?" That is a true difference, worth all our honesty — but it is not the cartoon of three gods that sometimes stands in its place.
+
+## Why the one God is rich, not lonely
+
+There is a question worth raising gently, because it reaches the heart of why Christians confess God as Father, Son, and Spirit rather than as a single solitary person. The Bible makes a claim about God's very nature that a solitary monotheism cannot easily make: that "God is love" (1 John 4:8) — not merely that God *is loving* toward His creatures, but that love is what God eternally *is*, in His own being.
+
+But love requires an object. A person who is utterly alone cannot be *loving* until there is someone to love; love would be something such a god *began* to do once he created, not something he eternally *is*. The Christian confession answers this: the one God has never been a solitary monad, because the Father has eternally loved the Son in the joy of the Spirit. Jesus prays to the Father, "you loved me before the foundation of the world" (John 17:24). Before there was a universe, before there was anything to create, there was love within God — the Father, the Son, and the Spirit in eternal communion.
+
+This is not a math problem (one cannot be three) but a window into why God is good news. It means God did not create us out of loneliness or need, but out of the overflow of a love already full. It means that at the foundation of all reality is not a distant solitary will but self-giving love, older than time. We raise this not to win an argument but to show that the Trinity, far from compromising God's greatness, magnifies it: the one God is so rich in His own being that He *is* love, and has been, eternally. That is a God worth knowing — and a claim worth weighing honestly, whatever you conclude.
+
 ---
 
 # Chapter Three — Has the Bible Been Corrupted?
@@ -114,6 +152,26 @@ Here is the heart of the matter. The high view of Jesus — His deity, His death
 > "The grass withers, the flower fades; but the word of our God stands forever." — Isaiah 40:8 (WEB)
 
 So when a Christian quotes the Bible to you, you are within your rights to test what it says. But "it's been changed" is not a historical answer; it is a way of not having the conversation. The text we hold is, by every measure available to history, the text the first Christians wrote. The real question is not whether the Bible was corrupted, but whether what it plainly says is *true*.
+
+## What the evidence actually looks like
+
+It is fair to ask for specifics rather than assurances, so here are some. For the Old Testament, the Dead Sea Scrolls — discovered in 1947 and dating from before the time of Jesus — included a complete scroll of Isaiah roughly a thousand years older than the manuscripts we had before. When scholars compared it to the medieval text, the agreement was extraordinary; across a thousand years of copying, the message stood unchanged. That is not what a corrupted text looks like; it is what a carefully guarded one looks like.
+
+For the New Testament, we possess thousands of Greek manuscripts plus early translations and quotations — including fragments of the Gospels from the second and third centuries, well before Islam. This abundance is precisely what lets scholars *see* the small copying differences (a spelling, a word order) and reconstruct the original with confidence. A text known from a single late copy could hide its errors; a text known from thousands of early ones cannot. The variants are visible *because* the evidence is overwhelming, and none of them touch the gospel.
+
+> "Heaven and earth will pass away, but my words will not pass away." — Matthew 24:35 (WEB)
+
+So the honest picture is the opposite of the rumor. There is no trace of an earlier, "purer," prophet-only Bible that was later overwritten to insert the deity of Christ; the crucified and risen Lord is in the *earliest* layer we can reach, on every continent the church reached, copied by communities that could not have coordinated. To examine the manuscripts is not to find a corrupted book, but a remarkably stable one — which simply returns us to the harder and more important question: not whether the Bible was changed, but whether what it has always said is *true*.
+
+## What corrupting the Bible would actually have required
+
+Step back and consider what the corruption theory is really asking us to believe, because the logistics expose how unlikely it is. By the time anyone might have wished to alter the Christian Scriptures, they were already *everywhere* — copied by hand in Greek, Latin, Syriac, Coptic, Armenian, and more; scattered across Egypt, Asia Minor, Greece, Italy, Africa, and the East; read in thousands of independent congregations; quoted endlessly in the letters and sermons of early teachers. There was no central headquarters, no single library, no controlling authority that *could* have recalled every copy and edited them in unison.
+
+To corrupt such a text — to insert, say, the deity and resurrection of Christ where it had not been — someone would have had to track down every manuscript on three continents, in a half-dozen languages, held by communities that often disagreed with one another, and change them all identically, leaving no older "uncorrupted" copy and no record of protest anywhere. That is not how the historical record looks, and frankly it is not how textual transmission *can* work. When documents are copied widely and independently, errors creep in *locally* and are easily spotted by comparison; coordinated, universal, undetectable alteration is impossible.
+
+> "The grass withers, and its flower falls; but the Lord's word endures forever." — 1 Peter 1:24-25 (WEB)
+
+So the corruption theory, examined practically, asks for a conspiracy no one had the power to carry out and which left no fingerprints. The simpler and better-evidenced explanation is the one the manuscripts themselves give: the text we hold is, in all that matters, the text the apostles wrote. Which means the real question was never the manuscripts. It is the message.
 
 ---
 
@@ -150,6 +208,26 @@ Read in context, the Comforter is unmistakably the Holy Spirit, given to Jesus' 
 
 Notice what each of these three arguments has in common: each is persuasive *only* when the verse is lifted out of its paragraph. Put the verse back — "from among their brothers," the gentle servant Matthew names as Jesus, the Spirit who comes in days and lives inside the disciples — and the case evaporates. This is exactly why the rule of this book matters. Read it in context, and the Old and New Testaments point not away from Jesus but straight to Him.
 
+## The test a true prophet must pass
+
+The question of later prophets is not one the Bible leaves us to guess about; it gives explicit *tests*, and applying them honestly is part of reading in context. The Torah lays down two criteria a true prophet must meet. First, his words must come true:
+
+> "When a prophet speaks in Yahweh's name, if the thing doesn't follow, nor happen, that is the thing which Yahweh has not spoken. The prophet has spoken it presumptuously." — Deuteronomy 18:21-22 (WEB)
+
+Second — and this one is decisive — even a prophet whose signs come true must be rejected if he turns people *away from the God who has already revealed Himself* to follow other gods or another way (Deuteronomy 13:1-5). The test is not merely "Did he perform wonders?" but "Does his message agree with what God has already spoken?" A later voice that contradicts the earlier revelation cannot be from the same God, for "God is not a man, that he should lie" (Numbers 23:19), and He does not reverse Himself.
+
+This is why, for the Christian, the question of any later prophet comes down to a single point: does his message agree with the Christ already revealed in the Scriptures — the crucified, risen Son of God — or does it deny Him? The New Testament applies exactly this test: "every spirit who confesses that Jesus Christ has come in the flesh is of God, and every spirit who doesn't confess that Jesus has come in the flesh is not of God" (1 John 4:2-3). We do not reject later claims out of prejudice, but by the measure God Himself gave: a true word from God will never overturn the Son God has already sent. So the road leads us, unavoidably, back to the central question — who is Jesus?
+
+## Reading prophecy forward, not a name backward
+
+It is worth naming the *method* difference underneath the prophecy question, because it explains why Christians and Muslims read these texts so differently. The Christian way of reading fulfilled prophecy is to look for a *pattern and a person* that the text genuinely anticipates, confirmed by the New Testament's own use — not to hunt for a *name* hidden in the letters. When the Gospels say Jesus fulfilled the Scriptures, they point to things like Bethlehem as the Messiah's birthplace:
+
+> "But you, Bethlehem Ephrathah, being small among the clans of Judah, out of you one will come out to me that is to be ruler in Israel; whose goings out are from of old, from ancient times." — Micah 5:2 (WEB)
+
+A specific town, named seven centuries early, where a ruler "from ancient times" would be born — and Jesus was born there. That is prophecy read forward: a detail planted in advance and matched by an event. It is a very different thing from taking a verse that, in context, speaks of Israel or the Holy Spirit and reading a later figure's name into it. The first respects what the text meant to its original hearers; the second imposes a meaning from outside.
+
+This is the heart of "read it in context." Jesus told His disciples that "all things which are written in the law of Moses, the prophets, and the psalms concerning me must be fulfilled" (Luke 24:44) — and then showed them, passage by passage, a coherent portrait the texts had been painting all along: born of a virgin, in Bethlehem, of David's line, pierced, buried with the rich, raised the third day. The case for Jesus is not one clever proof-text but a cumulative portrait, drawn across centuries, that He alone fits. That is the kind of fulfillment worth examining — and the kind the texts, read in context, actually offer.
+
 ---
 
 # Chapter Five — Who Is Jesus: Prophet or More?
@@ -180,6 +258,28 @@ For the Christian, the crucifixion is not a defeat to be explained away but the 
 
 If Islam is right, Jesus is a revered prophet and we should honor him as such. If Christianity is right, Jesus is God-with-us who died to save you, and to treat Him as merely a prophet is to miss the rescue God Himself came to bring. Both cannot be true. This is not a difference to paper over with talk of "we all believe the same things." We do not — not here. And because the stakes are eternal, the question deserves your most honest attention: not "which faith is my tradition?" but "who is Jesus, really?"
 
+## The titles the Qur'an gives Jesus — and the questions they raise
+
+Here is common ground that turns, gently, into the deepest question. The Qur'an itself honors Jesus with titles it gives to no other prophet. It affirms His virgin birth. It calls Him *al-Masih*, the Messiah. And remarkably, it calls Him a "Word" from God and a "Spirit" from Him. A fair-minded Muslim reader should feel the weight of these honors: no other prophet in Islam is born of a virgin, named the Messiah, or called God's Word and Spirit.
+
+These titles raise questions they do not, within Islam, fully answer. *Why* is this prophet, and no other, born without a human father? *Why* is He, and no other, called the Messiah — the anointed King the Hebrew Scriptures had promised? And what does it mean to call Him the "Word" of God? For the Christian, the Hebrew and Christian Scriptures answer precisely these questions: the Word of God is eternal and divine — "the Word was with God, and the Word was God" (John 1:1) — and became flesh in the virgin-born Messiah. The very honors Islam pays Jesus point, when followed in context, toward the fuller identity the Gospels proclaim.
+
+We do not press this to score a point, but because the titles invite the question. When Thomas, a Jewish monotheist who would never call a mere man "God," met the risen Jesus, he fell down and said:
+
+> "Thomas answered him, 'My Lord and my God!'" — John 20:28 (WEB)
+
+And Jesus did not correct him. The titles "Messiah," "Word," and "Spirit" are not small. Read in their full context, they ask the Muslim reader to consider that Jesus is more than even a mighty prophet — that He is who Thomas, seeing Him alive, confessed Him to be.
+
+## Why a crucified Messiah was the plan, not the failure
+
+The hardest thing for a Muslim to accept is often not that Jesus existed or taught, but that He was *crucified* — for surely God would not abandon His Messiah to such a shameful death? The Qur'an, as most read it, denies the crucifixion partly out of this honorable instinct: God protects His prophets. So let me answer the instinct, not just the claim.
+
+The Christian does not see the cross as God *failing* to rescue His prophet. We see it as the very thing God had planned and foretold — the Messiah's mission, not His defeat. Isaiah said so seven centuries before it happened, and said it was *God's own will*:
+
+> "Yet it pleased Yahweh to bruise him. He has caused him to suffer... when you make his soul an offering for sin, he will see his offspring." — Isaiah 53:10 (WEB)
+
+The suffering was not an accident God failed to prevent; it "pleased Yahweh" — it was the offering for sin the whole sacrificial system had pointed toward. Paul admits frankly that a crucified Messiah is a scandal to the religious mind — "we preach Christ crucified, a stumbling block to Jews and foolishness to Greeks" (1 Corinthians 1:23) — and then insists it is precisely there that "the power of God and the wisdom of God" are revealed. The cross looks like the prophet's humiliation; it is in fact the King's coronation, the Lamb's sacrifice, the moment our debt was paid. To remove the cross to protect Jesus' honor is, from the Christian side, to remove the very act in which His honor and our salvation shine brightest. The empty tomb is God's vindication — not that the cross was avoided, but that it was conquered.
+
 ---
 
 # Chapter Six — Heaven, Hell, and How a Person Is Saved
@@ -208,6 +308,24 @@ And this is where the gospel offers something Islam, by its own structure, does 
 
 So the offer on the table is genuinely different. Islam offers a path of submission with the verdict deferred to the Day of Judgment. The gospel offers a finished rescue and a verdict you can know now, not because you are good but because Christ is, and He has taken your place. If that is true, it is the best news a human being could hear — and it is freely offered to you, with nothing to pay, because the price has already been paid.
 
+## The gift of assurance
+
+There is one more difference here so practical that it touches every night's sleep, and it is worth naming with care. In most understandings of Islam, a person lives in submission and hopes in God's mercy, but cannot *know* in this life how the scale will finally tip; the verdict waits for the Day of Judgment. The gospel offers something its structure makes possible only because salvation rests on Christ's finished work rather than on the believer's performance — it offers *assurance now*:
+
+> "These things I have written to you who believe in the name of the Son of God, that you may know that you have eternal life." — 1 John 5:13 (WEB)
+
+Not "hope so." *Know.* This is not arrogance — as if the Christian were claiming to be good enough. It is the opposite: the Christian's confidence rests entirely *outside himself*, on what Christ has already accomplished. "By grace you have been saved through faith, and that not of yourselves; it is the gift of God, not of works" (Ephesians 2:8-9). Because the debt is paid by Another, and paid in full, the verdict is already in.
+
+I offer this not as a debating point but as something precious that a Muslim friend may never have been told is available: that one can stand before a holy God not anxiously hoping the good has outweighed the bad, but resting in a finished work and a settled welcome. If salvation depends on the scale of our deeds, no honest person can ever be sure. If it depends on the cross of Christ, received by faith, then assurance is not presumption — it is simply trusting the sufficiency of what He has done. That is a rest worth examining, whatever you conclude.
+
+## The scale and the running Father
+
+Behind the two ways of salvation lie two different pictures of God Himself, and it is worth seeing them side by side. In the religion of the scale, God is supremely the Judge, weighing each deed, and the worshiper approaches with hope but never certainty. Jesus offered a second picture — not to deny that God is Judge, but to reveal His heart toward returning sinners. He told of a son who squandered everything and came home in disgrace, rehearsing a speech to earn a servant's place. But before he could finish, the father did something no dignified Middle Eastern patriarch would do:
+
+> "But while he was still far off, his father saw him, and was moved with compassion, and ran, and fell on his neck, and kissed him." — Luke 15:20 (WEB)
+
+The father *ran.* He did not wait at the door with folded arms for the son to prove himself; he ran to meet him, embraced him before the apology was out, and called for a robe, a ring, and a feast. This is the God Jesus reveals — not a reluctant judge slowly persuaded by our good deeds, but a Father scanning the horizon, ready to run. The difference between the scale and the running Father is not that one takes sin seriously and the other does not; the cross shows that God takes sin with deadly seriousness. The difference is *who pays.* On the scale, you do. With the Father, He has — and the son's part is simply to come home. I commend this picture to you not to dismiss your reverence for God's justice, which Christians share, but to ask whether the God who runs might be even greater than the God who only weighs.
+
 ---
 
 # Chapter Seven — Reading It Together: An Invitation
@@ -235,6 +353,18 @@ You have read a Christian's honest answer. I have tried to give it with humility
 > "Come to me, all you who labor and are heavily burdened, and I will give you rest." — Matthew 11:28 (WEB)
 
 Read it in context. Then come and see.
+
+## A prayer the honest seeker can pray
+
+If you have read this far, you have given Christianity a fair hearing — and the only honest next step is not to take my word for it, but to ask God Himself. Jesus made a remarkable promise to anyone willing to *do* God's will, not merely debate it:
+
+> "If anyone desires to do his will, he will know about the teaching, whether it is from God, or if I am speaking from myself." — John 7:17 (WEB)
+
+The promise is that sincerity will be answered — that the one who genuinely wants the truth, and is willing to follow it wherever it leads, will be given light. So I leave you not with a demand but with an invitation you can act on tonight, in your own room, in your own words. Pray something like this, honestly:
+
+*"God, you know I want the truth more than I want to be right. If Jesus is only a prophet, keep me from error. But if He is who the Gospels say — your Word, the Lamb, the risen Lord — then show me, and give me the courage to follow. Open my eyes as I read."*
+
+Then open the Gospel of John and read it slowly, a chapter at a time, asking that question as you go. You risk nothing by looking closely; if Jesus is merely a prophet, an honest reading will cost you nothing. But if He is more — if the One the whole Bible was pointing to has come, drunk our cup, and risen — then to find Him is to find everything. The God who promised, "You will seek me, and find me, when you search for me with all your heart" (Jeremiah 29:13), does not break His promises. Seek Him, and see.
 
 ---
 

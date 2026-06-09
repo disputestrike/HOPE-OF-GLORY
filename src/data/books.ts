@@ -183,7 +183,7 @@ export const BOOKS: Book[] = [
       "A rigorous, charitable reply to the hardest Christian–Muslim questions — tawhid and the Trinity, the charge that the Bible was corrupted (tahrif), whether the Old Testament predicts Muhammad, the identity and crucifixion of Jesus, and how a person is saved. Read in context, with humility and never hostility. For the Muslim reader, the Christian, and the seeker. Free to read and download.",
     file: "read-it-in-context.md",
     pdf: "/ebooks/read-it-in-context-hope-of-glory.pdf",
-    pages: 18,
+    pages: 27,
     readingTimeMin: 40,
     anchor: {
       ref: "1 Peter 3:15 · WEB",
